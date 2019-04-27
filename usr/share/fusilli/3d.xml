@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fusilli>
+	<plugin name="3d">
+		<short>3D Windows</short>
+		<long>Elevates windows while rotating the cube</long>
+
+		<category>Effects</category>
+
+		<deps>
+			<requirement>
+				<plugin>cube</plugin>
+			</requirement>
+			<relation type="after">
+				<plugin>cube</plugin>
+			</relation>
+		</deps>
+
+		<group>
+			<short>Misc. Options</short>
+
+			<subgroup>
+				<option type="string" per_screen="true" name="window_match">
+					<short>Window Match</short>
+					<long>Windows that should be handled by 3D</long>
+					<hint>match</hint>
+					<default>Toolbar | Utility | Dialog | Normal | Unknown</default>
+				</option>
+
+				<option type="int" per_screen="true" name="min_cube_size">
+					<short>Minimum Cube Size</short>
+					<long>Minimum cube size (in percent).</long>
+					<default>60</default>
+					<min>10</min>
+					<max>100</max>
+				</option>
+
+				<option type="int" per_screen="true" name="max_window_space">
+					<short>Window Space</short>
+					<long>Change the amount of space between the windows (in percent of the cube size).</long>
+					<default>10</default>
+					<min>0</min>
+					<max>50</max>
+				</option>
+
+				<option type="bool" per_screen="true" name="manual_only">
+					<short>3D Only On Mouse Rotate</short>
+					<long>Initiates the 3D display only if rotate is mouse driven. (Ex. You rotate the cube via the mouse)</long>
+					<default>true</default>
+				</option>
+			</subgroup>
+		</group>
+
+		<group>
+			<short>Window Depth</short>
+
+			<subgroup>
+				<option type="float" per_screen="true" name="width">
+					<short>Window Depth</short>
+					<long>Window depth</long>
+					<default>0.3</default>
+					<min>0.0</min>
+					<max>1.0</max>
+					<precision>0.001</precision>
+				</option>
+
+				<option type="int" per_screen="true" name="bevel">
+					<short>Bevel Corners</short>
+					<long>Roundoff corners for consistency with rounded decorations</long>
+					<default>0</default>
+					<min>0</min>
+					<max>20</max>
+				</option>
+
+				<option type="string" per_screen="true" name="width_color">
+					<short>Window Color (Active)</short>
+					<long>Color of the active window's depth</long>
+					<hint>color</hint>
+					<default>#333333ff</default>
+				</option>
+
+				<option type="string" per_screen="true" name="width_color_inactive">
+					<short>Window Color (Inactive)</short>
+					<long>Color of an inactive window's depth</long>
+					<hint>color</hint>
+					<default>#333333ff</default>
+				</option>
+			</subgroup>
+
+			<subgroup collapsible="true">
+				<short>Bevel Corners</short>
+
+				<option type="bool" per_screen="true" name="bevel_topleft">
+					<short>Bevel Top Left</short>
+					<long>Bevel top left corner</long>
+					<default>true</default>
+				</option>
+
+				<option type="bool" per_screen="true" name="bevel_topright">
+					<short>Bevel Top Right</short>
+					<long>Bevel top right corner</long>
+					<default>true</default>
+				</option>
+
+				<option type="bool" per_screen="true" name="bevel_bottomleft">
+					<short>Bevel Bottom Left</short>
+					<long>Bevel bottom left corner</long>
+					<default>false</default>
+				</option>
+
+				<option type="bool" per_screen="true" name="bevel_bottomright">
+					<short>Bevel Bottom Right</short>
+					<long>Bevel bottom right corner</long>
+					<default>false</default>
+				</option>
+			</subgroup>
+		</group>
+	</plugin>
+</fusilli>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fusilli>
+	<plugin name="minimize">
+		<short>Minimize Effect</short>
+		<short xml:lang="bn">প্রভাব সর্বনিম্ন করা</short>
+		<short xml:lang="bn_IN">প্রভাব সর্বনিম্ন করা</short>
+		<short xml:lang="ca">Minimitza l'efecte</short>
+		<short xml:lang="cs">Efekt minimalizace</short>
+		<short xml:lang="da">Minimer effekt</short>
+		<short xml:lang="de">Minimierungseffekt</short>
+		<short xml:lang="el">Εφέ Ελαχιστοποίησης</short>
+		<short xml:lang="es">Efecto Minimizar</short>
+		<short xml:lang="eu">Ikonotze Efektua</short>
+		<short xml:lang="fi">Pienennystehoste</short>
+		<short xml:lang="fr">Effet de Minimisation</short>
+		<short xml:lang="gl">Efecto ao Minimizar</short>
+		<short xml:lang="gu">ન્યૂનતમ અસર</short>
+		<short xml:lang="he">אפקט מזעור</short>
+		<short xml:lang="hu">Minimalizálás effektus</short>
+		<short xml:lang="it">Effetto minimizzazione</short>
+		<short xml:lang="ja">最小化時の効果</short>
+		<short xml:lang="ko">최소화 효과</short>
+		<short xml:lang="nb">Minimereffekt</short>
+		<short xml:lang="nl">Minimaliseer effect</short>
+		<short xml:lang="or">ନ୍ଯୁନତମ ପ୍ରଭାବ</short>
+		<short xml:lang="pl">Efekt minimalizacji</short>
+		<short xml:lang="pt">Minimizar Efeito</short>
+		<short xml:lang="pt_BR">Efeito ao Minimizar</short>
+		<short xml:lang="ro">Efect de minimizare</short>
+		<short xml:lang="ru">Эффект свертывания</short>
+		<short xml:lang="sk">Efekt pri minimalizovaní</short>
+		<short xml:lang="sv">Minimeringseffekt</short>
+		<short xml:lang="tr">Küçültme Efekti</short>
+		<short xml:lang="uk">Ефект згортання</short>
+		<short xml:lang="zh_CN">最小化效果</short>
+		<short xml:lang="zh_TW">最小化特效</short>
+		<long>Transform windows when they are minimized and unminimized</long>
+		<long xml:lang="bn">উইন্ডোগুলি ছোট এবং বড় করার সময় সেগুলি স্থানান্তরিত করে</long>
+		<long xml:lang="bn_IN">উইন্ডোগুলি ছোট এবং বড় করার সময় সেগুলি স্থানান্তরিত করে</long>
+		<long xml:lang="ca">Transforma les finestres quan es minimitzen i es maximitzen</long>
+		<long xml:lang="cs">Transformovat okna při jejich minimalizaci a zrušení minimalizace</long>
+		<long xml:lang="da">Vinduer skal ændres, når de minimeres og gendannes</long>
+		<long xml:lang="de">Fenster beim Minimieren und beim Aufheben der Minimierung verformen</long>
+		<long xml:lang="el">Μετατροπή παραθύρων όταν είναι ελαχιστοποιημένα και μή-ελαχιστοποιημένα</long>
+		<long xml:lang="es">Transforma las ventanas cuando se minimizan o desminimizan</long>
+		<long xml:lang="eu">Eraldatu leihoak ikonotzean edo handitzean</long>
+		<long xml:lang="fi">Animoi ikkunoiden pienennys ja suurennus</long>
+		<long xml:lang="fr">Transformer les fenêtres lorsqu'elles sont réduites ou agrandies</long>
+		<long xml:lang="gl">Transforma as xanelas cando son minimizadas e restauradas</long>
+		<long xml:lang="gu">જ્યારે વિન્ડો નાની થાય અને નાનામાંથી પાછી આવે ત્યારે પરિવહન કરવાની વિન્ડો</long>
+		<long xml:lang="he">שנה את צורת החלונות בעת מזעור ושחזור</long>
+		<long xml:lang="hi">विंडो बदलें जब वे न्यूनतम और अधिकतम किए जाते हैं</long>
+		<long xml:lang="hu">Ablakok átalakítása minimalizáláskor és visszaállításkor</long>
+		<long xml:lang="it">Trasforma le finestre quando vengono minimizzate e deminimizzate</long>
+		<long xml:lang="ja">最小化および最小化解除時のウィンドウの拡縮</long>
+		<long xml:lang="ko">최소화하거나 해제할 때 창 변형하기</long>
+		<long xml:lang="nb">Omdann vinduer når de minimeres og avminimeres</long>
+		<long xml:lang="nl">Transformeer vensters als deze worden geminimaliseerd en gemaximaliseerd</long>
+		<long xml:lang="or">ଉଇଣ୍ଡୋ ଗୁଡିକୁ ରୂପାନ୍ତର କର ୟେବେ ସେଗୁଡିକ ନ୍ଯୁନତମ କିମ୍ବା ଅଣ-ନ୍ଯୁନତମ ହୁଅନ୍ତି </long>
+		<long xml:lang="pa">ਵਿੰਡੋ ਟਰਾਂਸਫਰਮ ਕਰੋ, ਜਦੋਂ ਉਹ ਘੱਟੋ-ਘੱਟ ਅਤੇ ਅਣ-ਘੱਟੋ-ਘੱਟ ਹੋਣ</long>
+		<long xml:lang="pl">Przekształcaj okna podczas minimalizacji i cofania minimalizacji</long>
+		<long xml:lang="pt">Transformar janelas quando elas forem minimizadas e desminimizadas</long>
+		<long xml:lang="pt_BR">Transformar janelas quando elas forem minimizadas e desminimizadas</long>
+		<long xml:lang="ro">Transformare ferestre cînd sînt minimizate și deminimizate</long>
+		<long xml:lang="ru">Преобразовывать окна при свертывании и отмене свертывания</long>
+		<long xml:lang="sk">Transformovať okná pri ich minimalizovaní a spätnom obnovení</long>
+		<long xml:lang="sv">Transformera fönster när de minimeras och avminimeras</long>
+		<long xml:lang="tr">Pencereleri küçültüldüklerinde ve geri yüklendiklerinde dönüştür</long>
+		<long xml:lang="uk">Перетворювати вікна при згортанні та скасуванні згортання</long>
+		<long xml:lang="zh_CN">最小化和取消最小化时变形窗口</long>
+		<long xml:lang="zh_TW">在最小化和解除最小化時變化視窗</long>
+		<category>Effects</category>
+
+		<deps>
+			<relation type="before">
+				<plugin>cube</plugin>
+				<plugin>scale</plugin>
+			</relation>
+		</deps>
+
+		<group>
+			<short>General</short>
+
+			<subgroup>
+				<option type="float" per_screen="true" name="speed">
+					<short>Speed</short>
+					<short xml:lang="bg">Скорост</short>
+					<short xml:lang="ca">Velocitat</short>
+					<short xml:lang="cs">Rychlost</short>
+					<short xml:lang="da">Hastighed</short>
+					<short xml:lang="de">Geschwindigkeit</short>
+					<short xml:lang="el">Ταχύτητα</short>
+					<short xml:lang="es">Velocidad</short>
+					<short xml:lang="eu">Abiadura</short>
+					<short xml:lang="fi">Nopeus</short>
+					<short xml:lang="fr">Vitesse</short>
+					<short xml:lang="gl">Velocidade</short>
+					<short xml:lang="gu">ઝડપ</short>
+					<short xml:lang="he">מהירות</short>
+					<short xml:lang="hu">Sebesség</short>
+					<short xml:lang="it">Velocità</short>
+					<short xml:lang="ja">速度</short>
+					<short xml:lang="ko">속도</short>
+					<short xml:lang="nb">Hastighet</short>
+					<short xml:lang="nl">Snelheid</short>
+					<short xml:lang="or">ଗତି</short>
+					<short xml:lang="pl">Szybkość</short>
+					<short xml:lang="pt">Velocidade</short>
+					<short xml:lang="pt_BR">Velocidade</short>
+					<short xml:lang="ro">Viteză</short>
+					<short xml:lang="ru">Скорость</short>
+					<short xml:lang="sk">Rýchlosť</short>
+					<short xml:lang="sv">Hastighet</short>
+					<short xml:lang="tr">Hız</short>
+					<short xml:lang="uk">Швидкість</short>
+					<short xml:lang="zh_CN">速度</short>
+					<short xml:lang="zh_TW">速度</short>
+					<long>Minimize speed</long>
+					<long xml:lang="bn">সর্বনিম্ন করার গতি</long>
+					<long xml:lang="bn_IN">সর্বনিম্ন করার গতি</long>
+					<long xml:lang="ca">Minimitza la velocitat</long>
+					<long xml:lang="cs">Rychlost minimalizace</long>
+					<long xml:lang="da">Sænk hastighed</long>
+					<long xml:lang="de">Minimiergeschwindigkeit</long>
+					<long xml:lang="el">Ταχύτητα ελαχιστοποίησης</long>
+					<long xml:lang="es">Velocidad al minimizar</long>
+					<long xml:lang="eu">Ikonotze abiadura</long>
+					<long xml:lang="fi">Pienennykseen käytetty aika</long>
+					<long xml:lang="fr">Vitesse de minimisation</long>
+					<long xml:lang="gl">Velocidade de minimizado</long>
+					<long xml:lang="gu">ન્યૂનતમ કરવાની ઝડપ</long>
+					<long xml:lang="he">מהירות מזעור</long>
+					<long xml:lang="hu">Minimalizálás sebessége</long>
+					<long xml:lang="it">Velocità minimizzazione</long>
+					<long xml:lang="ja">最小化速度</long>
+					<long xml:lang="ko">최소화 속도</long>
+					<long xml:lang="nb">Minimeringshastighet</long>
+					<long xml:lang="nl">Minimaliseer snelheid</long>
+					<long xml:lang="or">ଗତିକୁ ନ୍ଯୁନତମକର</long>
+					<long xml:lang="pl">Szybkość minimalizacji</long>
+					<long xml:lang="pt">Velocidade de minimização</long>
+					<long xml:lang="pt_BR">Velocidade de minimização</long>
+					<long xml:lang="ro">Viteză minimizare</long>
+					<long xml:lang="ru">Скорость свертывания</long>
+					<long xml:lang="sk">Minimalizovať rýchlosť</long>
+					<long xml:lang="sv">Minimeringshastighet</long>
+					<long xml:lang="tr">Küçültme Hızı</long>
+					<long xml:lang="uk">Швидкість згортання</long>
+					<long xml:lang="zh_CN">最小化速度</long>
+					<long xml:lang="zh_TW">最小化速度</long>
+					<default>1.5</default>
+					<min>0.1</min>
+					<max>50.0</max>
+					<precision>0.1</precision>
+				</option>
+
+				<option type="float" per_screen="true" name="timestep">
+					<short>Timestep</short>
+					<short xml:lang="ca">Etapa</short>
+					<short xml:lang="cs">Časový krok</short>
+					<short xml:lang="da">Tidstrin</short>
+					<short xml:lang="de">Zeitintervall</short>
+					<short xml:lang="el">Χρονικό Βήμα</short>
+					<short xml:lang="es">Paso</short>
+					<short xml:lang="eu">denbora-pausoa</short>
+					<short xml:lang="fi">Aikaviive</short>
+					<short xml:lang="fr">Intervalle</short>
+					<short xml:lang="gl">Saltos do tempo</short>
+					<short xml:lang="gu">સમયપગલું</short>
+					<short xml:lang="he">יחידת זמן</short>
+					<short xml:lang="hu">Időköz</short>
+					<short xml:lang="it">Intervallo</short>
+					<short xml:lang="ja">描画の時間刻み</short>
+					<short xml:lang="ko">시간 간격</short>
+					<short xml:lang="nb">Tidsskritt</short>
+					<short xml:lang="nl">Tijdstempel</short>
+					<short xml:lang="or">ସମଯସୋପାନ</short>
+					<short xml:lang="pl">Opóźnienie</short>
+					<short xml:lang="pt">Espaço de tempo</short>
+					<short xml:lang="pt_BR">Intervalo de tempo</short>
+					<short xml:lang="ro">Pas de timp</short>
+					<short xml:lang="ru">Шаг времени</short>
+					<short xml:lang="sk">Krok</short>
+					<short xml:lang="sv">Tidsintervall</short>
+					<short xml:lang="tr">Süre aralığı</short>
+					<short xml:lang="uk">Крок часу</short>
+					<short xml:lang="zh_CN">时间步长</short>
+					<short xml:lang="zh_TW">時間間隔</short>
+					<long>Minimize timestep</long>
+					<long xml:lang="ca">Minimitza l'etapa</long>
+					<long xml:lang="cs">Časový krok minimalizace</long>
+					<long xml:lang="da">Minimer tidstrin</long>
+					<long xml:lang="de">Minimierintervall</long>
+					<long xml:lang="el">Χρονικό βήμα ελαχιστοποίησης</long>
+					<long xml:lang="es">Paso al minimizar</long>
+					<long xml:lang="eu">Ikonotze denbora-pausoa</long>
+					<long xml:lang="fi">Pienennyksen aikaväli</long>
+					<long xml:lang="fr">Intervalle de minimisation</long>
+					<long xml:lang="gl">Atraso no minimizado</long>
+					<long xml:lang="gu">સમયનોંધ ન્યૂનતમ કરો</long>
+					<long xml:lang="he">יחידת זמן למזעור</long>
+					<long xml:lang="hu">Minimalizálási időköz</long>
+					<long xml:lang="it">Intervallo minimizzazione</long>
+					<long xml:lang="ja">最小化の描画時間刻み</long>
+					<long xml:lang="ko">최소화 시간 간격</long>
+					<long xml:lang="nb">Tidsskritt for minimering</long>
+					<long xml:lang="nl">Minimaliseer tijdstempel</long>
+					<long xml:lang="or">ସମଯସୋପାନକୁ ନ୍ଯୁନତମକର</long>
+					<long xml:lang="pl">Opóźnienie minimalizacji</long>
+					<long xml:lang="pt">Timestep de minimização</long>
+					<long xml:lang="pt_BR">Intervalo de tempo de minimização</long>
+					<long xml:lang="ro">Pas de timp minimizare</long>
+					<long xml:lang="ru">Квант времени свертывания</long>
+					<long xml:lang="sk">Minimalizovať časový krok</long>
+					<long xml:lang="sv">Tidsintervall för minimering</long>
+					<long xml:lang="tr">Küçültme zaman aralığı</long>
+					<long xml:lang="uk">Квант часу згортання</long>
+					<long xml:lang="zh_CN">最小化时间步长</long>
+					<long xml:lang="zh_TW">最小化時間間隔</long>
+					<default>0.5</default>
+					<min>0.1</min>
+					<max>50.0</max>
+					<precision>0.1</precision>
+				</option>
+
+				<option type="string" per_screen="true" name="window_match">
+					<short>Minimize Windows</short>
+					<short xml:lang="bn">উইন্ডোগুলি ছোট করা</short>
+					<short xml:lang="bn_IN">উইন্ডোগুলি ছোট করা</short>
+					<short xml:lang="cs">Minimalizovatelná okna</short>
+					<short xml:lang="de">Minimierungseffekt für Fenster</short>
+					<short xml:lang="el">Ελαχιστοποίηση Παραθύρων</short>
+					<short xml:lang="es">Minimizar ventanas</short>
+					<short xml:lang="eu">Ikonotu leihoak</short>
+					<short xml:lang="fi">Pienennä ikkunat</short>
+					<short xml:lang="fr">Minimiser la fenêtre</short>
+					<short xml:lang="gl">Minimizar as Fiestras</short>
+					<short xml:lang="gu">વિન્ડો ન્યૂનતમ કરો</short>
+					<short xml:lang="he">מזעור חלונות</short>
+					<short xml:lang="hu">Ablak minimalizálása</short>
+					<short xml:lang="it">Finestre da minimizzare</short>
+					<short xml:lang="ja">最小化時効果ウィンドウ</short>
+					<short xml:lang="ko">창 최소화</short>
+					<short xml:lang="nb">Minimer vinduer</short>
+					<short xml:lang="nl">Venster minimaliseren</short>
+					<short xml:lang="or">ଉଇଣ୍ଡୋକୁ ନ୍ଯୁନତମ କର</short>
+					<short xml:lang="pl">Minimalizuj okna</short>
+					<short xml:lang="pt">Minimizar Janelas</short>
+					<short xml:lang="pt_BR">Minimizar Janelas</short>
+					<short xml:lang="ro">Minimizează ferestrele</short>
+					<short xml:lang="ru">Свернуть окна</short>
+					<short xml:lang="sk">Minimalizovať okná</short>
+					<short xml:lang="sv">Minimera fönster</short>
+					<short xml:lang="tr">Pencereleri Küçült</short>
+					<short xml:lang="uk">Згорнути вікна</short>
+					<short xml:lang="zh_CN">最小化窗口</short>
+					<short xml:lang="zh_TW">最小化視窗</short>
+					<long>Windows that should be transformed when minimized</long>
+					<long xml:lang="bn">উইন্ডো ছোট করার সময় যে উইন্ডোগুলি স্থানান্তরিত করা হবে</long>
+					<long xml:lang="bn_IN">উইন্ডো ছোট করার সময় যে উইন্ডোগুলি স্থানান্তরিত করা হবে</long>
+					<long xml:lang="cs">Typy oken, která se mají při minimalizaci transformovat</long>
+					<long xml:lang="de">Fenster, die beim Minimieren verformt werden sollen</long>
+					<long xml:lang="el">Παράθυρα που θα μετατραπούν οταν ελαχιστοποιηθούν</long>
+					<long xml:lang="es">Tipos de ventana que deben transformarse al minimizarlas</long>
+					<long xml:lang="eu">Leihoak ikonotzean eraldatuko dira</long>
+					<long xml:lang="fi">Ikkunatyypit, jotka tulisi muuntaa pienennettäessä</long>
+					<long xml:lang="fr">Types de fenêtres à transformer lorsqu'elles sont réduites</long>
+					<long xml:lang="gl">Fiestras se deben transformar cando sexan minimizadas</long>
+					<long xml:lang="gu">જ્યારે ન્યૂનતમ કરવાની હોય કે જેનું પરિવહન થવું જોઈએ તે વિન્ડો</long>
+					<long xml:lang="he">חלונות שיש לשנות את צורתם בעת מזעור</long>
+					<long xml:lang="hi">विंडोज़ जो न्यूनतम करने पर रूपांतरित किए जाने चाहिए</long>
+					<long xml:lang="hu">Minimalizált állapotban átalakítandó ablaktípusok</long>
+					<long xml:lang="it">Tipi di finestre da trasformare quando minimizzate</long>
+					<long xml:lang="ja">最小化の際に縮尺させる対象ウィンドウ</long>
+					<long xml:lang="ko">최소화시 변형되는 창</long>
+					<long xml:lang="nb">Vinduer som skal omdannes når de minimeres</long>
+					<long xml:lang="nl">Te transformeren vesters tijdens minimaliseren</long>
+					<long xml:lang="or">ଉଇଣ୍ଡୋ ୟାହାକି ରୂପାନ୍ତରିତ ହେବା ଉଚିତ ୟେବେ ନ୍ଯୁନତମ ହୋଇଥାଏ</long>
+					<long xml:lang="pa">ਵਿੰਡੋ, ਜੋ ਕਿ ਘੱਟੋ-ਘੱਟ ਕਰਨ ਦੌਰਾਨ ਟਰਾਂਸਫਰਮ ਕੀਤੀ ਜਾਵੇ</long>
+					<long xml:lang="pl">Typy okien, które mają być transformowane podczas minimalizacji</long>
+					<long xml:lang="pt">Janelas que devem ser transformadas quando minimizadas</long>
+					<long xml:lang="pt_BR">Janelas que devem ser transformadas quando minimizadas</long>
+					<long xml:lang="ro">Ferestrele care trebuiesc transformate la minimizare</long>
+					<long xml:lang="ru">Окна, которые должны быть преобразованы при свертывании</long>
+					<long xml:lang="sk">Okná, ktoré by mali byť transformované pri minimalizovaní</long>
+					<long xml:lang="sv">Fönster som ska bli transformerade när de blir minimerade</long>
+					<long xml:lang="tr">Küçültüldüklerinde ve geri yüklendiklerinde dönüştürülecek pencereler</long>
+					<long xml:lang="uk">Вікна, які повинні бути перетворені при згортанні</long>
+					<long xml:lang="zh_CN">最小化时应变形的窗口</long>
+					<long xml:lang="zh_TW">最小化時應該變化的視窗類型</long>
+					<hint>match</hint>
+					<default>toolbar | utility | dialog | normal</default>
+				</option>
+
+				<option type="int" per_screen="true" name="shade_resistance">
+					<short>Shade Resistance</short>
+					<short xml:lang="bn">শেড প্রতিরোধ</short>
+					<short xml:lang="bn_IN">শেড প্রতিরোধ</short>
+					<short xml:lang="ca">Resistència a l'ombra</short>
+					<short xml:lang="cs">Stálost stínu</short>
+					<short xml:lang="da">Skyggemodstand</short>
+					<short xml:lang="de">Schattenwiderstand</short>
+					<short xml:lang="el">Αντίσταση στη Σκίαση</short>
+					<short xml:lang="es">Resistencia de decoloración</short>
+					<short xml:lang="eu">Itzaltze Erresistentzia</short>
+					<short xml:lang="fi">Varjon vastussauma</short>
+					<short xml:lang="fr">Résistance de l'Ombre</short>
+					<short xml:lang="gl">Resistencia da Sombra</short>
+					<short xml:lang="gu">પડછાયા વિરોધી</short>
+					<short xml:lang="he">התנגדות הצללה</short>
+					<short xml:lang="hi">छाया प्रतिरोध</short>
+					<short xml:lang="hu">Felgördítés ellenállása</short>
+					<short xml:lang="it">Resistenza sfumatura</short>
+					<short xml:lang="ja">シェード抵抗</short>
+					<short xml:lang="ko">말아올리기 저항</short>
+					<short xml:lang="nb">Skyggemotstand</short>
+					<short xml:lang="nl">Oprol weerstand</short>
+					<short xml:lang="or">ଛାଯା ପ୍ରତିରୋଧକ</short>
+					<short xml:lang="pa">ਸ਼ੇਡ ਵਿਰੋਧ</short>
+					<short xml:lang="pl">Opór przyciemniania</short>
+					<short xml:lang="pt">Resistência de Sombra</short>
+					<short xml:lang="pt_BR">Resistência de Sombra</short>
+					<short xml:lang="ro">Rezistență la umbrire</short>
+					<short xml:lang="ru">Устойчивость тени</short>
+					<short xml:lang="sk">Stálosť tieňa</short>
+					<short xml:lang="sv">Skuggmotstånd</short>
+					<short xml:lang="tr">Gölgeleme Direnci</short>
+					<short xml:lang="uk">Стійкість тіні</short>
+					<short xml:lang="zh_CN">抗遮蔽性</short>
+					<short xml:lang="zh_TW">遮蔽阻力</short>
+					<long>Shade resistance</long>
+					<long xml:lang="bn">শেড প্রতিরোধ</long>
+					<long xml:lang="bn_IN">শেড প্রতিরোধ</long>
+					<long xml:lang="ca">Resistència a l'ombra</long>
+					<long xml:lang="cs">Stálost stínu</long>
+					<long xml:lang="da">Skyggemodstand</long>
+					<long xml:lang="de">Schattenwiderstand</long>
+					<long xml:lang="el">Αντίσταση στη σκίαση</long>
+					<long xml:lang="es">Resistencia a la decoloración</long>
+					<long xml:lang="eu">Itzaltze erresistentzia</long>
+					<long xml:lang="fi">Varjon vastussauma</long>
+					<long xml:lang="fr">Résistance de l'ombre</long>
+					<long xml:lang="gl">Resistencia que opón a sombra ao minimizar a súa xanela</long>
+					<long xml:lang="gu">પડછાયા વિરોધી</long>
+					<long xml:lang="he">התנגדות הצללה</long>
+					<long xml:lang="hi">छाया प्रतिरोध</long>
+					<long xml:lang="hu">Felgördítés ellenállása</long>
+					<long xml:lang="it">Resistenza sfumatura</long>
+					<long xml:lang="ja">シェード抵抗</long>
+					<long xml:lang="ko">말아올리기 저항</long>
+					<long xml:lang="nb">Skyggemotstand</long>
+					<long xml:lang="nl">Oprol weerstand</long>
+					<long xml:lang="or">ଛାଯା ପ୍ରତିରୋଧକ</long>
+					<long xml:lang="pa">ਸ਼ੇਡ ਵਿਰੋਧ</long>
+					<long xml:lang="pl">Opór cieniowania</long>
+					<long xml:lang="pt">Resistência ao sombrear</long>
+					<long xml:lang="pt_BR">Resistência ao Sombrear</long>
+					<long xml:lang="ro">Rezistență la umbrire</long>
+					<long xml:lang="ru">Устойчивость тени</long>
+					<long xml:lang="sk">Stálosť tieňa</long>
+					<long xml:lang="sv">Skuggmotstånd</long>
+					<long xml:lang="tr">Gölgeleme direnci</long>
+					<long xml:lang="uk">Стійкість тіні</long>
+					<long xml:lang="zh_CN">抗遮蔽性</long>
+					<long xml:lang="zh_TW">遮蔽阻力</long>
+					<default>75</default>
+					<min>0</min>
+					<max>100</max>
+				</option>
+			</subgroup>
+		</group>
+	</plugin>
+</fusilli>

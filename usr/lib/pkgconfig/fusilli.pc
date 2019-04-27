@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: fusilli
+Description: OpenGL compositing manager
+Version: 0.0.0
+
+Requires: x11                          xcomposite                   xext                         xfixes                       xdamage                      xrandr                       xinerama                     ice                          sm                           libxml-2.0                   libxslt                      libstartup-notification-1.0 >= 0.7                   cairo-xlib-xrender                   pangocairo                   cairo >= 1.0                   dbus-1
+Libs:
+Cflags: -pthread -I/usr/include/libxml2 -I/usr/include/startup-notification-1.0 -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/i386-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12 -I/usr/include/pango-1.0 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include    -I${includedir}/fusilli

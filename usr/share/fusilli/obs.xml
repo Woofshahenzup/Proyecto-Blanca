@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fusilli>
+	<plugin name="obs">
+		<short>Opacity, Brightness and Saturation</short>
+		<short xml:lang="el">Αδιαφάνεια, Φωτεινότητα και Κορεσμός </short>
+		<short xml:lang="es">Opacidad, brillo y saturación</short>
+		<short xml:lang="eu">Opakutasuna, distira eta saturazioa</short>
+		<short xml:lang="fi">Peittävyys, kirkkaus ja värikylläisyys</short>
+		<short xml:lang="fr">Opacité, luminosité et saturation</short>
+		<short xml:lang="gl">Opacidade, Brillo e Saturación</short>
+		<short xml:lang="he">אטימות, בהירות ורוויה</short>
+		<short xml:lang="hu">Átlátszatlanság, fényerő, telítettség</short>
+		<short xml:lang="it">Opacità, luminosità e saturazione</short>
+		<short xml:lang="ja">不透明度・明度・彩度</short>
+		<short xml:lang="ko">투명, 밝기, 채도</short>
+		<short xml:lang="pl">Przezroczystość, Jasność i Nasycenie</short>
+		<short xml:lang="pt">Opacidade, Brilho e Saturação</short>
+		<short xml:lang="ru">Прозрачность, яркость и насыщенность</short>
+		<short xml:lang="uk">Прозорість, яскравість і насиченість</short>
+		<short xml:lang="zh_CN">不透明度、亮度与饱和度</short>
+		<short xml:lang="zh_TW">不透明、亮度與飽和度</short>
+		<long>Opacity, Brightness and Saturation adjustments</long>
+		<long xml:lang="el">Ρυθμίσεις Αδιαφάνειας, Φωτεινότητας και Κορεσμού</long>
+		<long xml:lang="es">Ajustes de opacidad, brillo y saturación</long>
+		<long xml:lang="eu">Opakutasun, distira eta saturazio doitzeak</long>
+		<long xml:lang="fi">Peittävyyden, kirkkauden ja värikylläisyyden muuttaminen</long>
+		<long xml:lang="fr">Ajustement de l'opacité, de la luminosité et de la saturation</long>
+		<long xml:lang="gl">Opacidade, Brillo e axustes de Saturación</long>
+		<long xml:lang="he">כוונון אטימות, בהירות ורוויה</long>
+		<long xml:lang="hu">Átlátszatlanság, fényerő, telítettség beállítások</long>
+		<long xml:lang="it">Regolazioni di opacità, luminosità e saturazione</long>
+		<long xml:lang="ja">不透明度や明度、彩度の調節</long>
+		<long xml:lang="ko">투명, 밝기, 채도 조정</long>
+		<long xml:lang="pl">Dostosowywanie Nieprzezroczystości, Jasności i Nasycenia</long>
+		<long xml:lang="pt">Ajustes de Opacidade, Brilho e Saturação</long>
+		<long xml:lang="ru">Регулировки прозрачности, яркости и насыщенности</long>
+		<long xml:lang="uk">Регулювання прозорості, яскравості і насиченості</long>
+		<long xml:lang="zh_CN">调整不透明度、亮度和饱和度</long>
+		<long xml:lang="zh_TW">不透明、亮度與飽和度調整</long>
+		<category>Accessibility</category>
+		<deps>
+			<relation type="after">
+				<plugin>decoration</plugin>
+				<plugin>blur</plugin>
+			</relation>
+		</deps>
+
+		<group>
+			<short>Opacity</short>
+			<short xml:lang="bn">অস্বচ্ছতা</short>
+			<short xml:lang="bn_IN">অস্বচ্ছতা</short>
+			<short xml:lang="ca">Opacitat</short>
+			<short xml:lang="cs">Krytí</short>
+			<short xml:lang="da">Uigennemsigtighed</short>
+			<short xml:lang="de">Opazität</short>
+			<short xml:lang="el">Αδιαφάνεια</short>
+			<short xml:lang="es">Opacidad</short>
+			<short xml:lang="eu">Opakutasuna</short>
+			<short xml:lang="fi">Läpinäkyvyys</short>
+			<short xml:lang="fr">Opacité</short>
+			<short xml:lang="gl">Opacidade</short>
+			<short xml:lang="gu">અપારદર્શકતા</short>
+			<short xml:lang="he">אטימות</short>
+			<short xml:lang="hu">Átlátszatlanság</short>
+			<short xml:lang="it">Opacità</short>
+			<short xml:lang="ja">不透明度</short>
+			<short xml:lang="ko">투명</short>
+			<short xml:lang="nb">Dekkevne</short>
+			<short xml:lang="nl">Ondoorzichtigheid</short>
+			<short xml:lang="or">ଅସ୍ବଚ୍ଛତା</short>
+			<short xml:lang="pl">Nieprzezroczystość</short>
+			<short xml:lang="pt">Opacidade</short>
+			<short xml:lang="pt_BR">Opacidade</short>
+			<short xml:lang="ro">Opacitate</short>
+			<short xml:lang="ru">Прозрачность</short>
+			<short xml:lang="sk">Nepriehľadnosť</short>
+			<short xml:lang="sv">Opacitet</short>
+			<short xml:lang="tr">Matlık</short>
+			<short xml:lang="uk">Прозорість</short>
+			<short xml:lang="zh_CN">不透明度</short>
+			<short xml:lang="zh_TW">不透明度</short>
+
+			<subgroup>
+				<option type="string" name="opacity_increase_key">
+					<short>Increase Opacity</short>
+					<long>Opacity Increase</long>
+					<long xml:lang="el">Αύξηση αδιαφάνειας</long>
+					<long xml:lang="es">Aumentar opacidad</long>
+					<long xml:lang="eu">Opakutasuna handitu</long>
+					<long xml:lang="fi">Peittävyyden lisääminen</long>
+					<long xml:lang="fr">Augmenter l'opacité</long>
+					<long xml:lang="gl">Incrementar opacidade</long>
+					<long xml:lang="he">הגברת האטימות</long>
+					<long xml:lang="hu">Átlátszatlanság növelése</long>
+					<long xml:lang="it">Aumento opacità</long>
+					<long xml:lang="ja">不透明度を上げる</long>
+					<long xml:lang="ko">투명도 증가</long>
+					<long xml:lang="pl">Zwiększ nieprzezroczystość</long>
+					<long xml:lang="pt">Aumentar Opacidade</long>
+					<long xml:lang="ru">Увеличение прозрачности</long>
+					<long xml:lang="uk">Збільшення прозорості</long>
+					<long xml:lang="zh_CN">减少透明度</long>
+					<long xml:lang="zh_TW">不透明度增加</long>
+					<hint>key</hint>
+					<default/>
+				</option>
+
+				<option type="string" name="opacity_increase_button">
+					<short>Increase Opacity</short>
+					<long>Opacity Increase</long>
+					<long xml:lang="el">Αύξηση αδιαφάνειας</long>
+					<long xml:lang="es">Aumentar opacidad</long>
+					<long xml:lang="eu">Opakutasuna handitu</long>
+					<long xml:lang="fi">Peittävyyden lisääminen</long>
+					<long xml:lang="fr">Augmenter l'opacité</long>
+					<long xml:lang="gl">Incrementar opacidade</long>
+					<long xml:lang="he">הגברת האטימות</long>
+					<long xml:lang="hu">Átlátszatlanság növelése</long>
+					<long xml:lang="it">Aumento opacità</long>
+					<long xml:lang="ja">不透明度を上げる</long>
+					<long xml:lang="ko">투명도 증가</long>
+					<long xml:lang="pl">Zwiększ nieprzezroczystość</long>
+					<long xml:lang="pt">Aumentar Opacidade</long>
+					<long xml:lang="ru">Увеличение прозрачности</long>
+					<long xml:lang="uk">Збільшення прозорості</long>
+					<long xml:lang="zh_CN">减少透明度</long>
+					<long xml:lang="zh_TW">不透明度增加</long>
+					<hint>button</hint>
+					<default>&lt;Alt&gt;Button4</default>
+				</option>
+
+				<option type="string" name="opacity_decrease_key">
+					<short>Decrease Opacity</short>
+					<long>Opacity Decrease</long>
+					<long xml:lang="el">Μείωση αδιαφάνειας</long>
+					<long xml:lang="es">Disminuir opacidad</long>
+					<long xml:lang="eu">Opakutasuna txikitu</long>
+					<long xml:lang="fi">Peittävyyden vähentäminen</long>
+					<long xml:lang="fr">Réduire l'opacité</long>
+					<long xml:lang="gl">Decrementar Opacidade</long>
+					<long xml:lang="he">הפחתת אטימות</long>
+					<long xml:lang="hu">Átlátszatlanság csökkentése</long>
+					<long xml:lang="it">Riduzione opacità</long>
+					<long xml:lang="ja">不透明度を下げる</long>
+					<long xml:lang="ko">투명도 감소</long>
+					<long xml:lang="pl">Zmniejsz nieprzezroczystość</long>
+					<long xml:lang="pt">Diminuir Opacidade</long>
+					<long xml:lang="ru">Уменьшение прозрачности</long>
+					<long xml:lang="uk">Зменшення прозорості</long>
+					<long xml:lang="zh_CN">增加透明度</long>
+					<long xml:lang="zh_TW">不透明度減少</long>
+					<hint>key</hint>
+					<default/>
+				</option>
+
+				<option type="string" name="opacity_decrease_button">
+					<short>Decrease Opacity</short>
+					<long>Opacity Decrease</long>
+					<long xml:lang="el">Μείωση αδιαφάνειας</long>
+					<long xml:lang="es">Disminuir opacidad</long>
+					<long xml:lang="eu">Opakutasuna txikitu</long>
+					<long xml:lang="fi">Peittävyyden vähentäminen</long>
+					<long xml:lang="fr">Réduire l'opacité</long>
+					<long xml:lang="gl">Decrementar Opacidade</long>
+					<long xml:lang="he">הפחתת אטימות</long>
+					<long xml:lang="hu">Átlátszatlanság csökkentése</long>
+					<long xml:lang="it">Riduzione opacità</long>
+					<long xml:lang="ja">不透明度を下げる</long>
+					<long xml:lang="ko">투명도 감소</long>
+					<long xml:lang="pl">Zmniejsz nieprzezroczystość</long>
+					<long xml:lang="pt">Diminuir Opacidade</long>
+					<long xml:lang="ru">Уменьшение прозрачности</long>
+					<long xml:lang="uk">Зменшення прозорості</long>
+					<long xml:lang="zh_CN">增加透明度</long>
+					<long xml:lang="zh_TW">不透明度減少</long>
+					<hint>button</hint>
+					<default>&lt;Alt&gt;Button5</default>
+				</option>
+
+				<option type="int" per_screen="true" name="opacity_step">
+					<short>Step</short>
+					<short xml:lang="bg">Стъпка</short>
+					<short xml:lang="el">Βήμα</short>
+					<short xml:lang="es">Paso</short>
+					<short xml:lang="eu">Pausoa</short>
+					<short xml:lang="fi">Askel</short>
+					<short xml:lang="fr">Incrément</short>
+					<short xml:lang="gl">Salto</short>
+					<short xml:lang="he">דרגת שינוי</short>
+					<short xml:lang="hu">Lépésköz</short>
+					<short xml:lang="it">Passo</short>
+					<short xml:lang="ja">変化刻み</short>
+					<short xml:lang="ko">단계</short>
+					<short xml:lang="pl">Krok zmiany</short>
+					<short xml:lang="pt">Incremento</short>
+					<short xml:lang="ru">Шаг</short>
+					<short xml:lang="uk">Крок</short>
+					<short xml:lang="zh_CN">调整步长</short>
+					<short xml:lang="zh_TW">幅度</short>
+					<long>Opacity Step</long>
+					<long xml:lang="bn">অস্বচ্ছতার ধাপ</long>
+					<long xml:lang="bn_IN">অস্বচ্ছতার ধাপ</long>
+					<long xml:lang="ca">Etapa d'opacitat</long>
+					<long xml:lang="cs">Krok krytí</long>
+					<long xml:lang="da">Uigennemsigtighedstrin</long>
+					<long xml:lang="de">Schrittweite für Opazität</long>
+					<long xml:lang="el">Βήμα Αδιαφάνειας</long>
+					<long xml:lang="es">Paso de opacidad</long>
+					<long xml:lang="eu">Opakotasun pausoa</long>
+					<long xml:lang="fi">Peittävyyden säädön askel</long>
+					<long xml:lang="fr">Incrément d'opacité</long>
+					<long xml:lang="gl">Etapa de Opacidade</long>
+					<long xml:lang="gu">અપારદર્શકતા પગલું</long>
+					<long xml:lang="he">דרגת שינוי אטימות</long>
+					<long xml:lang="hi">अपारदर्शिता चरण</long>
+					<long xml:lang="hr">Broj virtualnih radnih povrsina</long>
+					<long xml:lang="hu">Átlátszatlanság mértéke</long>
+					<long xml:lang="it">Passo opacità</long>
+					<long xml:lang="ja">不透明度の変化刻み</long>
+					<long xml:lang="ko">투명도 단계</long>
+					<long xml:lang="nb">Steg for dekkevne</long>
+					<long xml:lang="nl">Opaciteit stap</long>
+					<long xml:lang="or">ଅସ୍ବଚ୍ଛତା ସୋପାନ</long>
+					<long xml:lang="pa">ਧੁੰਦਲਾਪਨ ਸਟੈਪ</long>
+					<long xml:lang="pl">Krok zmiany nieprzezroczystości</long>
+					<long xml:lang="pt">Etapa de Opacidade</long>
+					<long xml:lang="pt_BR">Etapa de Opacidade</long>
+					<long xml:lang="ro">Pas opacitate</long>
+					<long xml:lang="ru">Шаг прозрачности</long>
+					<long xml:lang="sk">Krok nepriehľadnosti</long>
+					<long xml:lang="sv">Intervall för opacitet</long>
+					<long xml:lang="tr">Matlık Adımı</long>
+					<long xml:lang="uk">Крок прозорості</long>
+					<long xml:lang="zh_CN">不透明度步长</long>
+					<long xml:lang="zh_TW">不透明度幅度</long>
+					<min>1</min>
+					<max>10</max>
+					<default>5</default>
+				</option>
+			</subgroup>
+
+			<subgroup multilist="true">
+				<short>Window specific settings</short>
+				<short xml:lang="el">Συγκεκριμένες ρυθμίσεις παραθύρου</short>
+				<short xml:lang="es">Opciones especifícas de la ventana</short>
+				<short xml:lang="eu">Leiho zehatz ezarpenak</short>
+				<short xml:lang="fi">Ikkunakohtaiset asetukset</short>
+				<short xml:lang="fr">Réglages spécifiques des fenêtres</short>
+				<short xml:lang="gl">Opcións especificas para as xanelas</short>
+				<short xml:lang="he">הגדרות לחלונות מוגדרים</short>
+				<short xml:lang="hu">Ablak beállítások</short>
+				<short xml:lang="it">Impostazioni specifiche della finestra</short>
+				<short xml:lang="ja">ウィンドウ特定設定</short>
+				<short xml:lang="ko">특정한 창 설정</short>
+				<short xml:lang="pl">Ustawienia konkretnych okien</short>
+				<short xml:lang="pt">Definições específicas de janelas</short>
+				<short xml:lang="ru">Специфические настройки окна</short>
+				<short xml:lang="uk">Специфічні налаштування вікна</short>
+				<short xml:lang="zh_CN">窗口相关设置</short>
+				<short xml:lang="zh_TW">視窗的具體設定</short>
+
+				<option type="list_string" per_screen="true" name="opacity_matches">
+					<short>Windows</short>
+					<short xml:lang="el">Παράθυρα</short>
+					<short xml:lang="es">Ventanas</short>
+					<short xml:lang="eu">Leihoak</short>
+					<short xml:lang="fi">Ikkunat</short>
+					<short xml:lang="fr">Fenêtres</short>
+					<short xml:lang="gl">Fiestras</short>
+					<short xml:lang="he">חלונות</short>
+					<short xml:lang="hu">Ablakok</short>
+					<short xml:lang="it">Finestre</short>
+					<short xml:lang="ja">ウィンドウ</short>
+					<short xml:lang="ko">창</short>
+					<short xml:lang="pl">Okna</short>
+					<short xml:lang="pt">Janelas</short>
+					<short xml:lang="ru">Окна</short>
+					<short xml:lang="uk">Вікна</short>
+					<short xml:lang="zh_CN">窗口</short>
+					<short xml:lang="zh_TW">何種視窗</short>
+					<long>Windows that should have a different opacity by default</long>
+					<long xml:lang="el">Παράθυρα που πρέπει να έχουν διαφορετική διαφάνεια εξ' ορισμού</long>
+					<long xml:lang="es">Ventanas que deberían tener una opacidad diferente por defecto</long>
+					<long xml:lang="eu">Opakutasun lehenetsi ezberdina izan behar duten leihoak</long>
+					<long xml:lang="fi">Ikkunat joilla tulisi oletuksena olla eriävä peittävyys</long>
+					<long xml:lang="fr">Fenêtres devant avoir une opacité différente par défaut</long>
+					<long xml:lang="gl">Fiestras que deben ter unha opacidade diferente por omisión</long>
+					<long xml:lang="he">חלונות בעלי אטימות שונה כברירת מחדל</long>
+					<long xml:lang="hu">Alapértelmezettől eltérő átlátszatlansággal rendelkező ablakok</long>
+					<long xml:lang="it">Finestre che dovrebbero avere una opacità diversa in modo predefinito</long>
+					<long xml:lang="ja">デフォルトで他と異なる不透明度を持たせるウィンドウ</long>
+					<long xml:lang="ko">기본적으로 다른 투명도를 갖는 창</long>
+					<long xml:lang="pl">Typy okien, które powinny domyślnie mieć inną nieprzezroczystość</long>
+					<long xml:lang="pt">Janelas que devem ter uma opacidade diferente por omissão</long>
+					<long xml:lang="ru">Окна, которые должны иметь отличную(другую) прозрачность по умолчанию</long>
+					<long xml:lang="uk">Вікна, які повинні мати іншу яскравість за замовчуванням</long>
+					<long xml:lang="zh_CN">默认使用另一不透明度设置的窗口</long>
+					<long xml:lang="zh_TW">預設視窗應該有一個不同的不透明度</long>
+					<hint>match</hint>
+					<default/>
+				</option>
+
+				<option type="list_int" per_screen="true" name="opacity_values">
+					<short>Window values</short>
+					<short xml:lang="el">Τιμές παραθύρου</short>
+					<short xml:lang="es">Valores de las ventanas</short>
+					<short xml:lang="eu">Leihoaren balioak</short>
+					<short xml:lang="fi">Ikkunoiden arvot</short>
+					<short xml:lang="fr">Valeurs des fenêtres</short>
+					<short xml:lang="gl">Valores das xanelas</short>
+					<short xml:lang="he">ערכי חלונות</short>
+					<short xml:lang="hu">Ablak tulajdonságok</short>
+					<short xml:lang="it">Valori finestra</short>
+					<short xml:lang="ja">ウィンドウの値</short>
+					<short xml:lang="ko">정도</short>
+					<short xml:lang="pl">Wartości dla okien</short>
+					<short xml:lang="pt">Valores para a janela</short>
+					<short xml:lang="ru">Значения для окна</short>
+					<short xml:lang="uk">Значення для вікна</short>
+					<short xml:lang="zh_CN">窗口值</short>
+					<short xml:lang="zh_TW">幅度數值</short>
+					<long>Opacity values for windows</long>
+					<long xml:lang="el">Τιμές αδιαφάνειας παραθύρων</long>
+					<long xml:lang="es">Opacidad de las ventanas</long>
+					<long xml:lang="eu">Opakutasun balioa leihoentzat</long>
+					<long xml:lang="fi">Peittävyysarvot ikkunoille</long>
+					<long xml:lang="fr">Valeurs d'opacité des fenêtres</long>
+					<long xml:lang="gl">Valores de opacidade para as xanelas</long>
+					<long xml:lang="he">ערכי אטימות לחלונות</long>
+					<long xml:lang="hu">Ablakok átlátszatlansága</long>
+					<long xml:lang="it">Valori di opacità per le finestre</long>
+					<long xml:lang="ja">ウィンドウの不透明度</long>
+					<long xml:lang="ko">창이 투명한 정도</long>
+					<long xml:lang="pl">Poziom nieprzezroczystości okien</long>
+					<long xml:lang="pt">Valores de opacidade para janelas</long>
+					<long xml:lang="ru">Значение прозрачности для окон</long>
+					<long xml:lang="uk">Значення прозорості для вікон</long>
+					<long xml:lang="zh_CN">窗口的不透明度数值</long>
+					<long xml:lang="zh_TW">視窗的不透明度</long>
+					<default/>
+					<min>0</min>
+					<max>100</max>
+				</option>
+			</subgroup>
+		</group>
+
+		<group>
+			<short>Brightness</short>
+			<short xml:lang="ca">Brillantor</short>
+			<short xml:lang="cs">Jas</short>
+			<short xml:lang="da">Lysstyrke</short>
+			<short xml:lang="de">Helligkeit</short>
+			<short xml:lang="el">Φωτεινότητα</short>
+			<short xml:lang="es">Brillo</short>
+			<short xml:lang="et">Heledus</short>
+			<short xml:lang="eu">Distira</short>
+			<short xml:lang="fi">Kirkkaus</short>
+			<short xml:lang="fr">Luminosité</short>
+			<short xml:lang="gl">Brillo</short>
+			<short xml:lang="gu">તેજસ્વીતા</short>
+			<short xml:lang="he">בהירות</short>
+			<short xml:lang="hu">Fényerő</short>
+			<short xml:lang="it">Luminosità</short>
+			<short xml:lang="ja">明度</short>
+			<short xml:lang="ko">밝기</short>
+			<short xml:lang="nb">Skarphet</short>
+			<short xml:lang="nl">Helderheid</short>
+			<short xml:lang="or">ଉଜ୍ବଳତା</short>
+			<short xml:lang="pl">Jasność</short>
+			<short xml:lang="pt">Brilho</short>
+			<short xml:lang="pt_BR">Brilho</short>
+			<short xml:lang="ro">Luminozitate</short>
+			<short xml:lang="ru">Яркость</short>
+			<short xml:lang="sk">Jas</short>
+			<short xml:lang="sv">Ljusstyrka</short>
+			<short xml:lang="tr">Parlaklık</short>
+			<short xml:lang="uk">Яскравість</short>
+			<short xml:lang="zh_CN">亮度</short>
+			<short xml:lang="zh_TW">亮度</short>
+
+			<subgroup>
+				<option type="string" name="brightness_increase_key">
+					<short>Increase Brightness</short>
+					<long>Brightness Increase</long>
+					<long xml:lang="el">Αύξηση Φωτεινότητας</long>
+					<long xml:lang="es">Aumentar brillo</long>
+					<long xml:lang="eu">Distira handitu</long>
+					<long xml:lang="fi">Kirkkauden lisääminen</long>
+					<long xml:lang="fr">Augmenter la luminosité</long>
+					<long xml:lang="gl">Incrementar Brillo</long>
+					<long xml:lang="he">הגבר בהירות</long>
+					<long xml:lang="hu">Fényerő növelése</long>
+					<long xml:lang="it">Aumento luminosità</long>
+					<long xml:lang="ja">明度を上げる</long>
+					<long xml:lang="ko">밝기 증가</long>
+					<long xml:lang="pl">Zwiększenie jasności</long>
+					<long xml:lang="pt">Aumentar Brilho</long>
+					<long xml:lang="ru">Увеличение яркости</long>
+					<long xml:lang="uk">Збільшення яскравості</long>
+					<long xml:lang="zh_CN">调高亮度</long>
+					<long xml:lang="zh_TW">增加亮度</long>
+					<hint>key</hint>
+					<default/>
+				</option>
+
+				<option type="string" name="brightness_increase_button">
+					<short>Increase Brightness</short>
+					<long>Brightness Increase</long>
+					<long xml:lang="el">Αύξηση Φωτεινότητας</long>
+					<long xml:lang="es">Aumentar brillo</long>
+					<long xml:lang="eu">Distira handitu</long>
+					<long xml:lang="fi">Kirkkauden lisääminen</long>
+					<long xml:lang="fr">Augmenter la luminosité</long>
+					<long xml:lang="gl">Incrementar Brillo</long>
+					<long xml:lang="he">הגבר בהירות</long>
+					<long xml:lang="hu">Fényerő növelése</long>
+					<long xml:lang="it">Aumento luminosità</long>
+					<long xml:lang="ja">明度を上げる</long>
+					<long xml:lang="ko">밝기 증가</long>
+					<long xml:lang="pl">Zwiększenie jasności</long>
+					<long xml:lang="pt">Aumentar Brilho</long>
+					<long xml:lang="ru">Увеличение яркости</long>
+					<long xml:lang="uk">Збільшення яскравості</long>
+					<long xml:lang="zh_CN">调高亮度</long>
+					<long xml:lang="zh_TW">增加亮度</long>
+					<hint>button</hint>
+					<default/>
+				</option>
+
+				<option type="string" name="brightness_decrease_key">
+					<short>Decrease Brightness</short>
+					<long>Brightness Decrease</long>
+					<long xml:lang="el">Μείωση Φωτεινότητας</long>
+					<long xml:lang="es">Disminuir brillo</long>
+					<long xml:lang="eu">Distira txikitu</long>
+					<long xml:lang="fi">Kirkkauden vähentäminen</long>
+					<long xml:lang="fr">Réduire la luminosité</long>
+					<long xml:lang="gl">Decrementar Brillo</long>
+					<long xml:lang="he">הפחת בהירות</long>
+					<long xml:lang="hu">Fényerő csökkentése</long>
+					<long xml:lang="it">Riduzione luminosità</long>
+					<long xml:lang="ja">明度を下げる</long>
+					<long xml:lang="ko">밝기 감소</long>
+					<long xml:lang="pl">Zmniejszenie jasności</long>
+					<long xml:lang="pt">Diminuir Brilho</long>
+					<long xml:lang="ru">Уменьшение яркости</long>
+					<long xml:lang="uk">Зменшення яскравості</long>
+					<long xml:lang="zh_CN">调低亮度</long>
+					<long xml:lang="zh_TW">降低亮度</long>
+					<hint>key</hint>
+					<default/>
+				</option>
+
+				<option type="string" name="brightness_decrease_button">
+					<short>Decrease Brightness</short>
+					<long>Brightness Decrease</long>
+					<long xml:lang="el">Μείωση Φωτεινότητας</long>
+					<long xml:lang="es">Disminuir brillo</long>
+					<long xml:lang="eu">Distira txikitu</long>
+					<long xml:lang="fi">Kirkkauden vähentäminen</long>
+					<long xml:lang="fr">Réduire la luminosité</long>
+					<long xml:lang="gl">Decrementar Brillo</long>
+					<long xml:lang="he">הפחת בהירות</long>
+					<long xml:lang="hu">Fényerő csökkentése</long>
+					<long xml:lang="it">Riduzione luminosità</long>
+					<long xml:lang="ja">明度を下げる</long>
+					<long xml:lang="ko">밝기 감소</long>
+					<long xml:lang="pl">Zmniejszenie jasności</long>
+					<long xml:lang="pt">Diminuir Brilho</long>
+					<long xml:lang="ru">Уменьшение яркости</long>
+					<long xml:lang="uk">Зменшення яскравості</long>
+					<long xml:lang="zh_CN">调低亮度</long>
+					<long xml:lang="zh_TW">降低亮度</long>
+					<hint>button</hint>
+					<default/>
+				</option>
+
+				<option type="int" per_screen="true" name="brightness_step">
+					<short>Step</short>
+					<short xml:lang="bg">Стъпка</short>
+					<short xml:lang="el">Βήμα</short>
+					<short xml:lang="es">Paso</short>
+					<short xml:lang="eu">Pausoa</short>
+					<short xml:lang="fi">Askel</short>
+					<short xml:lang="fr">Incrément</short>
+					<short xml:lang="gl">Salto</short>
+					<short xml:lang="he">דרגת שינוי</short>
+					<short xml:lang="hu">Lépésköz</short>
+					<short xml:lang="it">Passo</short>
+					<short xml:lang="ja">変化刻み</short>
+					<short xml:lang="ko">단계</short>
+					<short xml:lang="pl">Krok zmiany</short>
+					<short xml:lang="pt">Incremento</short>
+					<short xml:lang="ru">Шаг</short>
+					<short xml:lang="uk">Крок</short>
+					<short xml:lang="zh_CN">调整步长</short>
+					<short xml:lang="zh_TW">幅度</short>
+					<long>Brightness Step</long>
+					<long xml:lang="el">Βήμα Φωτεινότητας</long>
+					<long xml:lang="es">Paso de brillo</long>
+					<long xml:lang="eu">Distira pausoa</long>
+					<long xml:lang="fi">Kirkkauden säädön askel</long>
+					<long xml:lang="fr">Incrément de luminosité</long>
+					<long xml:lang="gl">Salto no Brillo</long>
+					<long xml:lang="he">דרגת שינוי בהירות</long>
+					<long xml:lang="hu">Fényerő lépésköz</long>
+					<long xml:lang="it">Passo luminosità</long>
+					<long xml:lang="ja">明度の変化刻み</long>
+					<long xml:lang="ko">밝기 단계</long>
+					<long xml:lang="pl">Krok zmiany jasności</long>
+					<long xml:lang="pt">Incremento Brilho</long>
+					<long xml:lang="ru">Шаг изменения яркости</long>
+					<long xml:lang="uk">Крок зміни яскравості</long>
+					<long xml:lang="zh_CN">调整步幅</long>
+					<long xml:lang="zh_TW">亮度幅度</long>
+					<min>1</min>
+					<max>10</max>
+					<default>5</default>
+				</option>
+			</subgroup>
+
+			<subgroup multilist="true">
+				<short>Window specific settings</short>
+				<short xml:lang="el">Συγκεκριμένες ρυθμίσεις παραθύρου</short>
+				<short xml:lang="es">Opciones especifícas de la ventana</short>
+				<short xml:lang="eu">Leiho zehatz ezarpenak</short>
+				<short xml:lang="fi">Ikkunakohtaiset asetukset</short>
+				<short xml:lang="fr">Réglages spécifiques des fenêtres</short>
+				<short xml:lang="gl">Opcións especificas para as xanelas</short>
+				<short xml:lang="he">הגדרות לחלונות מוגדרים</short>
+				<short xml:lang="hu">Ablak beállítások</short>
+				<short xml:lang="it">Impostazioni specifiche della finestra</short>
+				<short xml:lang="ja">ウィンドウ特定設定</short>
+				<short xml:lang="ko">특정한 창 설정</short>
+				<short xml:lang="pl">Ustawienia konkretnych okien</short>
+				<short xml:lang="pt">Definições específicas de janelas</short>
+				<short xml:lang="ru">Специфические настройки окна</short>
+				<short xml:lang="uk">Специфічні налаштування вікна</short>
+				<short xml:lang="zh_CN">窗口相关设置</short>
+				<short xml:lang="zh_TW">視窗的具體設定</short>
+
+				<option type="list_string" per_screen="true" name="brightness_matches">
+					<short>Windows</short>
+					<short xml:lang="el">Παράθυρα</short>
+					<short xml:lang="es">Ventanas</short>
+					<short xml:lang="eu">Leihoak</short>
+					<short xml:lang="fi">Ikkunat</short>
+					<short xml:lang="fr">Fenêtres</short>
+					<short xml:lang="gl">Fiestras</short>
+					<short xml:lang="he">חלונות</short>
+					<short xml:lang="hu">Ablakok</short>
+					<short xml:lang="it">Finestre</short>
+					<short xml:lang="ja">ウィンドウ</short>
+					<short xml:lang="ko">창</short>
+					<short xml:lang="pl">Okna</short>
+					<short xml:lang="pt">Janelas</short>
+					<short xml:lang="ru">Окна</short>
+					<short xml:lang="uk">Вікна</short>
+					<short xml:lang="zh_CN">窗口</short>
+					<short xml:lang="zh_TW">何種視窗</short>
+					<long>Windows that should have a different brightness by default</long>
+					<long xml:lang="el">Παράθυρα που πρέπει να έχουν διαφορετική φωτεινότητα εξ' ορισμού</long>
+					<long xml:lang="es">Ventanas que deberían tener un brillo diferente por defecto</long>
+					<long xml:lang="eu">Distira lehenetsi ezberdina izan behar duten leihoak</long>
+					<long xml:lang="fi">Ikkunat joilla tulisi oletuksena olla eriävä kirkkaus</long>
+					<long xml:lang="fr">Fenêtres devant avoir une luminosité différente par défaut</long>
+					<long xml:lang="gl">Fiestras que deben ter un brillo diferente por omisión</long>
+					<long xml:lang="he">חלונות בעלי בהירות שונה כברירת מחדל</long>
+					<long xml:lang="hu">Alapértelmezettől eltérő fényerővel rendelkező ablakok</long>
+					<long xml:lang="it">Finestre che dovrebbero avere una luminosità diversa in modo predefinito</long>
+					<long xml:lang="ja">デフォルトで他と異なる明度を持たせるウィンドウ</long>
+					<long xml:lang="ko">기본적으로 다른 밝기를 갖는 창</long>
+					<long xml:lang="pl">Typy okien, które powinny domyślnie mieć inną jasność</long>
+					<long xml:lang="pt">Janelas que devem ter um brilho diferente por omissão</long>
+					<long xml:lang="ru">Окна, которые должны иметь отличную(другую) яркость по умолчанию</long>
+					<long xml:lang="uk">Вікна, які повинні мати іншу яскравість за замовчуванням</long>
+					<long xml:lang="zh_CN">默认使用另一亮度设置的窗口</long>
+					<long xml:lang="zh_TW">預設視窗應該有一個不同的亮度</long>
+					<hint>match</hint>
+					<default/>
+				</option>
+
+				<option type="list_int" per_screen="true" name="brightness_values">
+					<short>Window values</short>
+					<short xml:lang="el">Τιμές παραθύρου</short>
+					<short xml:lang="es">Valores de las ventanas</short>
+					<short xml:lang="eu">Leihoaren balioak</short>
+					<short xml:lang="fi">Ikkunoiden arvot</short>
+					<short xml:lang="fr">Valeurs des fenêtres</short>
+					<short xml:lang="gl">Valores das xanelas</short>
+					<short xml:lang="he">ערכי חלונות</short>
+					<short xml:lang="hu">Ablak tulajdonságok</short>
+					<short xml:lang="it">Valori finestra</short>
+					<short xml:lang="ja">ウィンドウの値</short>
+					<short xml:lang="ko">정도</short>
+					<short xml:lang="pl">Wartości dla okien</short>
+					<short xml:lang="pt">Valores para a janela</short>
+					<short xml:lang="ru">Значения для окна</short>
+					<short xml:lang="uk">Значення для вікна</short>
+					<short xml:lang="zh_CN">窗口值</short>
+					<short xml:lang="zh_TW">幅度數值</short>
+					<long>Brightness values for windows</long>
+					<long xml:lang="el">Τιμές φωτεινότητας παραθύρων</long>
+					<long xml:lang="es">Brillo de las ventanas</long>
+					<long xml:lang="eu">Distira balioak leihoentzat</long>
+					<long xml:lang="fi">Kirkkausarvot ikkunoille</long>
+					<long xml:lang="fr">Valeur de la luminosité des fenêtres</long>
+					<long xml:lang="gl">Valores de Brillo para as xanelas</long>
+					<long xml:lang="he">ערכי בהירות לחלונות</long>
+					<long xml:lang="hu">Fényerő értéke ablakokhoz</long>
+					<long xml:lang="it">Valori di luminosità per le finestre</long>
+					<long xml:lang="ja">ウィンドウに適用する明度</long>
+					<long xml:lang="ko">창의 밝은 정도</long>
+					<long xml:lang="pl">Wartości jasności dla okien</long>
+					<long xml:lang="pt">Valores de brilho para janelas</long>
+					<long xml:lang="ru">Значение яркости для окон</long>
+					<long xml:lang="uk">Значення яскравості для вікон</long>
+					<long xml:lang="zh_CN">窗口亮度</long>
+					<long xml:lang="zh_TW">視窗的亮度值</long>
+					<default/>
+					<min>0</min>
+					<max>100</max>
+				</option>
+			</subgroup>
+		</group>
+
+		<group>
+			<short>Saturation</short>
+			<short xml:lang="ca">Saturació</short>
+			<short xml:lang="cs">Sytost</short>
+			<short xml:lang="da">Farvemætning</short>
+			<short xml:lang="de">Sättigung</short>
+			<short xml:lang="el">Κορεσμός</short>
+			<short xml:lang="es">Saturación</short>
+			<short xml:lang="eu">Saturazioa</short>
+			<short xml:lang="fi">Kylläisyys</short>
+			<short xml:lang="fr">Saturation</short>
+			<short xml:lang="gl">Saturación</short>
+			<short xml:lang="he">רווייה</short>
+			<short xml:lang="hu">Telítettség</short>
+			<short xml:lang="it">Saturazione</short>
+			<short xml:lang="ja">彩度</short>
+			<short xml:lang="ko">채도</short>
+			<short xml:lang="nb">Metning</short>
+			<short xml:lang="nl">Verzadiging</short>
+			<short xml:lang="or">ସଂପୂର୍ଣ୍ଣ ମିଶ୍ରଣ</short>
+			<short xml:lang="pl">Nasycenie</short>
+			<short xml:lang="pt">Saturação</short>
+			<short xml:lang="pt_BR">Saturação</short>
+			<short xml:lang="ru">Насыщенность</short>
+			<short xml:lang="sk">Sýtosť</short>
+			<short xml:lang="sv">Färgmättnad</short>
+			<short xml:lang="tr">Doygunluk</short>
+			<short xml:lang="uk">Насиченість</short>
+			<short xml:lang="zh_CN">饱和度</short>
+			<short xml:lang="zh_TW">飽和度</short>
+
+			<subgroup>
+				<option type="string" name="saturation_increase_key">
+					<short>Increase Saturation</short>
+					<long>Saturation Increase</long>
+					<long xml:lang="el">Αύξηση Κορεσμού</long>
+					<long xml:lang="es">Aumentar saturación</long>
+					<long xml:lang="eu">Saturazioa handitu</long>
+					<long xml:lang="fi">Kylläisyyden lisääminen</long>
+					<long xml:lang="fr">Augmenter la saturation</long>
+					<long xml:lang="gl">Incrementar Saturación</long>
+					<long xml:lang="he">הגברת רווייה</long>
+					<long xml:lang="hu">Színtelítettség növelése</long>
+					<long xml:lang="it">Aumento saturazione</long>
+					<long xml:lang="ja">彩度を上げる</long>
+					<long xml:lang="ko">채도 증가</long>
+					<long xml:lang="pl">Zwiększ nasycenie</long>
+					<long xml:lang="pt">Aumentar Saturação</long>
+					<long xml:lang="ru">Увеличение насыщенности</long>
+					<long xml:lang="uk">Збільшення насиченості</long>
+					<long xml:lang="zh_CN">增加饱和度</long>
+					<long xml:lang="zh_TW">飽和度增加</long>
+					<hint>key</hint>
+					<default/>
+				</option>
+
+				<option type="string" name="saturation_increase_button">
+					<short>Increase Saturation</short>
+					<long>Saturation Increase</long>
+					<long xml:lang="el">Αύξηση Κορεσμού</long>
+					<long xml:lang="es">Aumentar saturación</long>
+					<long xml:lang="eu">Saturazioa handitu</long>
+					<long xml:lang="fi">Kylläisyyden lisääminen</long>
+					<long xml:lang="fr">Augmenter la saturation</long>
+					<long xml:lang="gl">Incrementar Saturación</long>
+					<long xml:lang="he">הגברת רווייה</long>
+					<long xml:lang="hu">Színtelítettség növelése</long>
+					<long xml:lang="it">Aumento saturazione</long>
+					<long xml:lang="ja">彩度を上げる</long>
+					<long xml:lang="ko">채도 증가</long>
+					<long xml:lang="pl">Zwiększ nasycenie</long>
+					<long xml:lang="pt">Aumentar Saturação</long>
+					<long xml:lang="ru">Увеличение насыщенности</long>
+					<long xml:lang="uk">Збільшення насиченості</long>
+					<long xml:lang="zh_CN">增加饱和度</long>
+					<long xml:lang="zh_TW">飽和度增加</long>
+					<hint>button</hint>
+					<default/>
+				</option>
+
+				<option type="string" name="saturation_decrease_key">
+					<short>Decrease Saturation</short>
+					<long>Saturation Decrease</long>
+					<long xml:lang="el">Μείωση Κορεσμού</long>
+					<long xml:lang="es">Disminuir saturación</long>
+					<long xml:lang="eu">Saturazioa txikitu</long>
+					<long xml:lang="fi">Kylläisyyden vähentäminen</long>
+					<long xml:lang="fr">Réduire la saturation</long>
+					<long xml:lang="gl">Decremenar Saturación</long>
+					<long xml:lang="he">הפחתת רווייה</long>
+					<long xml:lang="hu">Színtelítettség csökkentése</long>
+					<long xml:lang="it">Riduzione saturazione</long>
+					<long xml:lang="ja">彩度を下げる</long>
+					<long xml:lang="ko">채도 감소</long>
+					<long xml:lang="pl">Zmniejsz nasycenie</long>
+					<long xml:lang="pt">Diminuir Saturação</long>
+					<long xml:lang="ru">Уменьшение насыщенности</long>
+					<long xml:lang="uk">Зменшення насиченості</long>
+					<long xml:lang="zh_CN">减少饱和度</long>
+					<long xml:lang="zh_TW">飽和度降低</long>
+					<hint>key</hint>
+					<default/>
+				</option>
+
+				<option type="string" name="saturation_decrease_button">
+					<short>Decrease Saturation</short>
+					<long>Saturation Decrease</long>
+					<long xml:lang="el">Μείωση Κορεσμού</long>
+					<long xml:lang="es">Disminuir saturación</long>
+					<long xml:lang="eu">Saturazioa txikitu</long>
+					<long xml:lang="fi">Kylläisyyden vähentäminen</long>
+					<long xml:lang="fr">Réduire la saturation</long>
+					<long xml:lang="gl">Decremenar Saturación</long>
+					<long xml:lang="he">הפחתת רווייה</long>
+					<long xml:lang="hu">Színtelítettség csökkentése</long>
+					<long xml:lang="it">Riduzione saturazione</long>
+					<long xml:lang="ja">彩度を下げる</long>
+					<long xml:lang="ko">채도 감소</long>
+					<long xml:lang="pl">Zmniejsz nasycenie</long>
+					<long xml:lang="pt">Diminuir Saturação</long>
+					<long xml:lang="ru">Уменьшение насыщенности</long>
+					<long xml:lang="uk">Зменшення насиченості</long>
+					<long xml:lang="zh_CN">减少饱和度</long>
+					<long xml:lang="zh_TW">飽和度降低</long>
+					<hint>button</hint>
+					<default/>
+				</option>
+
+				<option type="int" per_screen="true" name="saturation_step">
+					<short>Step</short>
+					<short xml:lang="bg">Стъпка</short>
+					<short xml:lang="el">Βήμα</short>
+					<short xml:lang="es">Paso</short>
+					<short xml:lang="eu">Pausoa</short>
+					<short xml:lang="fi">Askel</short>
+					<short xml:lang="fr">Incrément</short>
+					<short xml:lang="gl">Salto</short>
+					<short xml:lang="he">דרגת שינוי</short>
+					<short xml:lang="hu">Lépésköz</short>
+					<short xml:lang="it">Passo</short>
+					<short xml:lang="ja">変化刻み</short>
+					<short xml:lang="ko">단계</short>
+					<short xml:lang="pl">Krok zmiany</short>
+					<short xml:lang="pt">Incremento</short>
+					<short xml:lang="ru">Шаг</short>
+					<short xml:lang="uk">Крок</short>
+					<short xml:lang="zh_CN">调整步长</short>
+					<short xml:lang="zh_TW">幅度</short>
+					<long>Saturation Step</long>
+					<long xml:lang="el">Βήμα Κορεσμού</long>
+					<long xml:lang="es">Paso de saturación</long>
+					<long xml:lang="eu">Saturazio pausoa</long>
+					<long xml:lang="fi">Kylläisyyden säädön askel</long>
+					<long xml:lang="fr">Incrément de la saturation</long>
+					<long xml:lang="gl">Salto na Saturación</long>
+					<long xml:lang="he">דרגת שינוי רווייה</long>
+					<long xml:lang="hu">Telítettség változásának lépésköze</long>
+					<long xml:lang="it">Passo saturazione</long>
+					<long xml:lang="ja">彩度の変化刻み</long>
+					<long xml:lang="ko">채도 단계</long>
+					<long xml:lang="pl">Krok zmiany nasycenia </long>
+					<long xml:lang="pt">Incremento Saturação</long>
+					<long xml:lang="ru">Шаг изменения насыщенности</long>
+					<long xml:lang="uk">Крок зміни насиченості</long>
+					<long xml:lang="zh_CN">饱和度步长</long>
+					<long xml:lang="zh_TW">飽和度幅度</long>
+					<min>1</min>
+					<max>10</max>
+					<default>5</default>
+				</option>
+			</subgroup>
+
+			<subgroup multilist="true">
+				<short>Window specific settings</short>
+				<short xml:lang="el">Συγκεκριμένες ρυθμίσεις παραθύρου</short>
+				<short xml:lang="es">Opciones especifícas de la ventana</short>
+				<short xml:lang="eu">Leiho zehatz ezarpenak</short>
+				<short xml:lang="fi">Ikkunakohtaiset asetukset</short>
+				<short xml:lang="fr">Réglages spécifiques des fenêtres</short>
+				<short xml:lang="gl">Opcións especificas para as xanelas</short>
+				<short xml:lang="he">הגדרות לחלונות מוגדרים</short>
+				<short xml:lang="hu">Ablak beállítások</short>
+				<short xml:lang="it">Impostazioni specifiche della finestra</short>
+				<short xml:lang="ja">ウィンドウ特定設定</short>
+				<short xml:lang="ko">특정한 창 설정</short>
+				<short xml:lang="pl">Ustawienia konkretnych okien</short>
+				<short xml:lang="pt">Definições específicas de janelas</short>
+				<short xml:lang="ru">Специфические настройки окна</short>
+				<short xml:lang="uk">Специфічні налаштування вікна</short>
+				<short xml:lang="zh_CN">窗口相关设置</short>
+				<short xml:lang="zh_TW">視窗的具體設定</short>
+
+				<option type="list_string" per_screen="true" name="saturation_matches">
+					<short>Windows</short>
+					<short xml:lang="el">Παράθυρα</short>
+					<short xml:lang="es">Ventanas</short>
+					<short xml:lang="eu">Leihoak</short>
+					<short xml:lang="fi">Ikkunat</short>
+					<short xml:lang="fr">Fenêtres</short>
+					<short xml:lang="gl">Fiestras</short>
+					<short xml:lang="he">חלונות</short>
+					<short xml:lang="hu">Ablakok</short>
+					<short xml:lang="it">Finestre</short>
+					<short xml:lang="ja">ウィンドウ</short>
+					<short xml:lang="ko">창</short>
+					<short xml:lang="pl">Okna</short>
+					<short xml:lang="pt">Janelas</short>
+					<short xml:lang="ru">Окна</short>
+					<short xml:lang="uk">Вікна</short>
+					<short xml:lang="zh_CN">窗口</short>
+					<short xml:lang="zh_TW">何種視窗</short>
+					<long>Windows that should have a different saturation by default</long>
+					<long xml:lang="el">Παράθυρα που πρέπει να έχουν διαφορετικό κορεσμό εξ' ορισμού</long>
+					<long xml:lang="es">Ventanas que deberían tener una saturación diferente por defecto</long>
+					<long xml:lang="eu">Saturazio lehenetsi ezberdina izan behar duten leihoak</long>
+					<long xml:lang="fi">Ikkunat joilla tulisi oletuksena olla eriävä värikylläisyys</long>
+					<long xml:lang="fr">Fenêtres devant avoir une saturation différente par défaut</long>
+					<long xml:lang="gl">Fiestras que deben ter unha saturación diferente por omisión</long>
+					<long xml:lang="he">חלונות בעלי רוויה שונה כברירת מחדל</long>
+					<long xml:lang="hu">Alapértelmezettől eltérő színtelítettséggel rendelkező ablakok</long>
+					<long xml:lang="it">Finestre che dovrebbero avere una saturazione diversa in modo predefinito</long>
+					<long xml:lang="ja">デフォルトで他と異なる彩度を持たせるウィンドウ</long>
+					<long xml:lang="ko">기본적으로 다른 채도를 갖는 창</long>
+					<long xml:lang="pl">Typy okien, które powinny domyślnie mieć inne nasycenie</long>
+					<long xml:lang="pt">Janelas que devem ter uma saturação diferente por omissão</long>
+					<long xml:lang="ru">Окна, которые должны иметь отличную(другую) насыщенность по умолчанию</long>
+					<long xml:lang="uk">Вікна, які повинні мати іншу яскравість за замовчуванням</long>
+					<long xml:lang="zh_CN">默认使用另一饱和度的窗口</long>
+					<long xml:lang="zh_TW">預設視窗應該有一個不同的飽和度</long>
+					<hint>match</hint>
+					<default/>
+				</option>
+
+				<option type="list_int" per_screen="true" name="saturation_values">
+					<short>Window values</short>
+					<short xml:lang="el">Τιμές παραθύρου</short>
+					<short xml:lang="es">Valores de las ventanas</short>
+					<short xml:lang="eu">Leihoaren balioak</short>
+					<short xml:lang="fi">Ikkunoiden arvot</short>
+					<short xml:lang="fr">Valeurs des fenêtres</short>
+					<short xml:lang="gl">Valores das xanelas</short>
+					<short xml:lang="he">ערכי חלונות</short>
+					<short xml:lang="hu">Ablak tulajdonságok</short>
+					<short xml:lang="it">Valori finestra</short>
+					<short xml:lang="ja">ウィンドウの値</short>
+					<short xml:lang="ko">정도</short>
+					<short xml:lang="pl">Wartości dla okien</short>
+					<short xml:lang="pt">Valores para a janela</short>
+					<short xml:lang="ru">Значения для окна</short>
+					<short xml:lang="uk">Значення для вікна</short>
+					<short xml:lang="zh_CN">窗口值</short>
+					<short xml:lang="zh_TW">幅度數值</short>
+					<long>Saturation values for windows</long>
+					<long xml:lang="el">Τιμές κορεσμού παραθύρων</long>
+					<long xml:lang="es">Saturación de las ventanas</long>
+					<long xml:lang="eu">Saturazio balioa leihoentzat</long>
+					<long xml:lang="fi">Kylläisyysarvot ikkunoille</long>
+					<long xml:lang="fr">Valeurs de saturation des fenêtres</long>
+					<long xml:lang="gl">Valores de saturación para as xanelas</long>
+					<long xml:lang="he">ערכי רוויה לחלונות</long>
+					<long xml:lang="hu">Ablakok színtelítettsége</long>
+					<long xml:lang="it">Valori di saturazione per le finestre</long>
+					<long xml:lang="ja">ウィンドウに適用する彩度</long>
+					<long xml:lang="ko">창의 채도 정도</long>
+					<long xml:lang="pl">Wartości nasycenia dla okien</long>
+					<long xml:lang="pt">Valores de saturação para janelas</long>
+					<long xml:lang="ru">Значения насыщенности для окон</long>
+					<long xml:lang="uk">Значення насиченості для вікон</long>
+					<long xml:lang="zh_CN">窗口的饱和度数值</long>
+					<long xml:lang="zh_TW">視窗的飽和度</long>
+					<default/>
+					<min>0</min>
+					<max>100</max>
+				</option>
+			</subgroup>
+		</group>
+	</plugin>
+</fusilli>

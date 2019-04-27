@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Exec=hdsgui
+Categories=System;
+Comment=Information about the temperature and health status of IDE, S-ATA, SCSI and USB hard disks. 
+Comment[fr]=Informations sur la température et l'état de santé des disques durs IDE, S-ATA, SCSI et USB.
+Icon=/usr/share/icons/hicolor/48x48/apps/hdsgui.png
+Name=Hard Disk Sentinel
+Name[fr]=Sentinelle Disque Dur
+NoDisplay=false
+Terminal=false
+Type=Application

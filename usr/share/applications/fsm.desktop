@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Fusilli Settings Manager
+Comment=Configure Fusilli Window Manager
+Icon=/usr/share/icons/fsm.png
+Exec=fsm
+Terminal=false
+Type=Application
+Categories=Fusilli;Settings;DesktopSettings;
+StartupNotify=true

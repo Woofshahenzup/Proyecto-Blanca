@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fusilli>
+	<plugin name="ezoom">
+
+		<short>Enhanced Zoom Desktop</short>
+		<long>Enhanced zoom functions for the visually impaired and other users</long>
+		<category>Accessibility</category>
+		<deps>
+			<relation type="after">
+				<plugin>expo</plugin>
+			</relation>
+
+			<relation type="before">
+				<plugin>staticswitcher</plugin>
+				<plugin>switcher</plugin>
+			</relation>
+		</deps>
+
+		<group>
+			<short>Zoom In/Out</short>
+
+			<subgroup>
+				<option type="string" name="zoom_in_button">
+					<short>Zoom In Button</short>
+					<long>Zoom In Button</long>
+					<hint>button</hint>
+					<default>&lt;Super&gt;Button4</default>
+				</option>
+
+				<option type="string" name="zoom_in_key">
+					<short>Zoom In Key</short>
+					<long>Zoom In Key</long>
+					<hint>key</hint>
+				</option>
+
+				<option type="string" name="zoom_out_button">
+					<short>Zoom Out Button</short>
+					<long>Zoom Out Button</long>
+					<hint>button</hint>
+					<default>&lt;Super&gt;Button5</default>
+				</option>
+
+				<option type="string" name="zoom_out_key">
+					<short>Zoom Out Key</short>
+					<long>Zoom Out Key</long>
+					<hint>key</hint>
+				</option>
+
+				<option type="string" name="zoom_box_button">
+					<short>Zoom Box Button</short>
+					<long>Zoom in on a boxed area</long>
+					<hint>button</hint>
+					<default>&lt;Super&gt;Button2</default>
+				</option>
+
+				<option type="float" per_screen="true" name="zoom_factor">
+					<short>Zoom factor</short>
+					<long>Zoom in/out by this factor. Higher value means quicker zooming.</long>
+					<default>1.150</default>
+					<min>1.01</min>
+					<max>3</max>
+					<precision>0.01</precision>
+				</option>
+
+				<option type="float" per_screen="true" name="minimum_zoom">
+					<short>Minimum zoom factor</short>
+					<long>The minimum allowed zoom factor. A value of 0.5 equals 2x zoom, a value of 0.25 equals 4x zoom.</long>
+					<default>0.125</default>
+					<min>0.000001</min>
+					<max>0.999999</max>
+					<precision>0.0001</precision>
+				</option>
+			</subgroup>
+
+		</group>
+
+		<group>
+			<short>Mouse Behaviour</short>
+
+			<subgroup>
+				<option type="string" name="center_mouse_key">
+					<short>Center the mouse Key</short>
+					<long>Puts the mouse in the middle of the screen (Regardless of zoom level)</long>
+					<hint>key</hint>
+					<default/>
+				</option>
+
+				<option type="bool" per_screen="true" name="sync_mouse">
+					<short>Sync Mouse</short>
+					<long>Always keep the zoomed area in sync with where the mouse is, and vice versa. Use this if you don't intend to draw a scaled pointer or hide the original pointer. The zoomed area will move as you move your mouse.</long>
+					<default>true</default>
+				</option>
+
+				<option type="bool" per_screen="true" name="scale_mouse">
+					<short>Scale the mouse pointer</short>
+					<long>Enable this to get a gradually larger mouse pointer as you zoom in</long>
+					<default>false</default>
+				</option>
+
+				<option type="bool" per_screen="true" name="scale_mouse_dynamic">
+					<short>Dynamic mouse pointer scale</short>
+					<long>When scaling the mouse pointer, this option makes the scale adjust according to the current level of zoom.</long>
+					<default>true</default>
+				</option>
+
+				<option type="float" per_screen="true" name="scale_mouse_static">
+					<short>Static mouse pointer scale</short>
+					<long>When not using a dynamic mouse pointer scale, this is the scale factor for the mouse pointer.</long>
+					<default>0.2</default>
+					<min>0.1</min>
+					<max>1.0</max>
+					<precision>0.01</precision>
+				</option>
+
+				<option type="bool" per_screen="true" name="hide_original_mouse">
+					<short>Hide original mouse pointer</short>
+					<long>Hides the original mouse pointer when zoomed in and scaling the mouse</long>
+					<default>false</default>
+				</option>
+
+				<option type="bool" per_screen="true" name="restrain_mouse">
+					<short>Restrain the mouse to the zoom area</short>
+					<long>Attempt to keep the zoomed mouse visible by warping it when it is moved outside the zoom area.</long>
+					<default>false</default>
+				</option>
+
+				<option type="bool" per_screen="true" name="mouse_pan">
+					<short>Mouse panning</short>
+					<long>Pan the zoom area when the mouse cursor moves outside the visible area.</long>
+					<default>false</default>
+				</option>
+
+				<option type="int" per_screen="true" name="restrain_margin">
+					<short>Mouse Restrain Margin</short>
+					<long>The size of the margin to add when attempting to restrain the mouse.</long>
+					<default>5</default>
+					<min>0</min>
+					<max>50</max>
+				</option>
+			</subgroup>
+		</group>
+
+		<group>
+			<short>Specific Zoom</short>
+
+			<subgroup>
+				<option type="string" name="zoom_specific_1_key">
+					<short>Zoom Specific Level 1</short>
+					<long>Zoom to the specific zoom level 1</long>
+					<hint>key</hint>
+					<default/>
+				</option>
+
+				<option type="float" name="zoom_spec1">
+					<short>Specific zoom factor 1</short>
+					<long>Zoom level to go to when triggering hotkey 1</long>
+					<default>1.0</default>
+					<min>0.1</min>
+					<max>1.0</max>
+					<precision>0.01</precision>
+				</option>
+
+				<option type="string" name="zoom_specific_2_key">
+					<short>Zoom Specific Level 2</short>
+					<long>Zoom to the specific zoom level 2</long>
+					<hint>key</hint>
+					<default/>
+				</option>
+
+				<option type="float" name="zoom_spec2">
+					<short>Specific zoom factor 2</short>
+					<long>Zoom level to go to when triggering hotkey 2</long>
+					<default>0.5</default>
+					<min>0.1</min>
+					<max>1.0</max>
+					<precision>0.01</precision>
+				</option>
+
+				<option type="string" name="zoom_specific_3_key">
+					<short>Zoom Specific Level 3</short>
+					<long>Zoom to the specific zoom level 3</long>
+					<hint>key</hint>
+					<default/>
+				</option>
+
+				<option type="float" name="zoom_spec3">
+					<short>Specific zoom factor 3</short>
+					<long>Zoom level to go to when triggering hotkey 3</long>
+					<default>0.2</default>
+					<min>0.1</min>
+					<max>1.0</max>
+					<precision>0.01</precision>
+				</option>
+
+				<option type="bool" name="spec_target_focus">
+					<short>Target Focused Window on Specific level</short>
+					<long>Enable this to target the focused window when jumping to a specific zoom level. Disable to target mouse.</long>
+					<default>true</default>
+				</option>
+			</subgroup>
+		</group>
+
+		<group>
+			<short>Zoom Area Movement</short>
+
+			<subgroup>
+				<option type="string" name="lock_zoom_key">
+					<short>Toggle zoom area lock</short>
+					<long>Toggles a lock on the zoom area so it doesn't change on various events</long>
+					<hint>key</hint>
+					<default/>
+				</option>
+			</subgroup>
+
+			<subgroup collapsible="true">
+				<short>Panning</short>
+
+				<option type="string" name="pan_left_key">
+					<short>Pan Zoom Left Key</short>
+					<long>Pan (move) the zoom area left</long>
+					<hint>key</hint>
+				</option>
+
+				<option type="string" name="pan_right_key">
+					<short>Pan Zoom Right Key</short>
+					<long>Pan (move) the zoom area right</long>
+					<hint>key</hint>
+				</option>
+
+				<option type="string" name="pan_up_key">
+					<short>Pan Zoom Up Key</short>
+					<long>Pan (move) the zoom area up</long>
+					<hint>key</hint>
+				</option>
+
+				<option type="string" name="pan_down_key">
+					<short>Pan Zoom Down Key</short>
+					<long>Pan (move) the zoom area down</long>
+					<hint>key</hint>
+				</option>
+
+				<option type="float" per_screen="true" name="pan_factor">
+					<short>Pan Factor</short>
+					<long>Move the zoomed area this much whenever you pan the zoomed area with keys.</long>
+					<default>0.1</default>
+					<min>0.001</min>
+					<max>1.0</max>
+					<precision>0.001</precision>
+				</option>
+			</subgroup>
+
+			<subgroup collapsible="true">
+				<short>Fitting</short>
+
+				<option type="string" name="fit_to_zoom_key">
+					<short>Fit the window to the zoom level</short>
+					<long>Resize the window so it matches the current zoom level.</long>
+					<hint>key</hint>
+					<default/>
+				</option>
+
+				<option type="string" name="fit_to_window_key">
+					<short>Fit zoomed area to window</short>
+					<long>Zooms in/out so the focused window is zoomed to the maximum while still being fully visible.</long>
+					<hint>key</hint>
+					<default>&lt;Super&gt;r</default>
+				</option>
+			</subgroup>
+		</group>
+
+		<group>
+			<short>Focus Tracking</short>
+
+			<subgroup>
+				<option type="bool" per_screen="true" name="follow_focus">
+					<short>Enable focus tracking</short>
+					<long>Move the zoom area when focus changes.</long>
+					<default>true</default>
+				</option>
+
+				<option type="bool" per_screen="true" name="focus_fit_window">
+					<short>Fit zoom level to window on focus change</short>
+					<long>Fit the zoomed area to the window when the zoomed area moves as a result of focus tracking.</long>
+					<default>false</default>
+				</option>
+
+				<option type="float" per_screen="true" name="autoscale_min">
+					<short>Autoscale threshold</short>
+					<long>Only change zoom level (scale) on focus change if the target value is higher than this. Prevents zooming too far in on small popups etc.</long>
+					<default>0.25</default>
+					<min>0.000001</min>
+					<max>0.999999</max>
+					<precision>0.0001</precision>
+				</option>
+
+				<option type="bool" per_screen="true" name="always_focus_fit_window">
+					<short>Always fit to window on focus track</short>
+					<long>Fit the zoomed area to the window when the zoomed area moves as a result of focus tracking. Even when not initially zoomed in.</long>
+					<default>false</default>
+				</option>
+
+				<option type="int" per_screen="true" name="follow_focus_delay">
+					<short>Follow Focus Delay</short>
+					<long>Only attempt to center newly focused windows if the mouse hasn't moved in this amount of seconds. Use this to avoid jumping when using sloppy focus.</long>
+					<default>1</default>
+					<min>0</min>
+					<max>15</max>
+				</option>
+			</subgroup>
+		</group>
+
+		<group>
+			<short>Animation</short>
+
+			<subgroup>
+				<option type="float" per_screen="true" name="speed">
+					<short>Speed</short>
+					<short xml:lang="bg">Скорост</short>
+					<short xml:lang="ca">Velocitat</short>
+					<short xml:lang="cs">Rychlost</short>
+					<short xml:lang="da">Hastighed</short>
+					<short xml:lang="de">Geschwindigkeit</short>
+					<short xml:lang="el">Ταχύτητα</short>
+					<short xml:lang="es">Velocidad</short>
+					<short xml:lang="eu">Abiadura</short>
+					<short xml:lang="fi">Nopeus</short>
+					<short xml:lang="fr">Vitesse</short>
+					<short xml:lang="gl">Velocidade</short>
+					<short xml:lang="gu">ઝડપ</short>
+					<short xml:lang="he">מהירות</short>
+					<short xml:lang="hu">Sebesség</short>
+					<short xml:lang="it">Velocità</short>
+					<short xml:lang="ja">速度</short>
+					<short xml:lang="ko">속도</short>
+					<short xml:lang="nb">Hastighet</short>
+					<short xml:lang="nl">Snelheid</short>
+					<short xml:lang="or">ଗତି</short>
+					<short xml:lang="pl">Szybkość</short>
+					<short xml:lang="pt">Velocidade</short>
+					<short xml:lang="pt_BR">Velocidade</short>
+					<short xml:lang="ro">Viteză</short>
+					<short xml:lang="ru">Скорость</short>
+					<short xml:lang="sk">Rýchlosť</short>
+					<short xml:lang="sv">Hastighet</short>
+					<short xml:lang="tr">Hız</short>
+					<short xml:lang="uk">Швидкість</short>
+					<short xml:lang="zh_CN">速度</short>
+					<short xml:lang="zh_TW">速度</short>
+					<long>Zoom Speed</long>
+					<default>25</default>
+					<min>0.1</min>
+					<max>100</max>
+					<precision>0.1</precision>
+				</option>
+
+				<option type="float" per_screen="true" name="timestep">
+					<short>Timestep</short>
+					<short xml:lang="ca">Etapa</short>
+					<short xml:lang="cs">Časový krok</short>
+					<short xml:lang="da">Tidstrin</short>
+					<short xml:lang="de">Zeitintervall</short>
+					<short xml:lang="el">Χρονικό Βήμα</short>
+					<short xml:lang="es">Paso</short>
+					<short xml:lang="eu">denbora-pausoa</short>
+					<short xml:lang="fi">Aikaviive</short>
+					<short xml:lang="fr">Intervalle</short>
+					<short xml:lang="gl">Saltos do tempo</short>
+					<short xml:lang="gu">સમયપગલું</short>
+					<short xml:lang="he">יחידת זמן</short>
+					<short xml:lang="hu">Időköz</short>
+					<short xml:lang="it">Intervallo</short>
+					<short xml:lang="ja">描画の時間刻み</short>
+					<short xml:lang="ko">시간 간격</short>
+					<short xml:lang="nb">Tidsskritt</short>
+					<short xml:lang="nl">Tijdstempel</short>
+					<short xml:lang="or">ସମଯସୋପାନ</short>
+					<short xml:lang="pl">Opóźnienie</short>
+					<short xml:lang="pt">Espaço de tempo</short>
+					<short xml:lang="pt_BR">Intervalo de tempo</short>
+					<short xml:lang="ro">Pas de timp</short>
+					<short xml:lang="ru">Шаг времени</short>
+					<short xml:lang="sk">Krok</short>
+					<short xml:lang="sv">Tidsintervall</short>
+					<short xml:lang="tr">Süre aralığı</short>
+					<short xml:lang="uk">Крок часу</short>
+					<short xml:lang="zh_CN">时间步长</short>
+					<short xml:lang="zh_TW">時間間隔</short>
+					<long>Zoom Timestep</long>
+					<default>1.2</default>
+					<min>0.1</min>
+					<max>50</max>
+					<precision>0.1</precision>
+				</option>
+
+				<option type="bool" per_screen="true" name="filter_linear">
+					<short>Filter Linear</short>
+					<long>Use linear filter when zoomed in</long>
+					<default>true</default>
+				</option>
+			</subgroup>
+		</group>
+	</plugin>
+</fusilli>

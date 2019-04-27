@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fusilli>
+	<plugin name="showmouse">
+		<short>Show mouse</short>
+		<long>Increases the visibility of the mouse pointer</long>
+		<category>Accessibility</category>
+
+		<deps>
+			<relation type="after">
+				<plugin>cube</plugin>
+			</relation>
+		</deps>
+
+		<group>
+			<short>General</short>
+
+			<subgroup>
+				<option type="string" name="initiate_key">
+					<short>Initiate Key</short>
+					<long>Toggle the mouse pointer trail.</long>
+					<hint>key</hint>
+					<default>&lt;Super&gt;k</default>
+				</option>
+
+				<option type="string" name="initiate_button">
+					<short>Initiate Button</short>
+					<long>Toggle the mouse pointer trail.</long>
+					<hint>button</hint>
+					<default/>
+				</option>
+
+				<option type="float" per_screen="true" name="rotation_speed">
+					<short>Rotation speed</short>
+					<long>Rotation speed.</long>
+					<default>0.5</default>
+					<min>0.1</min>
+					<max>10.0</max>
+					<precision>0.1</precision>
+				</option>
+
+				<option type="int" per_screen="true" name="radius">
+					<short>Radius</short>
+					<long>Ring radius</long>
+					<default>100</default>
+					<min>10</min>
+					<max>1000</max>
+				</option>
+
+				<option type="int" per_screen="true" name="emitters">
+					<short>Emitters</short>
+					<long>Number of particle emitters (0 to disable).</long>
+					<default>3</default>
+					<min>0</min>
+					<max>10</max>
+				</option>
+			</subgroup>
+
+			<subgroup collapsible="true">
+				<short>Guides</short>
+
+				<option type="int" per_screen="true" name="guide_thickness">
+					<short>Guide thickness</short>
+					<long>How thick mouse guides should be, in pixels.</long>
+					<default>0</default>
+					<min>0</min>
+					<max>20</max>
+				</option>
+
+				<option type="int" per_screen="true" name="guide_empty_radius">
+					<short>Guide empty radius</short>
+					<long>Radius of the disk around the cursor which doesn't contain guides.</long>
+					<default>20</default>
+					<min>0</min>
+					<max>100</max>
+				</option>
+
+				<option type="string" per_screen="true" name="guide_color">
+					<short>Guide Color</short>
+					<long>Guide color.</long>
+					<hint>color</hint>
+					<default>#ff000099</default>
+				</option>
+			</subgroup>
+		</group>
+
+		<group>
+			<short>Particle Options</short>
+
+			<subgroup>
+				<option type="int" per_screen="true" name="num_particles">
+					<short>Number Of Particles</short>
+					<long>Number of particles.</long>
+					<default>500</default>
+					<min>10</min>
+					<max>2000</max>
+				</option>
+
+				<option type="float" per_screen="true" name="size">
+					<short>Particle Size</short>
+					<long>Particle size.</long>
+					<default>10.0</default>
+					<min>0.1</min>
+					<max>20</max>
+					<precision>0.1</precision>
+				</option>
+
+				<option type="float" per_screen="true" name="slowdown">
+					<short>Particle Slowdown</short>
+					<long>Particle slowdown.</long>
+					<default>1.0</default>
+					<min>0.1</min>
+					<max>10</max>
+					<precision>0.1</precision>
+				</option>
+
+				<option type="float" per_screen="true" name="life">
+					<short>Particle Life</short>
+					<long>Particle life.</long>
+					<default>0.7</default>
+					<min>0.1</min>
+					<max>1</max>
+					<precision>0.1</precision>
+				</option>
+
+				<option type="float" per_screen="true" name="darken">
+					<short>Darken backgound</short>
+					<long>Darken background under particles</long>
+					<default>0.9</default>
+					<min>0.0</min>
+					<max>1.0</max>
+					<precision>0.1</precision>
+				</option>
+
+				<option type="bool" per_screen="true" name="blend">
+					<short>Additive blending</short>
+					<long>Additive blending of particles</long>
+					<default>true</default>
+				</option>
+
+				<option type="string" per_screen="true" name="color">
+					<short>Particle Color</short>
+					<long>Particle color.</long>
+					<hint>color</hint>
+					<default>#ffdf40ff</default>
+				</option>
+
+				<option type="bool" per_screen="true" name="random">
+					<short>Randomly Colored Particles</short>
+					<long>Have random colors for the particles</long>
+					<default>false</default>
+				</option>
+			</subgroup>
+		</group>
+	</plugin>
+</fusilli>

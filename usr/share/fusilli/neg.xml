@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fusilli>
+	<plugin name="neg">
+		<short>Negative</short>
+		<long>Used to set a window or screen negative</long>
+
+		<category>Accessibility</category>
+		<deps>
+			<relation type="after">
+				<plugin>blur</plugin>
+			</relation>
+		</deps>
+
+		<group>
+			<short>General</short>
+
+			<subgroup>
+				<option type="string" name="window_toggle_key">
+					<short>Toggle Window Negative</short>
+					<long>Toggle active window negative</long>
+					<hint>key</hint>
+					<default>&lt;Super&gt;n</default>
+				</option>
+
+				<option type="string" name="screen_toggle_key">
+					<short>Toggle Screen Negative</short>
+					<long>Toggle screen negative</long>
+					<hint>key</hint>
+					<default>&lt;Super&gt;m</default>
+				</option>
+			</subgroup>
+		</group>
+
+		<group>
+			<short>Advanced</short>
+
+			<subgroup>
+				<option type="string" per_screen="true" name="neg_match">
+					<short>Neg Windows</short>
+					<long>Windows to be negative by default</long>
+					<hint>match</hint>
+					<default>any</default>
+				</option>
+
+				<option type="string" per_screen="true" name="exclude_match">
+					<short>Exclude Windows</short>
+					<long>Windows to exclude from negating</long>
+					<hint>match</hint>
+					<default>type=Desktop</default>
+				</option>
+			</subgroup>
+		</group>
+	</plugin>
+</fusilli>

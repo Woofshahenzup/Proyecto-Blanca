@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fusilli>
+	<plugin name="wallpaper">
+		<short>Wallpaper</short>
+		<long>Draw the desktop wallpaper</long>
+		<category>Utility</category>
+		<deps>
+			<relation type="after">
+				<plugin>svg</plugin>
+			</relation>
+		</deps>
+
+		<group>
+			<short>General</short>
+
+			<subgroup multilist="true">
+				<short>Backgrounds</short>
+
+				<option type="list_string" per_screen="true" name="bg_image">
+					<short>Image</short>
+					<long>Image file</long>
+					<hints>file;image;</hints>
+				</option>
+
+				<option type="list_int" per_screen="true" name="bg_image_pos">
+					<short>Position</short>
+					<long>Image position</long>
+					<min>0</min>
+					<max>4</max>
+					<default>2</default>
+					<desc>
+						<value>0</value>
+						<name>Scale and Crop</name>
+					</desc>
+					<desc>
+						<value>1</value>
+						<name>Scaled</name>
+					</desc>
+					<desc>
+						<value>2</value>
+						<name>Centered</name>
+						<name xml:lang="bg">Центрирано подреждане</name>
+						<name xml:lang="bn">কেন্দ্রীভূত</name>
+						<name xml:lang="bn_IN">কেন্দ্রীভূত</name>
+						<name xml:lang="cs">Centrovaný</name>
+						<name xml:lang="de">Zentriert</name>
+						<name xml:lang="el">Στο Κέντρο</name>
+						<name xml:lang="es">Centrado</name>
+						<name xml:lang="eu">Zentratua</name>
+						<name xml:lang="fi">Keskitetty</name>
+						<name xml:lang="fr">Centré</name>
+						<name xml:lang="gl">Centrado</name>
+						<name xml:lang="gu">કેન્દ્રિત થયેલ</name>
+						<name xml:lang="he">ממורכז</name>
+						<name xml:lang="hi">केंद्रित</name>
+						<name xml:lang="hu">Középre</name>
+						<name xml:lang="it">Centrato</name>
+						<name xml:lang="ja">中央</name>
+						<name xml:lang="ko">중앙</name>
+						<name xml:lang="nb">Sentrert</name>
+						<name xml:lang="nl">Gecentreerd</name>
+						<name xml:lang="or">କେନ୍ଦ୍ରିତ</name>
+						<name xml:lang="pa">ਸੈਂਟਰਡ</name>
+						<name xml:lang="pl">Wyśrodkowany</name>
+						<name xml:lang="pt">Centrado</name>
+						<name xml:lang="pt_BR">Centralizado</name>
+						<name xml:lang="ro">Centrat</name>
+						<name xml:lang="ru">По центру</name>
+						<name xml:lang="sk">Vystrednené</name>
+						<name xml:lang="sv">Centrerad</name>
+						<name xml:lang="tr">Ortalanmış</name>
+						<name xml:lang="uk">У центрі</name>
+						<name xml:lang="zh_CN">居中</name>
+						<name xml:lang="zh_TW">居中</name>
+					</desc>
+					<desc>
+						<value>3</value>
+						<name>Tiled</name>
+					</desc>
+					<desc>
+						<value>4</value>
+						<name>Center Tiled</name>
+					</desc>
+				</option>
+
+				<option type="list_int" per_screen="true" name="bg_fill_type">
+					<short>Fill type</short>
+					<long>Background fill type</long>
+					<min>0</min>
+					<max>2</max>
+					<default>2</default>
+					<desc>
+						<value>0</value>
+						<name>Solid fill</name>
+					</desc>
+					<desc>
+						<value>1</value>
+						<name>Vertical gradient</name>
+					</desc>
+					<desc>
+						<value>2</value>
+						<name>Horizontal gradient</name>
+					</desc>
+				</option>
+
+				<option type="list_string" per_screen="true" name="bg_color1">
+					<short>Color 1</short>
+					<long>Fill or first gradient color</long>
+					<default>#ffffffff</default>
+					<hint>color</hint>
+				</option>
+
+				<option type="list_string" per_screen="true" name="bg_color2">
+					<short>Color 2</short>
+					<long>Second gradient color</long>
+					<default>#000000ff</default>
+					<hint>color</hint>
+				</option>
+
+			</subgroup>
+		</group>
+	</plugin>
+</fusilli>

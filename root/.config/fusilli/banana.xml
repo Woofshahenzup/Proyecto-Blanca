@@ -1,0 +1,1138 @@
+<?xml version='1.0' encoding='utf-8'?>
+<fusilli>
+	<plugin name="core">
+
+		<option name="active_plugins">
+			<item>resize</item>
+			<item>thumbnail</item>
+			<item>svg</item>
+			<item>ring</item>
+			<item>minimize</item>
+			<item>place</item>
+			<item>decoration</item>
+			<item>wobbly</item>
+			<item>animation</item>
+			<item>fade</item>
+			<item>move</item>
+			<item>cube</item>
+			<item>expo</item>
+			<item>scale</item>
+			<item>rotate</item>
+			<item>3d</item>
+			<item>ezoom</item>
+			<item>opacify</item>
+			<item>blur</item>
+		</option>
+		<option name="audible_bell">false</option>
+		<option name="ignore_hints_when_maximized">true</option>
+		<option name="hide_skip_taskbar_windows">true</option>
+		<option name="edge_delay">0</option>
+		<option name="ping_delay">5000</option>
+		<option name="unredirect_fullscreen_windows" screen="0">false</option>
+		<option name="default_icon" screen="0">icon</option>
+		<option name="force_independent_output_painting" screen="0">false</option>
+		<option name="texture_compression" screen="0">false</option>
+		<option name="texture_filter">1</option>
+		<option name="lighting" screen="0">true</option>
+		<option name="detect_refresh_rate" screen="0">true</option>
+		<option name="refresh_rate" screen="0">50</option>
+		<option name="detect_outputs" screen="0">true</option>
+		<option name="overlapping_outputs" screen="0">0</option>
+		<option name="outputs" screen="0">
+			<item>640x480+0+0</item>
+		</option>
+		<option name="sync_to_vblank" screen="0">true</option>
+		<option name="click_to_focus">true</option>
+		<option name="raise_on_click">true</option>
+		<option name="autoraise">true</option>
+		<option name="autoraise_delay">1000</option>
+		<option name="focus_prevention_level" screen="0">1</option>
+		<option name="focus_prevention_match" screen="0">any</option>
+		<option name="close_window_key">&lt;Alt&gt;F4</option>
+		<option name="close_window_button" />
+		<option name="raise_window_key" />
+		<option name="raise_window_button">&lt;Control&gt;Button6</option>
+		<option name="lower_window_key" />
+		<option name="lower_window_button">&lt;Alt&gt;Button6</option>
+		<option name="unmaximize_window_key">&lt;Alt&gt;F5</option>
+		<option name="minimize_window_key">&lt;Alt&gt;F9</option>
+		<option name="minimize_window_button" />
+		<option name="maximize_window_key">&lt;Alt&gt;F10</option>
+		<option name="maximize_window_horizontally_key" />
+		<option name="maximize_window_vertically_key" />
+		<option name="window_menu_button">&lt;Alt&gt;Button3</option>
+		<option name="window_menu_key">&lt;Alt&gt;space</option>
+		<option name="show_desktop_key">&lt;Control&gt;&lt;Alt&gt;d</option>
+		<option name="toggle_window_maximized_key" />
+		<option name="toggle_window_maximized_button" />
+		<option name="toggle_window_maximized_horizontally_key" />
+		<option name="toggle_window_maximized_vertically_key" />
+		<option name="toggle_window_shaded_key">&lt;Control&gt;&lt;Alt&gt;s</option>
+		<option name="slow_animations_key" />
+		<option name="hsize" screen="0">4</option>
+		<option name="vsize" screen="0">1</option>
+		<option name="jpeg_quality">80</option>
+		<option name="mouse_poll_interval">40</option>
+
+	</plugin>
+
+	<plugin name="3d">
+
+		<option name="window_match" screen="0">Toolbar | Utility | Dialog | Normal | Unknown</option>
+		<option name="min_cube_size" screen="0">60</option>
+		<option name="max_window_space" screen="0">10</option>
+		<option name="manual_only" screen="0">true</option>
+		<option name="width" screen="0">0.3</option>
+		<option name="bevel" screen="0">0</option>
+		<option name="width_color" screen="0">#333333ff</option>
+		<option name="width_color_inactive" screen="0">#333333ff</option>
+		<option name="bevel_topleft" screen="0">true</option>
+		<option name="bevel_topright" screen="0">true</option>
+		<option name="bevel_bottomleft" screen="0">false</option>
+		<option name="bevel_bottomright" screen="0">false</option>
+
+	</plugin>
+
+	<plugin name="addhelper">
+
+		<option name="toggle_key">&lt;Super&gt;p</option>
+		<option name="window_types">Toolbar | Utility | Dialog | ModalDialog | Fullscreen | Normal</option>
+		<option name="ononinit">false</option>
+		<option name="brightness">30</option>
+		<option name="saturation">50</option>
+		<option name="opacity">100</option>
+
+	</plugin>
+
+	<plugin name="animation">
+
+		<option name="open_effects" screen="0">
+			<item>magiclamp</item>
+			<item>fade</item>
+			<item>fade</item>
+		</option>
+		<option name="open_durations" screen="0">
+			<item>200</item>
+			<item>150</item>
+			<item>150</item>
+		</option>
+		<option name="open_matches" screen="0">
+			<item>(type=Normal | Dialog | ModalDialog | Unknown) &amp; !(name=gnome-screensaver) &amp; !(name=mate-screensaver)</item>
+			<item>(type=Menu | PopupMenu | DropdownMenu)</item>
+			<item>(type=Tooltip | Notification | Utility) &amp; !(name=fusilli) &amp; !(title=notify-osd)</item>
+		</option>
+		<option name="close_effects" screen="0">
+			<item>magiclamp</item>
+			<item>fade</item>
+			<item>fade</item>
+		</option>
+		<option name="close_durations" screen="0">
+			<item>300</item>
+			<item>150</item>
+			<item>150</item>
+		</option>
+		<option name="close_matches" screen="0">
+			<item>(type=Normal | Dialog | ModalDialog | Unknown) &amp; !(name=gnome-screensaver) &amp; !(name=mate-screensaver)</item>
+			<item>(type=Menu | PopupMenu | DropdownMenu)</item>
+			<item>(type=Tooltip | Notification | Utility) &amp; !(name=fusilli) &amp; !(title=notify-osd)</item>
+		</option>
+		<option name="minimize_effects" screen="0">
+			<item>magiclamp</item>
+			<item>curvefold</item>
+		</option>
+		<option name="minimize_durations" screen="0">
+			<item>300</item>
+			<item>200</item>
+		</option>
+		<option name="minimize_matches" screen="0">
+			<item>(type=Normal | Dialog | ModalDialog | Unknown)</item>
+			<item>(type=Normal | Dialog | ModalDialog | Unknown)</item>
+		</option>
+		<option name="shade_effects" screen="0">
+			<item>rollup</item>
+		</option>
+		<option name="shade_durations" screen="0">
+			<item>300</item>
+		</option>
+		<option name="shade_matches" screen="0">
+			<item>(type=Normal | Dialog | ModalDialog | Utility | Unknown)</item>
+		</option>
+		<option name="focus_effects" screen="0">
+			<item>None</item>
+		</option>
+		<option name="focus_durations" screen="0">
+			<item>300</item>
+		</option>
+		<option name="focus_matches" screen="0">
+			<item>(type=Normal | Dialog | ModalDialog | Utility | Unknown) &amp; !(name=fusilli)</item>
+		</option>
+		<option name="time_step" screen="0">5</option>
+		<option name="time_step_intense" screen="0">29</option>
+		<option name="airplane_path_length" screen="0">1.0</option>
+		<option name="airplane_fly_to_taskbar" screen="0">true</option>
+		<option name="beam_size" screen="0">8.0</option>
+		<option name="beam_spacing" screen="0">5</option>
+		<option name="beam_color" screen="0">#7f7f7fff</option>
+		<option name="beam_slowdown" screen="0">1.0</option>
+		<option name="beam_life" screen="0">0.7</option>
+		<option name="fire_particles" screen="0">1000</option>
+		<option name="fire_size" screen="0">5.0</option>
+		<option name="fire_slowdown" screen="0">2.1</option>
+		<option name="fire_life" screen="0">1.0</option>
+		<option name="fire_color" screen="0">#0400ffff</option>
+		<option name="fire_direction" screen="0">0</option>
+		<option name="fire_constant_speed" screen="0">false</option>
+		<option name="fire_smoke" screen="0">false</option>
+		<option name="fire_mystical" screen="0">false</option>
+		<option name="curved_fold_amp_mult" screen="0">1.0</option>
+		<option name="curved_fold_zoom_to_taskbar" screen="0">true</option>
+		<option name="dodge_gap_ratio" screen="0">0.5</option>
+		<option name="domino_direction" screen="0">5</option>
+		<option name="dream_zoom_to_taskbar" screen="0">true</option>
+		<option name="explode_gridx" screen="0">13</option>
+		<option name="explode_gridy" screen="0">10</option>
+		<option name="explode_spokes" screen="0">2</option>
+		<option name="explode_tiers" screen="0">3</option>
+		<option name="explode_thickness" screen="0">15.0</option>
+		<option name="explode_tessellation" screen="0">0</option>
+		<option name="fold_gridx" screen="0">3</option>
+		<option name="fold_gridy" screen="0">3</option>
+		<option name="fold_dir" screen="0">1</option>
+		<option name="razr_direction" screen="0">5</option>
+		<option name="glide1_away_position" screen="0">1.0</option>
+		<option name="glide1_away_angle" screen="0">0.0</option>
+		<option name="glide1_zoom_to_taskbar" screen="0">true</option>
+		<option name="glide2_away_position" screen="0">-0.4</option>
+		<option name="glide2_away_angle" screen="0">-45.0</option>
+		<option name="glide2_zoom_to_taskbar" screen="0">true</option>
+		<option name="glide3_away_position" screen="0">-0.4</option>
+		<option name="glide3_away_angle" screen="0">45.0</option>
+		<option name="glide3_thickness" screen="0">0.0</option>
+		<option name="horizontal_folds_amp_mult" screen="0">1.0</option>
+		<option name="horizontal_folds_num_folds" screen="0">3</option>
+		<option name="horizontal_folds_zoom_to_taskbar" screen="0">true</option>
+		<option name="magic_lamp_moving_end" screen="0">true</option>
+		<option name="magic_lamp_grid_res" screen="0">100</option>
+		<option name="magic_lamp_max_waves" screen="0">3</option>
+		<option name="magic_lamp_amp_min" screen="0">200.0</option>
+		<option name="magic_lamp_amp_max" screen="0">300.0</option>
+		<option name="magic_lamp_open_start_width" screen="0">30</option>
+		<option name="rollup_fixed_interior" screen="0">true</option>
+		<option name="sidekick_num_rotations" screen="0">0.5</option>
+		<option name="sidekick_springiness" screen="0">0.0</option>
+		<option name="sidekick_zoom_from_center" screen="0">3</option>
+		<option name="skewer_direction" screen="0">9</option>
+		<option name="skewer_tessellation" screen="0">1</option>
+		<option name="skewer_gridx" screen="0">6</option>
+		<option name="skewer_gridy" screen="0">4</option>
+		<option name="skewer_thickness" screen="0">0.0</option>
+		<option name="skewer_rotation" screen="0">0</option>
+		<option name="vacuum_moving_end" screen="0">true</option>
+		<option name="vacuum_grid_res" screen="0">100</option>
+		<option name="vacuum_open_start_width" screen="0">30</option>
+		<option name="wave_width" screen="0">0.7</option>
+		<option name="wave_amp_mult" screen="0">1.0</option>
+		<option name="zoom_from_center" screen="0">3</option>
+		<option name="zoom_springiness" screen="0">0.0</option>
+
+	</plugin>
+
+	<plugin name="annotate">
+
+		<option name="initiate_button">&lt;Super&gt;&lt;Alt&gt;Button1</option>
+		<option name="erase_button">&lt;Super&gt;&lt;Alt&gt;Button3</option>
+		<option name="clear_key">&lt;Super&gt;&lt;Alt&gt;k</option>
+		<option name="clear_button" />
+		<option name="fill_color">#ff0000ff</option>
+		<option name="stroke_color">#00ff00ff</option>
+		<option name="line_width">3.0</option>
+		<option name="stroke_width">1.0</option>
+
+	</plugin>
+
+	<plugin name="blur">
+
+		<option name="pulse">true</option>
+		<option name="blur_speed" screen="0">3.5</option>
+		<option name="focus_blur_match" screen="0">toolbar | menu | utility | normal | dialog | modaldialog</option>
+		<option name="focus_blur" screen="0">false</option>
+		<option name="alpha_blur_match" screen="0">any</option>
+		<option name="alpha_blur" screen="0">true</option>
+		<option name="filter" screen="0">0</option>
+		<option name="gaussian_radius" screen="0">3</option>
+		<option name="gaussian_strength" screen="0">1.0</option>
+		<option name="mipmap_lod" screen="0">2.5</option>
+		<option name="saturation" screen="0">100</option>
+		<option name="occlusion" screen="0">true</option>
+		<option name="independent_tex" screen="0">false</option>
+
+	</plugin>
+
+	<plugin name="clone">
+
+		<option name="initiate_button">&lt;Super&gt;&lt;Shift&gt;Button1</option>
+
+	</plugin>
+
+	<plugin name="colorfilter">
+
+		<option name="toggle_window_key">&lt;Super&gt;f</option>
+		<option name="toggle_screen_key">&lt;Super&gt;d</option>
+		<option name="switch_filter_key">&lt;Control&gt;&lt;Super&gt;s</option>
+		<option name="filters" screen="0">
+			<item>negative</item>
+			<item>negative-green</item>
+			<item>blueish-filter</item>
+			<item>sepia</item>
+			<item>grayscale</item>
+			<item>deuteranopia</item>
+			<item>protanopia</item>
+		</option>
+		<option name="filter_decorations" screen="0">false</option>
+		<option name="filter_match" screen="0">any</option>
+		<option name="exclude_match" screen="0">type=Desktop</option>
+
+	</plugin>
+
+	<plugin name="commands">
+
+		<option name="command0" />
+		<option name="command1" />
+		<option name="command2" />
+		<option name="command3" />
+		<option name="command4" />
+		<option name="command5" />
+		<option name="command6" />
+		<option name="command7" />
+		<option name="command8" />
+		<option name="command9" />
+		<option name="run_command_key0" />
+		<option name="run_command_key1" />
+		<option name="run_command_key2" />
+		<option name="run_command_key3" />
+		<option name="run_command_key4" />
+		<option name="run_command_key5" />
+		<option name="run_command_key6" />
+		<option name="run_command_key7" />
+		<option name="run_command_key8" />
+		<option name="run_command_key9" />
+		<option name="run_command_button0" />
+		<option name="run_command_button1" />
+		<option name="run_command_button2" />
+		<option name="run_command_button3" />
+		<option name="run_command_button4" />
+		<option name="run_command_button5" />
+		<option name="run_command_button6" />
+		<option name="run_command_button7" />
+		<option name="run_command_button8" />
+		<option name="run_command_button9" />
+
+	</plugin>
+
+	<plugin name="cube">
+
+		<option name="index">0</option>
+		<option name="unfold_key">&lt;Control&gt;&lt;Alt&gt;Down</option>
+		<option name="mipmap" screen="0">true</option>
+		<option name="multioutput_mode" screen="0">1</option>
+		<option name="in" screen="0">false</option>
+		<option name="acceleration" screen="0">4.0</option>
+		<option name="speed" screen="0">1.5</option>
+		<option name="timestep" screen="0">1.2</option>
+		<option name="color" screen="0">#ffffff00</option>
+		<option name="scale_image" screen="0">false</option>
+		<option name="cubecap_image" screen="0">/usr/share/backgrounds/wallpaperpup.png</option>
+		<option name="adjust_image" screen="0">true</option>
+		<option name="skydome" screen="0">true</option>
+		<option name="skydome_image" screen="0">/usr/share/backgrounds/wALL1.png</option>
+		<option name="skydome_animated" screen="0">true</option>
+		<option name="skydome_gradient_start_color" screen="0">#a7a7a7ff</option>
+		<option name="skydome_gradient_end_color" screen="0">#2c2d12ff</option>
+		<option name="active_opacity" screen="0">100.0</option>
+		<option name="inactive_opacity" screen="0">100.0</option>
+		<option name="transparent_manual_only" screen="0">true</option>
+
+	</plugin>
+
+	<plugin name="decoration">
+
+		<option name="command">fusilli-decorator-gtk --replace</option>
+		<option name="mipmap">false</option>
+		<option name="decoration_match">any </option>
+		<option name="shadow_match">any -conky</option>
+		<option name="decoration_style">0</option>
+		<option name="metacity_theme">FOLLOW_MARCO_GSETTINGS</option>
+		<option name="blur">0</option>
+		<option name="action_double_click_titlebar">2</option>
+		<option name="action_middle_click_titlebar">5</option>
+		<option name="action_right_click_titlebar">6</option>
+		<option name="wheel_action_titlebar">0</option>
+		<option name="use_system_font">false</option>
+		<option name="titlebar_font">Sans Bold 10</option>
+		<option name="button_layout">menu:minimize,maximize,close</option>
+		<option name="shadow_radius">8.0</option>
+		<option name="shadow_opacity">0.5</option>
+		<option name="shadow_color">#000000ff</option>
+		<option name="shadow_x_offset">1</option>
+		<option name="shadow_y_offset">1</option>
+		<option name="metacity_theme_opacity">75.0</option>
+		<option name="metacity_theme_shade_opacity">true</option>
+		<option name="metacity_theme_active_opacity">100.0</option>
+		<option name="metacity_theme_active_shade_opacity">true</option>
+
+	</plugin>
+
+	<plugin name="expo">
+
+		<option name="expo_key">&lt;Super&gt;e</option>
+		<option name="expo_button" />
+		<option name="double_click_time">500</option>
+		<option name="zoom_time">0.5</option>
+		<option name="expo_immediate_move">false</option>
+		<option name="expo_animation">0</option>
+		<option name="deform">0</option>
+		<option name="distance">0.0</option>
+		<option name="vp_distance">0.1</option>
+		<option name="aspect_ratio">1.0</option>
+		<option name="curve">0.5</option>
+		<option name="hide_docks">false</option>
+		<option name="mipmaps">false</option>
+		<option name="multioutput_mode">0</option>
+		<option name="vp_brightness">75.0</option>
+		<option name="vp_saturation">100.0</option>
+		<option name="reflection">true</option>
+		<option name="ground_color1">#b3b3b3cc</option>
+		<option name="ground_color2">#b3b3b300</option>
+		<option name="ground_size">0.5</option>
+		<option name="scale_factor">0.75</option>
+
+	</plugin>
+
+	<plugin name="extrawm">
+
+		<option name="toggle_redirect_key" />
+		<option name="toggle_fullscreen_key" />
+		<option name="toggle_always_on_top_key" />
+		<option name="toggle_sticky_key" />
+		<option name="activate_demands_attention_key" />
+		<option name="to_next_output_key" />
+
+	</plugin>
+
+	<plugin name="ezoom">
+
+		<option name="zoom_in_button">&lt;Super&gt;Button4</option>
+		<option name="zoom_in_key" />
+		<option name="zoom_out_button">&lt;Super&gt;Button5</option>
+		<option name="zoom_out_key" />
+		<option name="zoom_box_button">&lt;Super&gt;Button2</option>
+		<option name="zoom_factor" screen="0">1.15</option>
+		<option name="minimum_zoom" screen="0">0.125</option>
+		<option name="center_mouse_key" />
+		<option name="sync_mouse" screen="0">true</option>
+		<option name="scale_mouse" screen="0">false</option>
+		<option name="scale_mouse_dynamic" screen="0">true</option>
+		<option name="scale_mouse_static" screen="0">0.2</option>
+		<option name="hide_original_mouse" screen="0">false</option>
+		<option name="restrain_mouse" screen="0">false</option>
+		<option name="mouse_pan" screen="0">false</option>
+		<option name="restrain_margin" screen="0">5</option>
+		<option name="zoom_specific_1_key" />
+		<option name="zoom_spec1">1.0</option>
+		<option name="zoom_specific_2_key" />
+		<option name="zoom_spec2">0.5</option>
+		<option name="zoom_specific_3_key" />
+		<option name="zoom_spec3">0.2</option>
+		<option name="spec_target_focus">true</option>
+		<option name="lock_zoom_key" />
+		<option name="pan_left_key" />
+		<option name="pan_right_key" />
+		<option name="pan_up_key" />
+		<option name="pan_down_key" />
+		<option name="pan_factor" screen="0">0.1</option>
+		<option name="fit_to_zoom_key" />
+		<option name="fit_to_window_key">&lt;Super&gt;r</option>
+		<option name="follow_focus" screen="0">true</option>
+		<option name="focus_fit_window" screen="0">false</option>
+		<option name="autoscale_min" screen="0">0.25</option>
+		<option name="always_focus_fit_window" screen="0">false</option>
+		<option name="follow_focus_delay" screen="0">1</option>
+		<option name="speed" screen="0">25.0</option>
+		<option name="timestep" screen="0">1.2</option>
+		<option name="filter_linear" screen="0">true</option>
+
+	</plugin>
+
+	<plugin name="fade">
+
+		<option name="fade_mode" screen="0">0</option>
+		<option name="fade_speed" screen="0">5.0</option>
+		<option name="fade_time" screen="0">100</option>
+		<option name="window_match" screen="0">any</option>
+		<option name="visual_bell" screen="0">true</option>
+		<option name="fullscreen_visual_bell" screen="0">true</option>
+		<option name="minimize_open_close" screen="0">true</option>
+		<option name="dim_unresponsive" screen="0">false</option>
+		<option name="unresponsive_brightness" screen="0">65</option>
+		<option name="unresponsive_saturation" screen="0">0</option>
+
+	</plugin>
+
+	<plugin name="fadedesktop">
+
+		<option name="fade_time" screen="0">500</option>
+		<option name="window_match" screen="0">Toolbar | Utility | Dialog | Normal | Unknown</option>
+
+	</plugin>
+
+	<plugin name="firepaint">
+
+		<option name="initiate_button">&lt;Super&gt;&lt;Shift&gt;Button1</option>
+		<option name="clear_key">&lt;Super&gt;&lt;Shift&gt;c</option>
+		<option name="num_particles" screen="0">3000</option>
+		<option name="fire_size" screen="0">15.0</option>
+		<option name="fire_slowdown" screen="0">0.5</option>
+		<option name="fire_life" screen="0">0.7</option>
+		<option name="fire_color" screen="0">#ff3305ff</option>
+		<option name="fire_mystical" screen="0">false</option>
+		<option name="bg_brightness" screen="0">50</option>
+
+	</plugin>
+
+	<plugin name="grid">
+
+		<option name="put_center_key">&lt;Control&gt;&lt;Alt&gt;KP_5</option>
+		<option name="put_left_key">&lt;Control&gt;&lt;Alt&gt;KP_4</option>
+		<option name="put_right_key">&lt;Control&gt;&lt;Alt&gt;KP_6</option>
+		<option name="put_top_key">&lt;Control&gt;&lt;Alt&gt;KP_8</option>
+		<option name="put_bottom_key">&lt;Control&gt;&lt;Alt&gt;KP_2</option>
+		<option name="put_topleft_key">&lt;Control&gt;&lt;Alt&gt;KP_7</option>
+		<option name="put_topright_key">&lt;Control&gt;&lt;Alt&gt;KP_9</option>
+		<option name="put_bottomleft_key">&lt;Control&gt;&lt;Alt&gt;KP_1</option>
+		<option name="put_bottomright_key">&lt;Control&gt;&lt;Alt&gt;KP_3</option>
+
+	</plugin>
+
+	<plugin name="group">
+
+		<option name="select_button">&lt;Shift&gt;&lt;Super&gt;Button1</option>
+		<option name="select_single_key">&lt;Super&gt;s</option>
+		<option name="select_opacity" screen="0">80</option>
+		<option name="select_saturation" screen="0">20</option>
+		<option name="select_brightness" screen="0">70</option>
+		<option name="select_precision" screen="0">25</option>
+		<option name="fill_color" screen="0">#00000055</option>
+		<option name="line_color" screen="0">#000000ab</option>
+		<option name="group_key">&lt;Super&gt;g</option>
+		<option name="ungroup_key">&lt;Super&gt;u</option>
+		<option name="remove_key">&lt;Super&gt;r</option>
+		<option name="close_key">&lt;Super&gt;c</option>
+		<option name="ignore_key">&lt;Super&gt;x</option>
+		<option name="tabmode_key">&lt;Super&gt;t</option>
+		<option name="change_tab_left_key">&lt;Super&gt;Left</option>
+		<option name="change_tab_right_key">&lt;Super&gt;Right</option>
+		<option name="mipmaps" screen="0">false</option>
+		<option name="untab_on_close" screen="0">false</option>
+		<option name="autotab_create" screen="0">false</option>
+		<option name="autotab_windows" screen="0" />
+		<option name="tabbar_show_delay" screen="0">0.4</option>
+		<option name="tabbing_speed" screen="0">1.2</option>
+		<option name="tabbing_timestep" screen="0">1.5</option>
+		<option name="fade_time" screen="0">0.2</option>
+		<option name="pulse_time" screen="0">0.6</option>
+		<option name="reflex_time" screen="0">0.5</option>
+		<option name="fade_text_time" screen="0">0.25</option>
+		<option name="visibility_time" screen="0">0.5</option>
+		<option name="change_animation_time" screen="0">0.5</option>
+		<option name="bar_animations" screen="0">true</option>
+		<option name="thumb_size" screen="0">96</option>
+		<option name="thumb_space" screen="0">5</option>
+		<option name="border_radius" screen="0">10</option>
+		<option name="border_width" screen="0">1</option>
+		<option name="tab_base_color" screen="0">#00000099</option>
+		<option name="tab_border_color" screen="0">#000000ab</option>
+		<option name="tab_highlight_color" screen="0">#ffffff99</option>
+		<option name="tab_style" screen="0">0</option>
+		<option name="tabbar_font_size" screen="0">12</option>
+		<option name="tabbar_font_family" screen="0">Sans</option>
+		<option name="tabbar_font_color" screen="0">#ffffffff</option>
+		<option name="dnd_ungroup_window" screen="0">true</option>
+		<option name="drag_hover_time" screen="0">0.5</option>
+		<option name="drag_spring_k" screen="0">8.0</option>
+		<option name="drag_friction" screen="0">35.0</option>
+		<option name="drag_y_distance" screen="0">400</option>
+		<option name="drag_speed_limit" screen="0">800</option>
+		<option name="glow" screen="0">true</option>
+		<option name="glow_size" screen="0">64</option>
+		<option name="glow_type" screen="0">0</option>
+		<option name="change_color_key" />
+		<option name="move_all" screen="0">true</option>
+		<option name="resize_all" screen="0">false</option>
+		<option name="raise_all" screen="0">true</option>
+		<option name="maximize_unmaximize_all" screen="0">false</option>
+		<option name="minimize_all" screen="0">true</option>
+		<option name="shade_all" screen="0">false</option>
+		<option name="auto_group" screen="0">false</option>
+		<option name="auto_ungroup" screen="0">true</option>
+		<option name="window_match" screen="0">Toolbar | Utility | Dialog | Normal | Unknown</option>
+
+	</plugin>
+
+	<plugin name="mag">
+
+		<option name="toggle_key">&lt;Super&gt;m</option>
+		<option name="zoom_in_button">&lt;Super&gt;&lt;Shift&gt;Button4</option>
+		<option name="zoom_out_button">&lt;Super&gt;&lt;Shift&gt;Button5</option>
+		<option name="mode" screen="0">0</option>
+		<option name="zoom_factor" screen="0">2.0</option>
+		<option name="speed" screen="0">1.5</option>
+		<option name="timestep" screen="0">1.2</option>
+		<option name="keep_screen" screen="0">true</option>
+		<option name="box_width" screen="0">300</option>
+		<option name="box_height" screen="0">200</option>
+		<option name="border" screen="0">2</option>
+		<option name="box_color" screen="0">#000000ff</option>
+		<option name="overlay" screen="0">overlay.png</option>
+		<option name="mask" screen="0">mask.png</option>
+		<option name="x_offset" screen="0">155</option>
+		<option name="y_offset" screen="0">155</option>
+		<option name="radius" screen="0">200</option>
+
+	</plugin>
+
+	<plugin name="matecompat">
+
+		<option name="main_menu_key">&lt;Alt&gt;F1</option>
+		<option name="run_key">&lt;Alt&gt;F2</option>
+		<option name="command_screenshot">mate-screenshot</option>
+		<option name="run_command_screenshot_key">Print</option>
+		<option name="command_window_screenshot">mate-screenshot --window</option>
+		<option name="run_command_window_screenshot_key">&lt;Alt&gt;Print</option>
+		<option name="command_terminal">mate-terminal</option>
+		<option name="run_command_terminal_key" />
+
+	</plugin>
+
+	<plugin name="minimize">
+
+		<option name="speed" screen="0">1.5</option>
+		<option name="timestep" screen="0">0.5</option>
+		<option name="window_match" screen="0">toolbar | utility | dialog | normal</option>
+		<option name="shade_resistance" screen="0">75</option>
+
+	</plugin>
+
+	<plugin name="move">
+
+		<option name="initiate_button">&lt;Alt&gt;Button1</option>
+		<option name="initiate_key">&lt;Alt&gt;F7</option>
+		<option name="opacity">100</option>
+		<option name="constrain_y">true</option>
+		<option name="snapoff_maximized">true</option>
+		<option name="lazy_positioning">true</option>
+
+	</plugin>
+
+	<plugin name="neg">
+
+		<option name="window_toggle_key">&lt;Super&gt;n</option>
+		<option name="screen_toggle_key">&lt;Super&gt;m</option>
+		<option name="neg_match" screen="0">any</option>
+		<option name="exclude_match" screen="0">type=Desktop</option>
+
+	</plugin>
+
+	<plugin name="obs">
+
+		<option name="opacity_increase_key" />
+		<option name="opacity_increase_button">&lt;Alt&gt;Button4</option>
+		<option name="opacity_decrease_key" />
+		<option name="opacity_decrease_button">&lt;Alt&gt;Button5</option>
+		<option name="opacity_step" screen="0">5</option>
+		<option name="opacity_matches" screen="0" />
+		<option name="opacity_values" screen="0" />
+		<option name="brightness_increase_key" />
+		<option name="brightness_increase_button" />
+		<option name="brightness_decrease_key" />
+		<option name="brightness_decrease_button" />
+		<option name="brightness_step" screen="0">5</option>
+		<option name="brightness_matches" screen="0" />
+		<option name="brightness_values" screen="0" />
+		<option name="saturation_increase_key" />
+		<option name="saturation_increase_button" />
+		<option name="saturation_decrease_key" />
+		<option name="saturation_decrease_button" />
+		<option name="saturation_step" screen="0">5</option>
+		<option name="saturation_matches" screen="0" />
+		<option name="saturation_values" screen="0" />
+
+	</plugin>
+
+	<plugin name="opacify">
+
+		<option name="toggle_key">&lt;Super&gt;o</option>
+		<option name="init_toggle">false</option>
+		<option name="toggle_reset">true</option>
+		<option name="timeout">700</option>
+		<option name="only_if_block" screen="0">false</option>
+		<option name="focus_instant" screen="0">false</option>
+		<option name="no_delay_change" screen="0">false</option>
+		<option name="window_match" screen="0">Normal | Dialog | ModalDialog | Utility | Toolbar | Fullscreen</option>
+		<option name="active_opacity" screen="0">100</option>
+		<option name="passive_opacity" screen="0">10</option>
+
+	</plugin>
+
+	<plugin name="place">
+
+		<option name="workarounds" screen="0">true</option>
+		<option name="mode" screen="0">2</option>
+		<option name="multioutput_mode" screen="0">0</option>
+		<option name="force_placement_match" screen="0" />
+		<option name="position_matches" screen="0" />
+		<option name="position_x_values" screen="0" />
+		<option name="position_y_values" screen="0" />
+		<option name="position_constrain_workarea" screen="0" />
+		<option name="mode_matches" screen="0" />
+		<option name="mode_modes" screen="0" />
+		<option name="viewport_matches" screen="0" />
+		<option name="viewport_x_values" screen="0" />
+		<option name="viewport_y_values" screen="0" />
+
+	</plugin>
+
+	<plugin name="resize">
+
+		<option name="initiate_button">&lt;Alt&gt;Button2</option>
+		<option name="initiate_key">&lt;Alt&gt;F8</option>
+		<option name="mode">0</option>
+		<option name="border_color">#2f2f4f9f</option>
+		<option name="fill_color">#2f2f4f4f</option>
+
+	</plugin>
+
+	<plugin name="ring">
+
+		<option name="next_key">&lt;Super&gt;Tab</option>
+		<option name="prev_key">&lt;Super&gt;&lt;Shift&gt;Tab</option>
+		<option name="next_all_key">&lt;Super&gt;&lt;Alt&gt;Tab</option>
+		<option name="prev_all_key">&lt;Super&gt;&lt;Shift&gt;&lt;Alt&gt;Tab</option>
+		<option name="speed" screen="0">1.5</option>
+		<option name="timestep" screen="0">1.2</option>
+		<option name="inactive_opacity" screen="0">100</option>
+		<option name="window_match" screen="0">Normal | Dialog | ModalDialog | Utility | Unknown</option>
+		<option name="overlay_icon" screen="0">1</option>
+		<option name="darken_back" screen="0">true</option>
+		<option name="minimized" screen="0">true</option>
+		<option name="select_with_mouse" screen="0">false</option>
+		<option name="ring_clockwise" screen="0">false</option>
+		<option name="ring_width" screen="0">70</option>
+		<option name="ring_height" screen="0">60</option>
+		<option name="thumb_width" screen="0">350</option>
+		<option name="thumb_height" screen="0">250</option>
+		<option name="min_brightness" screen="0">0.5</option>
+		<option name="min_scale" screen="0">0.4</option>
+		<option name="window_title" screen="0">true</option>
+		<option name="title_font_bold" screen="0">false</option>
+		<option name="title_font_family" screen="0">Sans</option>
+		<option name="title_font_size" screen="0">16</option>
+		<option name="title_back_color" screen="0">#00000099</option>
+		<option name="title_font_color" screen="0">#ffffffff</option>
+		<option name="title_text_placement" screen="0">0</option>
+
+	</plugin>
+
+	<plugin name="rotate">
+
+		<option name="raise_on_rotate">false</option>
+		<option name="invert_y" screen="0">false</option>
+		<option name="invert_x" screen="0">false</option>
+		<option name="sensitivity" screen="0">1.0</option>
+		<option name="acceleration" screen="0">4.0</option>
+		<option name="snap_top" screen="0">false</option>
+		<option name="snap_bottom" screen="0">false</option>
+		<option name="speed" screen="0">2.0</option>
+		<option name="timestep" screen="0">1.0</option>
+		<option name="zoom" screen="0">0.0</option>
+		<option name="initiate_button">&lt;Control&gt;&lt;Alt&gt;Button1</option>
+		<option name="rotate_left_key">&lt;Control&gt;&lt;Alt&gt;Left</option>
+		<option name="rotate_left_button" />
+		<option name="rotate_right_key">&lt;Control&gt;&lt;Alt&gt;Right</option>
+		<option name="rotate_right_button" />
+		<option name="rotate_left_window_key">&lt;Control&gt;&lt;Alt&gt;&lt;Shift&gt;Left</option>
+		<option name="rotate_left_window_button" />
+		<option name="rotate_right_window_key">&lt;Control&gt;&lt;Alt&gt;&lt;Shift&gt;Right</option>
+		<option name="rotate_right_window_button" />
+		<option name="rotate_to_key1" />
+		<option name="rotate_to_key2" />
+		<option name="rotate_to_key3" />
+		<option name="rotate_to_key4" />
+		<option name="rotate_to_key5" />
+		<option name="rotate_to_key6" />
+		<option name="rotate_to_key7" />
+		<option name="rotate_to_key8" />
+		<option name="rotate_to_key9" />
+		<option name="rotate_with_window_key1" />
+		<option name="rotate_with_window_key2" />
+		<option name="rotate_with_window_key3" />
+		<option name="rotate_with_window_key4" />
+		<option name="rotate_with_window_key5" />
+		<option name="rotate_with_window_key6" />
+		<option name="rotate_with_window_key7" />
+		<option name="rotate_with_window_key8" />
+		<option name="rotate_with_window_key9" />
+
+	</plugin>
+
+	<plugin name="scale">
+
+		<option name="key_bindings_toggle">false</option>
+		<option name="button_bindings_toggle">false</option>
+		<option name="initiate_key">&lt;Shift&gt;&lt;Alt&gt;Up</option>
+		<option name="initiate_button" />
+		<option name="initiate_all_button" />
+		<option name="initiate_all_key" />
+		<option name="show_desktop">true</option>
+		<option name="window_match" screen="0">Toolbar | Utility | Dialog | Normal | Unknown</option>
+		<option name="multioutput_mode" screen="0">0</option>
+		<option name="spacing" screen="0">10</option>
+		<option name="speed" screen="0">1.5</option>
+		<option name="timestep" screen="0">1.2</option>
+		<option name="darken_back" screen="0">true</option>
+		<option name="opacity" screen="0">75</option>
+		<option name="overlay_icon" screen="0">true</option>
+
+	</plugin>
+
+	<plugin name="screenshot">
+
+		<option name="initiate_button">&lt;Super&gt;Button1</option>
+		<option name="directory" />
+		<option name="launch_app" />
+
+	</plugin>
+
+	<plugin name="shift">
+
+		<option name="initiate_key">&lt;Super&gt;&lt;Shift&gt;s</option>
+		<option name="initiate_button" />
+		<option name="initiate_all_key" />
+		<option name="initiate_all_button" />
+		<option name="terminate_button">Button3</option>
+		<option name="next_key">&lt;Super&gt;Tab</option>
+		<option name="prev_key">&lt;Super&gt;&lt;Shift&gt;Tab</option>
+		<option name="next_all_key">&lt;Super&gt;&lt;Alt&gt;Tab</option>
+		<option name="prev_all_key">&lt;Super&gt;&lt;Shift&gt;&lt;Alt&gt;Tab</option>
+		<option name="speed" screen="0">1.5</option>
+		<option name="shift_speed" screen="0">1.0</option>
+		<option name="timestep" screen="0">1.2</option>
+		<option name="window_match" screen="0">Normal | Dialog | ModalDialog | Utility | Unknown</option>
+		<option name="minimized" screen="0">true</option>
+		<option name="mouse_speed" screen="0">10.0</option>
+		<option name="click_duration" screen="0">500</option>
+		<option name="mode" screen="0">0</option>
+		<option name="size" screen="0">50</option>
+		<option name="background_intensity" screen="0">0.5</option>
+		<option name="hide_all" screen="0">false</option>
+		<option name="reflection" screen="0">true</option>
+		<option name="ground_color1" screen="0">#b3b3b3cc</option>
+		<option name="ground_color2" screen="0">#b3b3b300</option>
+		<option name="ground_size" screen="0">0.5</option>
+		<option name="intensity" screen="0">0.4</option>
+		<option name="flip_rotation" screen="0">30</option>
+		<option name="cover_offset" screen="0">0.0</option>
+		<option name="overlay_icon" screen="0">1</option>
+		<option name="mipmaps" screen="0">false</option>
+		<option name="multioutput_mode" screen="0">0</option>
+		<option name="window_title" screen="0">true</option>
+		<option name="title_font_bold" screen="0">false</option>
+		<option name="title_font_family" screen="0">Sans</option>
+		<option name="title_font_size" screen="0">16</option>
+		<option name="title_back_color" screen="0">#00000099</option>
+		<option name="title_font_color" screen="0">#ffffffff</option>
+		<option name="title_text_placement" screen="0">2</option>
+
+	</plugin>
+
+	<plugin name="showmouse">
+
+		<option name="initiate_key">&lt;Super&gt;k</option>
+		<option name="initiate_button" />
+		<option name="rotation_speed" screen="0">0.5</option>
+		<option name="radius" screen="0">100</option>
+		<option name="emitters" screen="0">3</option>
+		<option name="guide_thickness" screen="0">0</option>
+		<option name="guide_empty_radius" screen="0">20</option>
+		<option name="guide_color" screen="0">#ff000099</option>
+		<option name="num_particles" screen="0">500</option>
+		<option name="size" screen="0">10.0</option>
+		<option name="slowdown" screen="0">1.0</option>
+		<option name="life" screen="0">0.7</option>
+		<option name="darken" screen="0">0.9</option>
+		<option name="blend" screen="0">true</option>
+		<option name="color" screen="0">#ffdf40ff</option>
+		<option name="random" screen="0">false</option>
+
+	</plugin>
+
+	<plugin name="snow">
+
+		<option name="num_snowflakes">1500</option>
+		<option name="snow_size">10.0</option>
+		<option name="snow_speed">85</option>
+		<option name="snow_update_delay">40</option>
+		<option name="screen_boxing">400</option>
+		<option name="screen_depth">1000</option>
+		<option name="snow_over_windows">false</option>
+		<option name="snow_rotation">true</option>
+		<option name="snow_direction">0</option>
+		<option name="snow_textures">
+			<item>snowflake.png</item>
+		</option>
+		<option name="use_blending">true</option>
+		<option name="use_textures">true</option>
+		<option name="toggle_key">&lt;Super&gt;F3</option>
+
+	</plugin>
+
+	<plugin name="splash">
+
+		<option name="initiate_key">&lt;Control&gt;F11</option>
+		<option name="firststart">true</option>
+		<option name="background" />
+		<option name="logo" />
+		<option name="fade_time">1.0</option>
+		<option name="display_time">2.0</option>
+		<option name="saturation">50.0</option>
+		<option name="brightness">50.0</option>
+
+	</plugin>
+
+	<plugin name="staticswitcher">
+
+		<option name="next_key">&lt;Alt&gt;Tab</option>
+		<option name="prev_key">&lt;Shift&gt;&lt;Alt&gt;Tab</option>
+		<option name="next_all_key">&lt;Control&gt;&lt;Alt&gt;Tab</option>
+		<option name="prev_all_key">&lt;Shift&gt;&lt;Control&gt;&lt;Alt&gt;Tab</option>
+		<option name="show_popup">true</option>
+		<option name="speed" screen="0">4.0</option>
+		<option name="timestep" screen="0">1.2</option>
+		<option name="window_match" screen="0">Normal | Dialog | Toolbar | Utility | Unknown</option>
+		<option name="minimized" screen="0">true</option>
+		<option name="auto_change_vp" screen="0">false</option>
+		<option name="popup_delay" screen="0">0.0</option>
+		<option name="mouse_select" screen="0">false</option>
+		<option name="saturation" screen="0">50</option>
+		<option name="brightness" screen="0">50</option>
+		<option name="opacity" screen="0">100</option>
+		<option name="icon" screen="0">true</option>
+		<option name="mipmap" screen="0">true</option>
+		<option name="row_align" screen="0">1</option>
+		<option name="highlight_mode" screen="0">1</option>
+		<option name="highlight_rect_hidden" screen="0">1</option>
+		<option name="highlight_color" screen="0">#00000096</option>
+		<option name="highlight_border_color" screen="0">#000000c8</option>
+		<option name="highlight_border_inlay_color" screen="0">#c8c8c8c8</option>
+
+	</plugin>
+
+	<plugin name="svg" />
+
+	<plugin name="switcher">
+
+		<option name="next_key">&lt;Alt&gt;Tab</option>
+		<option name="prev_key">&lt;Shift&gt;&lt;Alt&gt;Tab</option>
+		<option name="next_all_key">&lt;Control&gt;&lt;Alt&gt;Tab</option>
+		<option name="prev_all_key">&lt;Shift&gt;&lt;Control&gt;&lt;Alt&gt;Tab</option>
+		<option name="show_popup">true</option>
+		<option name="speed" screen="0">1.5</option>
+		<option name="timestep" screen="0">1.2</option>
+		<option name="window_match" screen="0">Toolbar | Utility | Dialog | Normal | Unknown</option>
+		<option name="mipmap" screen="0">true</option>
+		<option name="saturation" screen="0">100</option>
+		<option name="brightness" screen="0">65</option>
+		<option name="opacity" screen="0">40</option>
+		<option name="bring_to_front" screen="0">true</option>
+		<option name="zoom" screen="0">1.0</option>
+		<option name="icon" screen="0">true</option>
+		<option name="minimized" screen="0">true</option>
+		<option name="auto_rotate" screen="0">false</option>
+
+	</plugin>
+
+	<plugin name="thumbnail">
+
+		<option name="thumb_size" screen="0">200</option>
+		<option name="show_delay" screen="0">100</option>
+		<option name="border" screen="0">16</option>
+		<option name="thumb_color" screen="0">#0000007f</option>
+		<option name="fade_speed" screen="0">0.5</option>
+		<option name="window_like" screen="0">true</option>
+		<option name="mipmap" screen="0">false</option>
+		<option name="current_viewport" screen="0">true</option>
+		<option name="always_on_top" screen="0">true</option>
+		<option name="title_enabled" screen="0">true</option>
+		<option name="font_bold" screen="0">true</option>
+		<option name="font_family" screen="0">Sans</option>
+		<option name="font_size" screen="0">12</option>
+		<option name="font_color" screen="0">#000000ff</option>
+
+	</plugin>
+
+	<plugin name="titleinfo">
+
+		<option name="show_remote_machine" screen="0">true</option>
+		<option name="show_root" screen="0">true</option>
+
+	</plugin>
+
+	<plugin name="trailfocus">
+
+		<option name="window_match" screen="0">(type=toolbar | type=utility | type=dialog | type=normal) &amp; !(state=skiptaskbar | state=skippager)</option>
+		<option name="windows_count" screen="0">5</option>
+		<option name="windows_start" screen="0">2</option>
+		<option name="max_opacity" screen="0">100</option>
+		<option name="min_opacity" screen="0">70</option>
+		<option name="max_brightness" screen="0">100</option>
+		<option name="min_brightness" screen="0">100</option>
+		<option name="max_saturation" screen="0">100</option>
+		<option name="min_saturation" screen="0">100</option>
+
+	</plugin>
+
+	<plugin name="wall">
+
+		<option name="show_switcher">true</option>
+		<option name="miniscreen">false</option>
+		<option name="left_key">&lt;Control&gt;&lt;Alt&gt;Left</option>
+		<option name="left_button" />
+		<option name="right_key">&lt;Control&gt;&lt;Alt&gt;Right</option>
+		<option name="right_button" />
+		<option name="up_key">&lt;Control&gt;&lt;Alt&gt;Up</option>
+		<option name="up_button" />
+		<option name="down_key">&lt;Control&gt;&lt;Alt&gt;Down</option>
+		<option name="down_button" />
+		<option name="prev_key" />
+		<option name="prev_button" />
+		<option name="next_key" />
+		<option name="next_button" />
+		<option name="left_window_key">&lt;Control&gt;&lt;Alt&gt;&lt;Shift&gt;Left</option>
+		<option name="right_window_key">&lt;Control&gt;&lt;Alt&gt;&lt;Shift&gt;Right</option>
+		<option name="up_window_key">&lt;Control&gt;&lt;Alt&gt;&lt;Shift&gt;Up</option>
+		<option name="down_window_key">&lt;Control&gt;&lt;Alt&gt;&lt;Shift&gt;Down</option>
+		<option name="preview_timeout">0.4</option>
+		<option name="preview_scale">100</option>
+		<option name="edge_radius">5</option>
+		<option name="border_width">10</option>
+		<option name="outline_color">#333333d9</option>
+		<option name="background_gradient_base_color">#cccce5d9</option>
+		<option name="background_gradient_highlight_color">#f2f2ffd9</option>
+		<option name="background_gradient_shadow_color">#f2f2ffd9</option>
+		<option name="thumb_gradient_base_color">#33333359</option>
+		<option name="thumb_gradient_highlight_color">#40404040</option>
+		<option name="thumb_highlight_gradient_base_color">#fffffff2</option>
+		<option name="thumb_highlight_gradient_shadow_color">#dfdfdfa6</option>
+		<option name="arrow_base_color">#e5e5e5d9</option>
+		<option name="arrow_shadow_color">#dbdbdbd9</option>
+		<option name="allow_wraparound">false</option>
+		<option name="slide_duration">0.3</option>
+		<option name="no_slide_match">type=Dock | type=Desktop | state=Sticky</option>
+		<option name="mmmode" screen="0">0</option>
+
+	</plugin>
+
+	<plugin name="wallpaper">
+
+		<option name="bg_image" screen="0" />
+		<option name="bg_image_pos" screen="0" />
+		<option name="bg_fill_type" screen="0" />
+		<option name="bg_color1" screen="0" />
+		<option name="bg_color2" screen="0" />
+
+	</plugin>
+
+	<plugin name="water">
+
+		<option name="initiate_key">&lt;Control&gt;&lt;Super&gt;</option>
+		<option name="toggle_rain_key">&lt;Shift&gt;F9</option>
+		<option name="toggle_wiper_key">&lt;Shift&gt;F8</option>
+		<option name="offset_scale">1.0</option>
+		<option name="rain_delay">250</option>
+		<option name="title_wave">false</option>
+
+	</plugin>
+
+	<plugin name="winrules">
+
+		<option name="skiptaskbar_match" screen="0" />
+		<option name="skippager_match" screen="0" />
+		<option name="above_match" screen="0" />
+		<option name="below_match" screen="0" />
+		<option name="sticky_match" screen="0" />
+		<option name="fullscreen_match" screen="0" />
+		<option name="maximize_match" screen="0" />
+		<option name="no_argb_match" screen="0" />
+		<option name="no_move_match" screen="0" />
+		<option name="no_resize_match" screen="0" />
+		<option name="no_minimize_match" screen="0" />
+		<option name="no_maximize_match" screen="0" />
+		<option name="no_close_match" screen="0" />
+		<option name="no_focus_match" screen="0" />
+		<option name="size_matches" screen="0" />
+		<option name="size_width_values" screen="0" />
+		<option name="size_height_values" screen="0" />
+
+	</plugin>
+
+	<plugin name="wobbly">
+
+		<option name="snap_key">&lt;Shift&gt;</option>
+		<option name="snap_inverted">true</option>
+		<option name="shiver">true</option>
+		<option name="friction" screen="0">3.0</option>
+		<option name="spring_k" screen="0">8.0</option>
+		<option name="grid_resolution" screen="0">8</option>
+		<option name="min_grid_size" screen="0">8</option>
+		<option name="map_effect" screen="0">1</option>
+		<option name="focus_effect" screen="0">1</option>
+		<option name="map_window_match" screen="0">Splash | DropdownMenu | PopupMenu | Tooltip | Notification | Combo | Dnd | Unknown</option>
+		<option name="focus_window_match" screen="0" />
+		<option name="grab_window_match" screen="0" />
+		<option name="move_window_match" screen="0">Toolbar | Menu | Utility | Dialog | Normal | Unknown</option>
+		<option name="maximize_effect" screen="0">true</option>
+
+	</plugin>
+
+	<plugin name="workarounds">
+
+		<option name="legacy_fullscreen">false</option>
+		<option name="firefox_menu_fix">false</option>
+		<option name="ooo_menu_fix">true</option>
+		<option name="notification_daemon_fix">false</option>
+		<option name="java_fix">true</option>
+		<option name="java_taskbar_fix">false</option>
+		<option name="qt_fix">false</option>
+		<option name="convert_urgency">false</option>
+		<option name="aiglx_fragment_fix">true</option>
+		<option name="fglrx_xgl_fix">false</option>
+		<option name="force_glx_sync">true</option>
+		<option name="sticky_alldesktops">false</option>
+		<option name="alldesktop_sticky_match">any</option>
+
+	</plugin>
+
+	<plugin name="wsnames">
+
+		<option name="workspace_number" screen="0" />
+		<option name="workspace_name" screen="0" />
+		<option name="display_time" screen="0">0.5</option>
+		<option name="fade_time" screen="0">0.25</option>
+		<option name="bold_text" screen="0">true</option>
+		<option name="font_size" screen="0">16</option>
+		<option name="font_family" screen="0">Sans</option>
+		<option name="text_placement" screen="0">0</option>
+		<option name="back_color" screen="0">#00000099</option>
+		<option name="font_color" screen="0">#ffffffff</option>
+
+	</plugin>
+</fusilli>

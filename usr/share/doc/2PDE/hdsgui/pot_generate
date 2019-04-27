@@ -1,0 +1,16 @@
+#!/bin/sh
+
+export TEXTDOMAIN=2P_translation_manager
+export TEXTDOMAINDIR=/usr/share/locale
+export OUTPUT_CHARSET=UTF-8
+. gettext.sh
+
+PPDE_DIR="`pwd`"
+PROG="${PWD##*/}"
+APP_DIR="/usr/local/$PROG"
+
+xgettext -L shell $APP_DIR/${PROG}.sh -o $PPDE_DIR/${PROG}.sh.pot
+xgettext -L shell $APP_DIR/${PROG}_systray -o $PPDE_DIR/${PROG}_systray.pot
+
+Xdialog --title "$PPDE_DIR" --icon /usr/local/lib/X11/pixmaps/ok.png --msgbox "$(eval_gettext '$PROG pot file(s) generated!')" 0 0
+exit

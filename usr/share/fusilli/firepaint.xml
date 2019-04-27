@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fusilli>
+	<plugin name="firepaint">
+		<short>Firepaint</short>
+		<long>Paint fire on the screen</long>
+		<category>Effects</category>
+
+		<group>
+			<short>General</short>
+
+			<subgroup>
+				<option type="string" name="initiate_button">
+					<short>Initiate Button</short>
+					<long>Initiate fire drawing</long>
+					<hint>button</hint>
+					<default>&lt;Super&gt;&lt;Shift&gt;Button1</default>
+				</option>
+
+				<option type="string" name="clear_key">
+					<short>Clear Key</short>
+					<long>Clear</long>
+					<long xml:lang="bg">Изчистване</long>
+					<long xml:lang="bn">পরিষ্কার করা</long>
+					<long xml:lang="bn_IN">পরিষ্কার করো</long>
+					<long xml:lang="ca">Borra</long>
+					<long xml:lang="cs">Vymazat</long>
+					<long xml:lang="de">Leeren</long>
+					<long xml:lang="el">Καθάρισμα</long>
+					<long xml:lang="es">Limpiar</long>
+					<long xml:lang="eu">Garbitu</long>
+					<long xml:lang="fi">Tyhjennä</long>
+					<long xml:lang="fr">Effacer</long>
+					<long xml:lang="gl">Limpar</long>
+					<long xml:lang="gu">સાફ કરો</long>
+					<long xml:lang="he">נקה</long>
+					<long xml:lang="hi">साफ करें</long>
+					<long xml:lang="hr">Izbrisi</long>
+					<long xml:lang="hu">Törlés</long>
+					<long xml:lang="it">Pulisci</long>
+					<long xml:lang="ja">消去</long>
+					<long xml:lang="ko">지우기</long>
+					<long xml:lang="nb">Rens</long>
+					<long xml:lang="nl">Wissen</long>
+					<long xml:lang="or">ପରିଷ୍କାରକର</long>
+					<long xml:lang="pl">Czyść</long>
+					<long xml:lang="pt">Limpar</long>
+					<long xml:lang="pt_BR">Limpar</long>
+					<long xml:lang="ro">Curăță</long>
+					<long xml:lang="ru">Очистить</long>
+					<long xml:lang="sk">Vyčistiť</long>
+					<long xml:lang="sl">Počisti</long>
+					<long xml:lang="sv">Töm</long>
+					<long xml:lang="tr">Temizle</long>
+					<long xml:lang="uk">Очистити</long>
+					<long xml:lang="zh_CN">清除</long>
+					<long xml:lang="zh_TW">清除桌面塗鴉</long>
+					<hint>key</hint>
+					<default>&lt;Super&gt;&lt;Shift&gt;c</default>
+				</option>
+
+				<option type="int" per_screen="true" name="num_particles">
+					<short>Number of particles</short>
+					<long>Maximum number of active particles</long>
+					<default>3000</default>
+					<min>100</min>
+					<max>20000</max>
+				</option>
+
+				<option type="float" per_screen="true" name="fire_size">
+					<short>Fire Particle Size</short>
+					<long>Fire particle size.</long>
+					<default>15.0</default>
+					<min>0.1</min>
+					<max>40</max>
+					<precision>0.1</precision>
+				</option>
+
+				<option type="float" per_screen="true" name="fire_slowdown">
+					<short>Fire Particle Slowdown</short>
+					<long>Fire particle slowdown.</long>
+					<default>0.5</default>
+					<min>0.1</min>
+					<max>10</max>
+					<precision>0.1</precision>
+				</option>
+
+				<option type="float" per_screen="true" name="fire_life">
+					<short>Fire Particle Life</short>
+					<long>Fire particle life.</long>
+					<default>0.7</default>
+					<min>0.1</min>
+					<max>0.95</max>
+					<precision>0.05</precision>
+				</option>
+
+				<option type="string" per_screen="true" name="fire_color">
+					<short>Fire Particle Color</short>
+					<long>Fire particle color.</long>
+					<hint>color</hint>
+					<default>#ff3305ff</default>
+				</option>
+
+				<option type="bool" per_screen="true" name="fire_mystical">
+					<short>Randomly Colored Fire</short>
+					<long>Have random colors for the fire effect, also known as Mystical Fire.</long>
+					<default>false</default>
+				</option>
+
+				<option type="int" per_screen="true" name="bg_brightness">
+					<short>Background brightness</short>
+					<long>Background brightness during paint</long>
+					<default>50</default>
+					<min>0</min>
+					<max>100</max>
+				</option>
+			</subgroup>
+		</group>
+	</plugin>
+</fusilli>

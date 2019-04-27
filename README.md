@@ -19,13 +19,17 @@ Aqui todo el listado de cosas por hacer al proyecto, cambios en el tiempo, soluc
 
 ## Cosas por agregar ##
 - Control de temperatura del cpu
-- Control de brillo
+- Control de brillo (listo)
 - Actualizador
-- Monitor de usb insertadas
-- Control del estado del disco duro
+- Monitor de usb insertadas (listo)
+- Control del estado del disco duros (listo)
 - Fondos de escritorio
 - Temas de iconos
-- bugfixes apagado
+- bugfixes apagado (listo)
+- fix de cups (listo)
+- fusilli rotini preconfigurado (listo)
+- Administrador Samba (listo)
+
 
 Cuando todo esto esté superado, cambiará a estado Beta.
 

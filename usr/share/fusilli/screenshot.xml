@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fusilli>
+	<plugin name="screenshot">
+		<short>Screenshot</short>
+		<short xml:lang="bg">Снимка на екрана</short>
+		<short xml:lang="cs">Snímek obrazovky</short>
+		<short xml:lang="de">Bildschirmfoto</short>
+		<short xml:lang="el">Αρπαγή Οθόνης</short>
+		<short xml:lang="es">Captura de Pantalla</short>
+		<short xml:lang="eu">Pantaila argazkia</short>
+		<short xml:lang="fi">Kuvakaappaus</short>
+		<short xml:lang="fr">Capture d'écran</short>
+		<short xml:lang="gl">Captura de pantalla</short>
+		<short xml:lang="gu">સ્ક્રીનશોટ</short>
+		<short xml:lang="he">צילום מסך</short>
+		<short xml:lang="hu">Képernyőkép</short>
+		<short xml:lang="it">Cattura schermate</short>
+		<short xml:lang="ja">スクリーンショット</short>
+		<short xml:lang="ko">스크린샷</short>
+		<short xml:lang="nb">Skjermbilde</short>
+		<short xml:lang="nl">Schermafdruk</short>
+		<short xml:lang="or">ସ୍କ୍ରିନ ସଟ</short>
+		<short xml:lang="pl">Zrzut ekranu</short>
+		<short xml:lang="pt">Captura de ecrã</short>
+		<short xml:lang="pt_BR">Capturar tela</short>
+		<short xml:lang="ro">Captură de ecran</short>
+		<short xml:lang="ru">Снимок экрана</short>
+		<short xml:lang="sk">Snímka obrazovky</short>
+		<short xml:lang="sv">Skärmbild</short>
+		<short xml:lang="tr">Ekran Görüntüsü</short>
+		<short xml:lang="uk">Знімок екрану</short>
+		<short xml:lang="zh_CN">截屏</short>
+		<short xml:lang="zh_TW">螢幕擷取</short>
+		<long>Screenshot plugin</long>
+		<long xml:lang="bg">Модул за снимки на екрана</long>
+		<long xml:lang="cs">Modul snímku obrazovky</long>
+		<long xml:lang="de">Plugin, mit dessen Hilfe Bildschirmfotos aufgenommen werden können</long>
+		<long xml:lang="el">Πρόσθετο αρπαγής οθόνης</long>
+		<long xml:lang="es">Plugin de captura de pantalla</long>
+		<long xml:lang="eu">Pantaila argazkia plugin</long>
+		<long xml:lang="fi">Kuvakaappaus-liitännäinen</long>
+		<long xml:lang="fr">Extension de capture d'écran</long>
+		<long xml:lang="gl">Complemento para a Captura de Pantalla</long>
+		<long xml:lang="gu">સ્ક્રીનશોટ પ્લગઈન</long>
+		<long xml:lang="he">התקן צילום מסך</long>
+		<long xml:lang="hu">Képernyőkép bővítmény</long>
+		<long xml:lang="it">Plugin per catturare schermate</long>
+		<long xml:lang="ja">スクリーンショット・プラグイン</long>
+		<long xml:lang="ko">스크린샷 플러그인</long>
+		<long xml:lang="nb">Tillegg for skjermbilde</long>
+		<long xml:lang="nl">Schermafdruk plugin</long>
+		<long xml:lang="or">ସ୍କ୍ରିନସଟ ପ୍ଲଗଇନ</long>
+		<long xml:lang="pl">Wtyczka zrzutów ekranu</long>
+		<long xml:lang="pt">Plugin de captura de ecrã</long>
+		<long xml:lang="pt_BR">Plugin de captura de tela</long>
+		<long xml:lang="ru">Модуль снимка экрана</long>
+		<long xml:lang="sk">Modul snímky obrazovky</long>
+		<long xml:lang="sv">Insticksmodul för skärmbild</long>
+		<long xml:lang="tr">Ekran görüntüsü yakalama eklentisi</long>
+		<long xml:lang="uk">Модуль знімка екрана</long>
+		<long xml:lang="zh_CN">截屏插件</long>
+		<long xml:lang="zh_TW">螢幕擷取外掛</long>
+		<category>Extras</category>
+
+		<group>
+			<short>General</short>
+
+			<subgroup>
+				<option type="string" name="initiate_button">
+					<short>Initiate</short>
+					<short xml:lang="bg">Започни</short>
+					<short xml:lang="bn">শুরু </short>
+					<short xml:lang="bn_IN">শুরু </short>
+					<short xml:lang="ca">Inicia</short>
+					<short xml:lang="cs">Iniciovat</short>
+					<short xml:lang="da">Start</short>
+					<short xml:lang="de">Initiieren</short>
+					<short xml:lang="el">Εκκίνηση</short>
+					<short xml:lang="es">Iniciar</short>
+					<short xml:lang="eu">Hasi</short>
+					<short xml:lang="fi">Aktivoi</short>
+					<short xml:lang="fr">Lancer</short>
+					<short xml:lang="gl">Iniciar</short>
+					<short xml:lang="he">התחל</short>
+					<short xml:lang="hu">Indítás</short>
+					<short xml:lang="it">Avvia</short>
+					<short xml:lang="ja">開始</short>
+					<short xml:lang="ko">시작</short>
+					<short xml:lang="nb">Begynn</short>
+					<short xml:lang="nl">Initialiseren</short>
+					<short xml:lang="or">ପ୍ରାରମ୍ଭ କର</short>
+					<short xml:lang="pl">Inicjuj</short>
+					<short xml:lang="pt">Iniciar</short>
+					<short xml:lang="pt_BR">Iniciar</short>
+					<short xml:lang="ro">Inițiere</short>
+					<short xml:lang="ru">Инициировать</short>
+					<short xml:lang="sk">Začať</short>
+					<short xml:lang="sl">Inicializiraj</short>
+					<short xml:lang="sv">Initiera</short>
+					<short xml:lang="tr">Başla</short>
+					<short xml:lang="uk">Ініціювати</short>
+					<short xml:lang="zh_CN">启动</short>
+					<short xml:lang="zh_TW">開始畫按鍵</short>
+					<long>Initiate rectangle screenshot</long>
+					<long xml:lang="cs">Pořídit snímek obrazovky</long>
+					<long xml:lang="de">Start der Auswahl des aufzunehmenden Rechtecks</long>
+					<long xml:lang="el">Εκκίνηση τετράγωνης αρπαγής οθόνης</long>
+					<long xml:lang="es">Inicia captura de pantalla rectangular</long>
+					<long xml:lang="eu">Hasi laukizuzen pantaila argazkia</long>
+					<long xml:lang="fi">Käynnistä suorakulmion muotoinen kuvankaappaaja</long>
+					<long xml:lang="fr">Lancer une capture d'écran</long>
+					<long xml:lang="gl">Iniciar Rectángulo de Captura de Pantalla </long>
+					<long xml:lang="he">הפעל צילום מסך של מרובע</long>
+					<long xml:lang="hu">Téglalap képernyőkép készítése</long>
+					<long xml:lang="it">Cattura schermata rettangolare</long>
+					<long xml:lang="ja">矩形選択スクリーンショットを開始</long>
+					<long xml:lang="ko">사각형 형태의 스크린샷을 찍음</long>
+					<long xml:lang="nb">Begynn rektangulært skjermbilde</long>
+					<long xml:lang="nl">Initiëer rechthoek schermafdruk</long>
+					<long xml:lang="or">ଆଯତାକାର ସ୍କ୍ରିସଟକୁ ଆରମ୍ଭକର</long>
+					<long xml:lang="pl">Rozpocznik prostokątny zrzut ekranu</long>
+					<long xml:lang="pt">Captura de secção rectangular do ecrã</long>
+					<long xml:lang="pt_BR">Captura de uma parte retangular da tela</long>
+					<long xml:lang="ru">Сделать снимок области</long>
+					<long xml:lang="sk">Zosnímať obrazovku</long>
+					<long xml:lang="tr">Dikdörtgen ekran görüntüsünü başlat</long>
+					<long xml:lang="uk">Зробити знімок області</long>
+					<long xml:lang="zh_CN">启动矩形截屏</long>
+					<long xml:lang="zh_TW">啟用矩型選擇擷取螢幕</long>
+					<hint>button</hint>
+					<default>&lt;Super&gt;Button1</default>
+				</option>
+
+				<option type="string" name="directory">
+					<short>Directory</short>
+					<short xml:lang="bg">Директория</short>
+					<short xml:lang="bn">ডিরেক্টরী</short>
+					<short xml:lang="bn_IN">ডিরেক্টরী</short>
+					<short xml:lang="cs">Adresář</short>
+					<short xml:lang="de">Verzeichnis</short>
+					<short xml:lang="el">Διαδρομή</short>
+					<short xml:lang="es">Carpeta</short>
+					<short xml:lang="eu">Direktorioa</short>
+					<short xml:lang="fi">Hakemisto</short>
+					<short xml:lang="fr">Répertoire</short>
+					<short xml:lang="gl">Cartafol</short>
+					<short xml:lang="he">ספריה</short>
+					<short xml:lang="hi">निर्देशिका</short>
+					<short xml:lang="hu">Könyvtár</short>
+					<short xml:lang="it">Directory</short>
+					<short xml:lang="ja">ディレクトリ</short>
+					<short xml:lang="ko">디렉토리</short>
+					<short xml:lang="nb">Katalog</short>
+					<short xml:lang="nl">Directory</short>
+					<short xml:lang="or">ବିବରଣୀପଞ୍ଜିକା</short>
+					<short xml:lang="pl">Katalog</short>
+					<short xml:lang="pt">Directório</short>
+					<short xml:lang="pt_BR">Diretório</short>
+					<short xml:lang="ru">Каталог</short>
+					<short xml:lang="sk">Priečinok</short>
+					<short xml:lang="sv">Katalog</short>
+					<short xml:lang="tr">Dizin</short>
+					<short xml:lang="uk">Каталог</short>
+					<short xml:lang="zh_CN">目录</short>
+					<short xml:lang="zh_TW">目錄</short>
+					<long>Put screenshot images in this directory. If empty, the desktop directory will be used.</long>
+					<default/>
+				</option>
+
+				<option type="string" name="launch_app">
+					<short>Launch Application</short>
+					<short xml:lang="bg">Стартирай приложение</short>
+					<short xml:lang="bn">স্থাপনকার্যের অনুপ্রয়োগ</short>
+					<short xml:lang="bn_IN">স্থাপনকার্যের অনুপ্রয়োগ</short>
+					<short xml:lang="cs">Spustit aplikaci : </short>
+					<short xml:lang="de">Anwendung starten</short>
+					<short xml:lang="el">Εκκίνηση Εφαρμογής</short>
+					<short xml:lang="es">Iniciar Aplicación</short>
+					<short xml:lang="eu">Abiarazi aplikazioa</short>
+					<short xml:lang="fi">Suorita sovellus</short>
+					<short xml:lang="fr">Lancer une Application</short>
+					<short xml:lang="gl">Lanzar Aplicación</short>
+					<short xml:lang="gu">કાર્યક્રમ લાવો</short>
+					<short xml:lang="he">שגר יישום</short>
+					<short xml:lang="hi">अनुप्रयोग लांच करें</short>
+					<short xml:lang="hu">Alkalmazás indítása</short>
+					<short xml:lang="it">Applicazione da eseguire</short>
+					<short xml:lang="ja">起動アプリケーション</short>
+					<short xml:lang="ko">프로그램 실행</short>
+					<short xml:lang="nb">Kjør program</short>
+					<short xml:lang="nl">Start toepassing</short>
+					<short xml:lang="or">ପ୍ରାରମ୍ଭକରିବା ପ୍ରଯୋଗ</short>
+					<short xml:lang="pl">Uruchom program</short>
+					<short xml:lang="pt">Iniciar Aplicação</short>
+					<short xml:lang="pt_BR">Iniciar Aplicação</short>
+					<short xml:lang="ro">Lansare aplicație</short>
+					<short xml:lang="ru">Запустить приложение</short>
+					<short xml:lang="sk">Spustiť aplikáciu</short>
+					<short xml:lang="sv">Kör program</short>
+					<short xml:lang="tr">Uygulamayı Başlat</short>
+					<short xml:lang="uk">Запустити програму</short>
+					<short xml:lang="zh_CN">启动应用程序</short>
+					<short xml:lang="zh_TW">啟動的應用程式</short>
+					<long>Automatically open screenshot in this application</long>
+					<long xml:lang="bn">এই অনুপ্রয়োগে স্ক্রিনশটগুলি স্বয়ংক্রিয়ভাবে খুলে যায়</long>
+					<long xml:lang="bn_IN">এই অনুপ্রয়োগে স্ক্রিনশটগুলি স্বয়ংক্রিয়ভাবে খুলে যায়</long>
+					<long xml:lang="cs">Automaticky otevřít snímek v této aplikaci</long>
+					<long xml:lang="de">Bildschirmfoto automatisch mit dieser Anwendung öffnen</long>
+					<long xml:lang="el">Αυτόματο άνοιγμα αρπαγής οθόνης σε αυτή την εφαρμογή</long>
+					<long xml:lang="es">Automaticamente toma una captura de pantalla en esta aplicación</long>
+					<long xml:lang="eu">Auomatikoki ireki pantaila argazkia aplikazio honetan</long>
+					<long xml:lang="fi">Ohjelma joka automaattisesti avaa kuvakaappauksen</long>
+					<long xml:lang="fr">Ouvrir automatiquement la capture d'écran dans cette application</long>
+					<long xml:lang="gl">Abrir automaticamente a captura de pantalla con esta aplicación</long>
+					<long xml:lang="gu">સ્ક્રીનશોટ આપોઆપ આ કાર્યક્રમમાં ખોલો</long>
+					<long xml:lang="he">פתח אוטומטית צילומי מסך ביישום זה</long>
+					<long xml:lang="hi">इस अनुप्रयोग में स्वतः स्क्रीनशॉट खोलें</long>
+					<long xml:lang="hu">A automatikus indítása bejelentkezéskor</long>
+					<long xml:lang="it">Apre le schermate con questa applicazione</long>
+					<long xml:lang="ja">スクリーンショット画像をこのアプリケーションで自動的に開く</long>
+					<long xml:lang="ko">이 프로그램을 사용하여 스크린샷을 자동으로 열기</long>
+					<long xml:lang="nb">Åpne skjermbilde automatisk med dette programmet</long>
+					<long xml:lang="nl">Automatisch schermafdruk openen in deze applicatie</long>
+					<long xml:lang="or">ଏହି ପ୍ରଯୋଗରେ ସ୍ବଯଂଚାଳିତଭାବରେ ସ୍କ୍ରିନସଟ ଖୋଲ</long>
+					<long xml:lang="pa">ਇਹ ਐਪਲੀਕੇਸ਼ਨ ਵਿੱਚ ਆਟੋਮੈਟਿਕ ਹੀ ਸਕਰੀਨਸ਼ਾਟ ਖੋਲ੍ਹੋ</long>
+					<long xml:lang="pl">Automatycznie otwiera zrzut ekrany w tym programie</long>
+					<long xml:lang="pt">Abrir automaticamente captura de ecrã nesta aplicação</long>
+					<long xml:lang="pt_BR">Abrir automaticamente captura de tela nesta aplicação</long>
+					<long xml:lang="ro">Deschide captura de ecran automat în această aplicație</long>
+					<long xml:lang="ru">Автоматически снимок экрана в этой программе</long>
+					<long xml:lang="sk">Automaticky otvoriť snímku v tejto aplikácii</long>
+					<long xml:lang="sv">Öppna automatiskt skärmbilder i detta program</long>
+					<long xml:lang="tr">Ekran görüntüsünü otomatik olarak bu uygulama ile aç</long>
+					<long xml:lang="uk">Автоматично знімок екрану в цій програмі</long>
+					<long xml:lang="zh_CN">在该应用程序中自动开启截屏</long>
+					<long xml:lang="zh_TW">在這個應用程式中自動開啟螢幕擷取</long>
+					<default/>
+				</option>
+			</subgroup>
+		</group>
+	</plugin>
+</fusilli>

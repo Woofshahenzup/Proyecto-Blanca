@@ -1,0 +1,217 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-20 10:58+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+############hdsgui.sh
+#: /usr/local/hdsgui/hdsgui.sh:7
+msgid "Error!"
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:7
+msgid ""
+"Hard Disk Sentinel (hdsentinel) missing!\n"
+"Please install it and try again.\n"
+"Exiting..."
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:19
+msgid "Set hard disk(s) acoustic setting:"
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:22
+msgid "(NOT SUPPORTED)"
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:39 /usr/local/hdsgui/hdsgui.sh:105
+#: /usr/local/hdsgui/hdsgui.sh:106 /usr/local/hdsgui/hdsgui.sh:147
+#: /usr/local/hdsgui/hdsgui.sh:150
+msgid "QUICK"
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:43 /usr/local/hdsgui/hdsgui.sh:280
+msgid "WARNING!"
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:43 /usr/local/hdsgui/hdsgui.sh:282
+msgid ""
+"One or several disk(s) connected to your motherboard\n"
+"or an external controller card strongly requires your attention."
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:46
+msgid "Please read carefully the report that will now be displayed..."
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:55 /usr/local/hdsgui/hdsgui.sh:137
+msgid "About"
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:58
+msgid "Basic GUI for hdsentinel 32/64 bit"
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:59 /usr/local/hdsgui/hdsgui.sh:64
+msgid "Argolance <i>(March 2019)"
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:63
+msgid "Systray notification icon"
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:79 /usr/local/hdsgui/hdsgui.sh:130
+msgid "HDS GUI"
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:79 /usr/local/hdsgui/hdsgui.sh:133
+msgid "Help"
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:81
+msgid ""
+"Hard Disk Sentinel</b> <i>(hdsentinel)</i> gives information about the "
+"temperature and health status of IDE, S-ATA, SCSI and USB hard disk<i>(s)</"
+"i> connected to motherboard or external controller cards.\n"
+"\t<b>HDS GUI</b> creates a directory of log files at first run, allowing "
+"user to look at them then note any suspect changes and a warning blinking "
+"systray icon can be displayed if a disk requires attention...\n"
+"<b>Notes:</b>\n"
+"\tIt is the hard disk itself that detects the problems and <b>Hard Disk "
+"Sentinel</b> reads them, interprets and displays them exactly to increase "
+"the attention about the change and allow time to prepare<i>(for example)</i> "
+"doing a backup.\n"
+"\tThe possible bad sectors reported in the text description are no longer "
+"used by the hard disk: they are already reallocated. So the spare area is "
+"used for all reads and writes targeting those bad sectors. This means that "
+"disk surface tests <i>(even the tests in <b>Hard Disk Sentinel</b>)</i> does "
+"not access those sectors, but tests the remaining data area and the spare "
+"area, so you can be sure that the original <i>(bad)</i> area does not "
+"contain important data and cannot risk data loss although having high number "
+"of reallocated sectors can be risky - as more problems may be expected with "
+"higher chance.\n"
+"\tBy using the surface tests, you can verify if the currently used data area "
+"is error-free and if there are no further errors reported <i>(no weak, "
+"damaged sectors, no further problems)."
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:103
+msgid "Please wait, hdsentinel is collecting data..."
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:109
+#, sh-format
+msgid ""
+"Hard Disk Sentinel - QUICK report - $DATE\n"
+"******************************************************************************************************"
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:116 /usr/local/hdsgui/hdsgui.sh:154
+#: /usr/local/hdsgui/hdsgui.sh:157
+msgid "FULL"
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:119
+#, sh-format
+msgid ""
+"Hard Disk Sentinel - FULL report - $DATE\n"
+"******************************************************************************************************"
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:142
+msgid "REPORT | HD ACOUSTIC SETTING | OPTIONS"
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:144
+msgid "Type of report to generate and display:"
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:153
+msgid "Full report with S.M.A.R.T parameters"
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:163
+msgid "Open log files directory:"
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:178 /usr/local/hdsgui/hdsgui.sh:224
+msgid "Enable"
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:190
+msgid "Optimize complete system for silence"
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:196
+msgid "Optimize complete system for high performance"
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:203 /usr/local/hdsgui/hdsgui.sh:250
+msgid "Exit and save changes"
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:216
+msgid "Examine disk(s) configuration at Startup:"
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:219
+msgid ""
+"A warning blinking systray icon can be displayed if any disk connected to "
+"the motherboard or an external controller card requires attention..."
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:231
+msgid "(Display duration:"
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:236
+msgid "seconds)"
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:237
+#, sh-format
+msgid ""
+"Click this button to test the systray icon with current display duration: <b>"
+"$DURATION</b>.\n"
+" Note that the selected value is saved only if you click the Ok button."
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:241
+msgid "Test"
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:262
+msgid "Exit the program without saving changes"
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui.sh:284
+msgid "Please, click this systray icon to run HDS GUI..."
+msgstr ""
+
+#############hdsgui_systray
+#: /usr/local/hdsgui/hdsgui_systray:19
+#msgid "WARNING!"
+#msgstr ""
+
+#: /usr/local/hdsgui/hdsgui_systray:21
+msgid ""
+"One or several disk(s) connected to your motherboard or an external "
+"controller card strongly requires your attention."
+msgstr ""
+
+#: /usr/local/hdsgui/hdsgui_systray:22
+#msgid "Please, click this systray icon to run HDS GUI..."
+#msgstr ""

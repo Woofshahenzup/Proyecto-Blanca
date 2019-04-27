@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fusilli>
+	<plugin name="annotate">
+		<short>Annotate</short>
+		<short xml:lang="bg">Анотации</short>
+		<short xml:lang="bn">অ্যানোটেট</short>
+		<short xml:lang="bn_IN">অ্যানোটেট</short>
+		<short xml:lang="cs">Anotace</short>
+		<short xml:lang="de">Auf den Bildschirm zeichnen</short>
+		<short xml:lang="el">Επισημείωση</short>
+		<short xml:lang="es">Anotar</short>
+		<short xml:lang="eu">Oharrak idatzi</short>
+		<short xml:lang="fi">Piirros</short>
+		<short xml:lang="fr">Annoter</short>
+		<short xml:lang="gl">Anotacións</short>
+		<short xml:lang="he">ציור הערות</short>
+		<short xml:lang="hu">Feljegyzés</short>
+		<short xml:lang="it">Annotazioni</short>
+		<short xml:lang="ja">注釈線</short>
+		<short xml:lang="ko">주석</short>
+		<short xml:lang="nb">Påfør</short>
+		<short xml:lang="nl">Annoteer</short>
+		<short xml:lang="or">ବ୍ଯାଖ୍ଯା କର</short>
+		<short xml:lang="pl">Rysowanie</short>
+		<short xml:lang="pt">Anotar</short>
+		<short xml:lang="pt_BR">Anotar</short>
+		<short xml:lang="ro">Adnotări</short>
+		<short xml:lang="ru">Заметка</short>
+		<short xml:lang="sk">Poznámka</short>
+		<short xml:lang="sv">Anteckning</short>
+		<short xml:lang="tr">Notlar</short>
+		<short xml:lang="uk">Коментар</short>
+		<short xml:lang="zh_CN">注解</short>
+		<short xml:lang="zh_TW">桌面畫筆</short>
+		<long>Annotate plugin</long>
+		<long xml:lang="bg">Модул за анотации</long>
+		<long xml:lang="bn">অ্যানোটেট প্লাগ ইন</long>
+		<long xml:lang="bn_IN">অ্যানোটেট প্লাগিন</long>
+		<long xml:lang="de">Bildschirmnotiz-Plugin</long>
+		<long xml:lang="el">Πρόσθετο επισημείωση</long>
+		<long xml:lang="es">plugin Anotar</long>
+		<long xml:lang="eu">Oharren plugina</long>
+		<long xml:lang="fi">Piirroksen liitännäiset</long>
+		<long xml:lang="fr">Extension "Annotation"</long>
+		<long xml:lang="gl">Complemento de Anotacións</long>
+		<long xml:lang="he">התקן ציור הערות</long>
+		<long xml:lang="hu">Feljegyzés bővítmény</long>
+		<long xml:lang="it">Plugin per prendere annotazioni</long>
+		<long xml:lang="ja">注釈線プラグイン</long>
+		<long xml:lang="ko">주석 플러그인</long>
+		<long xml:lang="nb">Påfør-tillegg</long>
+		<long xml:lang="nl">Annoteer plug-in</long>
+		<long xml:lang="or">ପ୍ଲଗଇନ ବ୍ଯାଖ୍ଯାକର</long>
+		<long xml:lang="pl">Wtyczka rysowania</long>
+		<long xml:lang="pt">Plugin de anotações</long>
+		<long xml:lang="pt_BR">Plugin de Anotações</long>
+		<long xml:lang="ro">Modúl Adnotare</long>
+		<long xml:lang="ru">Модуль заметки</long>
+		<long xml:lang="sk">Zásuvný modul poznámok</long>
+		<long xml:lang="sv">Insticksmodul för anteckningar</long>
+		<long xml:lang="tr">Not eklentisi</long>
+		<long xml:lang="uk">Модуль нотатки</long>
+		<long xml:lang="zh_CN">注解插件</long>
+		<long xml:lang="zh_TW">桌面畫筆外掛</long>
+		<category>Extras</category>
+
+		<group>
+			<short>General</short>
+
+			<subgroup>
+				<option type="string" name="initiate_button">
+					<short>Initiate</short>
+					<short xml:lang="bg">Започни</short>
+					<short xml:lang="bn">শুরু </short>
+					<short xml:lang="bn_IN">শুরু </short>
+					<short xml:lang="ca">Inicia</short>
+					<short xml:lang="cs">Iniciovat</short>
+					<short xml:lang="da">Start</short>
+					<short xml:lang="de">Initiieren</short>
+					<short xml:lang="el">Εκκίνηση</short>
+					<short xml:lang="es">Iniciar</short>
+					<short xml:lang="eu">Hasi</short>
+					<short xml:lang="fi">Aktivoi</short>
+					<short xml:lang="fr">Lancer</short>
+					<short xml:lang="gl">Iniciar</short>
+					<short xml:lang="he">התחל</short>
+					<short xml:lang="hu">Indítás</short>
+					<short xml:lang="it">Avvia</short>
+					<short xml:lang="ja">開始</short>
+					<short xml:lang="ko">시작</short>
+					<short xml:lang="nb">Begynn</short>
+					<short xml:lang="nl">Initialiseren</short>
+					<short xml:lang="or">ପ୍ରାରମ୍ଭ କର</short>
+					<short xml:lang="pl">Inicjuj</short>
+					<short xml:lang="pt">Iniciar</short>
+					<short xml:lang="pt_BR">Iniciar</short>
+					<short xml:lang="ro">Inițiere</short>
+					<short xml:lang="ru">Инициировать</short>
+					<short xml:lang="sk">Začať</short>
+					<short xml:lang="sl">Inicializiraj</short>
+					<short xml:lang="sv">Initiera</short>
+					<short xml:lang="tr">Başla</short>
+					<short xml:lang="uk">Ініціювати</short>
+					<short xml:lang="zh_CN">启动</short>
+					<short xml:lang="zh_TW">開始畫按鍵</short>
+					<long>Initiate annotate drawing</long>
+					<long xml:lang="bg">Започни изчертаване на анотация</long>
+					<long xml:lang="bn_IN">অ্যানোটেটন এ অঙ্কন শুরু করো</long>
+					<long xml:lang="de">Zeichnen initiieren</long>
+					<long xml:lang="el">Εκκίνηση ζωγραφίσματος επισημείωσης</long>
+					<long xml:lang="es">Iniciar dibujo de Anotar</long>
+					<long xml:lang="eu">Hasi oharren marraztea</long>
+					<long xml:lang="fi">Aktivoi piirtäminen</long>
+					<long xml:lang="fr">Lancer le dessin d'annotations</long>
+					<long xml:lang="gl">Iniciar debuxo das anotacións</long>
+					<long xml:lang="he">התחל לצייר הערות</long>
+					<long xml:lang="hu">Feljegyzésrajzolás indítása</long>
+					<long xml:lang="it">Avvia il disegno delle annotazioni</long>
+					<long xml:lang="ja">注釈線の描画を開始</long>
+					<long xml:lang="ko">주석 그리기를 시작</long>
+					<long xml:lang="nb">Begynn Påfør-tegning</long>
+					<long xml:lang="nl">Initiëer tekenen van annotatie</long>
+					<long xml:lang="or">ଚିତ୍ରାଙ୍କନ ବ୍ଯାଖ୍ଯା ପ୍ରାରମ୍ଭକର</long>
+					<long xml:lang="pl">Rozpocznij rysowanie</long>
+					<long xml:lang="pt">Iniciar desenho de anotação</long>
+					<long xml:lang="pt_BR">Iniciar desenho de anotação</long>
+					<long xml:lang="ro">Inițiază desenarea adnotării</long>
+					<long xml:lang="ru">Инициировать рисование заметки</long>
+					<long xml:lang="sk">Začať kreslenie poznámky</long>
+					<long xml:lang="sv">Initiera antecknings ritande</long>
+					<long xml:lang="tr">Not çizmeye başla</long>
+					<long xml:lang="uk">Початок малювання примітки</long>
+					<long xml:lang="zh_CN">启动注释绘制</long>
+					<long xml:lang="zh_TW">開始使用桌面畫筆的按鍵設定</long>
+					<hint>button</hint>
+					<default>&lt;Super&gt;&lt;Alt&gt;Button1</default>
+				</option>
+
+				<option type="string" name="erase_button">
+					<short>Initiate erase</short>
+					<short xml:lang="bg">Изтрий анотация</short>
+					<short xml:lang="bn_IN">মোছটে শুরু করো</short>
+					<short xml:lang="de">Löschen initiieren</short>
+					<short xml:lang="el">Εκκίνηση σβησίματος</short>
+					<short xml:lang="es">Iniciar borrado</short>
+					<short xml:lang="eu">Hasi ezabatzea</short>
+					<short xml:lang="fi">Aktivoi pyyhkiminen</short>
+					<short xml:lang="fr">Lancer l'effacement</short>
+					<short xml:lang="gl">Iniciar goma de borrar</short>
+					<short xml:lang="he">התחל מחיקה</short>
+					<short xml:lang="hu">Törlés indítása</short>
+					<short xml:lang="it">Avvia cancellazione</short>
+					<short xml:lang="ja">削除開始</short>
+					<short xml:lang="ko">지우기 시작</short>
+					<short xml:lang="nb">Begynn utvisking</short>
+					<short xml:lang="nl">Starten verwijdering</short>
+					<short xml:lang="or">ଲିଭାଇବା ପ୍ରାରମ୍ଭ କର</short>
+					<short xml:lang="pl">Rozpocznij usuwanie</short>
+					<short xml:lang="pt">Iniciar apagador</short>
+					<short xml:lang="pt_BR">Iniciar apagador</short>
+					<short xml:lang="ro">Inițiere ștergere</short>
+					<short xml:lang="ru">Инициировать стирание</short>
+					<short xml:lang="sk">Začať mazanie</short>
+					<short xml:lang="sl">Inicializiraj izbris</short>
+					<short xml:lang="sv">Initiera radering</short>
+					<short xml:lang="tr">Silmeye başla</short>
+					<short xml:lang="uk">Початок видалення</short>
+					<short xml:lang="zh_CN">启动擦除</short>
+					<short xml:lang="zh_TW">桌面畫筆橡皮擦</short>
+					<long>Initiate annotate erasing</long>
+					<long xml:lang="bg">Започни изтриване на анотация</long>
+					<long xml:lang="bn_IN">অ্যানোটেটন এ মোছটে শুরু করো</long>
+					<long xml:lang="de">Zeichnung löschen initiieren</long>
+					<long xml:lang="el">Εκκίνηση σβησίματος επισημείωσης</long>
+					<long xml:lang="es">Iniciar borrado de Anotar</long>
+					<long xml:lang="eu">Hasi oharren ezabatzea</long>
+					<long xml:lang="fi">Aktivoi piirtämisen pyyhkiminen</long>
+					<long xml:lang="fr">Lancer l'effacement des annotations</long>
+					<long xml:lang="gl">Iniciar goma de borrar das anotacións</long>
+					<long xml:lang="he">התחל למחוק הערות</long>
+					<long xml:lang="hu">Feljegyzéstörlés indítása</long>
+					<long xml:lang="it">Avvia la cancellazione delle annotazioni</long>
+					<long xml:lang="ja">注釈線の削除を開始</long>
+					<long xml:lang="ko">주석 지우기를 시작</long>
+					<long xml:lang="nb">Begynn Påfør-utvisking</long>
+					<long xml:lang="nl">Initiëer verwĳderen van annotatie</long>
+					<long xml:lang="or">ଲିଭାଇବା ବ୍ଯାଖ୍ଯା ଆରମ୍ଭକର</long>
+					<long xml:lang="pl">Rozpoczyna usuwanie rysunków</long>
+					<long xml:lang="pt">Iniciar apagador de anotação</long>
+					<long xml:lang="pt_BR">Iniciar apagador de anotação</long>
+					<long xml:lang="ro">Inițiază ștergerea adnotării</long>
+					<long xml:lang="ru">Инициировать стирание заметки</long>
+					<long xml:lang="sk">Začať mazanie poznámky</long>
+					<long xml:lang="sv">Initiera radering av anteckning</long>
+					<long xml:lang="tr">Not silmeye başla</long>
+					<long xml:lang="uk">Початок видалення примітки</long>
+					<long xml:lang="zh_CN">启动注释擦除</long>
+					<long xml:lang="zh_TW">桌面畫筆的橡皮擦按鍵設定</long>
+					<hint>button</hint>
+					<default>&lt;Super&gt;&lt;Alt&gt;Button3</default>
+				</option>
+
+				<option type="string" name="clear_key">
+					<short>Clear</short>
+					<short xml:lang="bg">Изчистване</short>
+					<short xml:lang="bn">পরিষ্কার করা</short>
+					<short xml:lang="bn_IN">পরিষ্কার করো</short>
+					<short xml:lang="ca">Borra</short>
+					<short xml:lang="cs">Vymazat</short>
+					<short xml:lang="de">Leeren</short>
+					<short xml:lang="el">Καθάρισμα</short>
+					<short xml:lang="es">Limpiar</short>
+					<short xml:lang="eu">Garbitu</short>
+					<short xml:lang="fi">Tyhjennä</short>
+					<short xml:lang="fr">Effacer</short>
+					<short xml:lang="gl">Limpar</short>
+					<short xml:lang="gu">સાફ કરો</short>
+					<short xml:lang="he">נקה</short>
+					<short xml:lang="hi">साफ करें</short>
+					<short xml:lang="hr">Izbrisi</short>
+					<short xml:lang="hu">Törlés</short>
+					<short xml:lang="it">Pulisci</short>
+					<short xml:lang="ja">消去</short>
+					<short xml:lang="ko">지우기</short>
+					<short xml:lang="nb">Rens</short>
+					<short xml:lang="nl">Wissen</short>
+					<short xml:lang="or">ପରିଷ୍କାରକର</short>
+					<short xml:lang="pl">Czyść</short>
+					<short xml:lang="pt">Limpar</short>
+					<short xml:lang="pt_BR">Limpar</short>
+					<short xml:lang="ro">Curăță</short>
+					<short xml:lang="ru">Очистить</short>
+					<short xml:lang="sk">Vyčistiť</short>
+					<short xml:lang="sl">Počisti</short>
+					<short xml:lang="sv">Töm</short>
+					<short xml:lang="tr">Temizle</short>
+					<short xml:lang="uk">Очистити</short>
+					<short xml:lang="zh_CN">清除</short>
+					<short xml:lang="zh_TW">清除桌面塗鴉</short>
+					<long>Clear</long>
+					<long xml:lang="bg">Изчистване</long>
+					<long xml:lang="bn">পরিষ্কার করা</long>
+					<long xml:lang="bn_IN">পরিষ্কার করো</long>
+					<long xml:lang="ca">Borra</long>
+					<long xml:lang="cs">Vymazat</long>
+					<long xml:lang="de">Leeren</long>
+					<long xml:lang="el">Καθάρισμα</long>
+					<long xml:lang="es">Limpiar</long>
+					<long xml:lang="eu">Garbitu</long>
+					<long xml:lang="fi">Tyhjennä</long>
+					<long xml:lang="fr">Effacer</long>
+					<long xml:lang="gl">Limpar</long>
+					<long xml:lang="gu">સાફ કરો</long>
+					<long xml:lang="he">נקה</long>
+					<long xml:lang="hi">साफ करें</long>
+					<long xml:lang="hr">Izbrisi</long>
+					<long xml:lang="hu">Törlés</long>
+					<long xml:lang="it">Pulisci</long>
+					<long xml:lang="ja">消去</long>
+					<long xml:lang="ko">지우기</long>
+					<long xml:lang="nb">Rens</long>
+					<long xml:lang="nl">Wissen</long>
+					<long xml:lang="or">ପରିଷ୍କାରକର</long>
+					<long xml:lang="pl">Czyść</long>
+					<long xml:lang="pt">Limpar</long>
+					<long xml:lang="pt_BR">Limpar</long>
+					<long xml:lang="ro">Curăță</long>
+					<long xml:lang="ru">Очистить</long>
+					<long xml:lang="sk">Vyčistiť</long>
+					<long xml:lang="sl">Počisti</long>
+					<long xml:lang="sv">Töm</long>
+					<long xml:lang="tr">Temizle</long>
+					<long xml:lang="uk">Очистити</long>
+					<long xml:lang="zh_CN">清除</long>
+					<long xml:lang="zh_TW">清除桌面塗鴉</long>
+					<hint>key</hint>
+					<default>&lt;Super&gt;&lt;Alt&gt;k</default>
+				</option>
+
+				<option type="string" name="clear_button">
+					<short>Clear</short>
+					<short xml:lang="bg">Изчистване</short>
+					<short xml:lang="bn">পরিষ্কার করা</short>
+					<short xml:lang="bn_IN">পরিষ্কার করো</short>
+					<short xml:lang="ca">Borra</short>
+					<short xml:lang="cs">Vymazat</short>
+					<short xml:lang="de">Leeren</short>
+					<short xml:lang="el">Καθάρισμα</short>
+					<short xml:lang="es">Limpiar</short>
+					<short xml:lang="eu">Garbitu</short>
+					<short xml:lang="fi">Tyhjennä</short>
+					<short xml:lang="fr">Effacer</short>
+					<short xml:lang="gl">Limpar</short>
+					<short xml:lang="gu">સાફ કરો</short>
+					<short xml:lang="he">נקה</short>
+					<short xml:lang="hi">साफ करें</short>
+					<short xml:lang="hr">Izbrisi</short>
+					<short xml:lang="hu">Törlés</short>
+					<short xml:lang="it">Pulisci</short>
+					<short xml:lang="ja">消去</short>
+					<short xml:lang="ko">지우기</short>
+					<short xml:lang="nb">Rens</short>
+					<short xml:lang="nl">Wissen</short>
+					<short xml:lang="or">ପରିଷ୍କାରକର</short>
+					<short xml:lang="pl">Czyść</short>
+					<short xml:lang="pt">Limpar</short>
+					<short xml:lang="pt_BR">Limpar</short>
+					<short xml:lang="ro">Curăță</short>
+					<short xml:lang="ru">Очистить</short>
+					<short xml:lang="sk">Vyčistiť</short>
+					<short xml:lang="sl">Počisti</short>
+					<short xml:lang="sv">Töm</short>
+					<short xml:lang="tr">Temizle</short>
+					<short xml:lang="uk">Очистити</short>
+					<short xml:lang="zh_CN">清除</short>
+					<short xml:lang="zh_TW">清除桌面塗鴉</short>
+					<long>Clear</long>
+					<long xml:lang="bg">Изчистване</long>
+					<long xml:lang="bn">পরিষ্কার করা</long>
+					<long xml:lang="bn_IN">পরিষ্কার করো</long>
+					<long xml:lang="ca">Borra</long>
+					<long xml:lang="cs">Vymazat</long>
+					<long xml:lang="de">Leeren</long>
+					<long xml:lang="el">Καθάρισμα</long>
+					<long xml:lang="es">Limpiar</long>
+					<long xml:lang="eu">Garbitu</long>
+					<long xml:lang="fi">Tyhjennä</long>
+					<long xml:lang="fr">Effacer</long>
+					<long xml:lang="gl">Limpar</long>
+					<long xml:lang="gu">સાફ કરો</long>
+					<long xml:lang="he">נקה</long>
+					<long xml:lang="hi">साफ करें</long>
+					<long xml:lang="hr">Izbrisi</long>
+					<long xml:lang="hu">Törlés</long>
+					<long xml:lang="it">Pulisci</long>
+					<long xml:lang="ja">消去</long>
+					<long xml:lang="ko">지우기</long>
+					<long xml:lang="nb">Rens</long>
+					<long xml:lang="nl">Wissen</long>
+					<long xml:lang="or">ପରିଷ୍କାରକର</long>
+					<long xml:lang="pl">Czyść</long>
+					<long xml:lang="pt">Limpar</long>
+					<long xml:lang="pt_BR">Limpar</long>
+					<long xml:lang="ro">Curăță</long>
+					<long xml:lang="ru">Очистить</long>
+					<long xml:lang="sk">Vyčistiť</long>
+					<long xml:lang="sl">Počisti</long>
+					<long xml:lang="sv">Töm</long>
+					<long xml:lang="tr">Temizle</long>
+					<long xml:lang="uk">Очистити</long>
+					<long xml:lang="zh_CN">清除</long>
+					<long xml:lang="zh_TW">清除桌面塗鴉</long>
+					<hint>button</hint>
+				</option>
+
+				<option type="string" name="fill_color">
+					<short>Annotate Fill Color</short>
+					<short xml:lang="bg">Цвят за запълване на анотациите</short>
+					<short xml:lang="bn">অ্যানোটেট পূর্ণ রঙ</short>
+					<short xml:lang="bn_IN">অ্যানোটেট এ রঙ পূর্ণ করোন</short>
+					<short xml:lang="cs">Barva anotace</short>
+					<short xml:lang="de">Füllfarbe</short>
+					<short xml:lang="el">Χρώμα Γεμίσματος Επισημείωσης</short>
+					<short xml:lang="es">Color de relleno para Anotar</short>
+					<short xml:lang="eu">Betetze kolorea oharretan</short>
+					<short xml:lang="fi">Piirroksen täyttöväri</short>
+					<short xml:lang="fr">Couleur de remplissage des annotations</short>
+					<short xml:lang="gl">Cor de recheo das anotacións</short>
+					<short xml:lang="gu">ભરવાના રંગની ટિપ્પણી</short>
+					<short xml:lang="he">צבע מילוי עבור הערות</short>
+					<short xml:lang="hu">Feljegyzés kitöltő színe</short>
+					<short xml:lang="it">Colore riempimento</short>
+					<short xml:lang="ja">注釈線の塗り色</short>
+					<short xml:lang="ko">주석의 채우기 색</short>
+					<short xml:lang="nb">Fyllfarge for Påfør</short>
+					<short xml:lang="nl">Annoteer opvul kleur</short>
+					<short xml:lang="or">ରଙ୍ଗ ପୁରଣ ବ୍ଯାଖ୍ଯାକର</short>
+					<short xml:lang="pl">Kolor wypełnienia</short>
+					<short xml:lang="pt">Cor de preenchimento das anotações</short>
+					<short xml:lang="pt_BR">Cor de preenchimento das anotações</short>
+					<short xml:lang="ro">Culoare de umplere a adnotării</short>
+					<short xml:lang="ru">Цвет заполнения заметки</short>
+					<short xml:lang="sk">Farba výplne poznámky</short>
+					<short xml:lang="tr">Not Dolgu Rengi</short>
+					<short xml:lang="uk">Колір коментарю</short>
+					<short xml:lang="zh_CN">注解填充颜色</short>
+					<short xml:lang="zh_TW">桌面畫筆色彩</short>
+					<long>Fill color for annotations</long>
+					<long xml:lang="bg">Цвят за запълване на анотациите</long>
+					<long xml:lang="bn">অ্যানোটেশন পূর্ণ করার রঙ</long>
+					<long xml:lang="bn_IN">অ্যানোটেটচন এ রঙ পূর্ণ করো</long>
+					<long xml:lang="ca">Color del club per anotacions</long>
+					<long xml:lang="de">Füllfarbe für Anmerkungen</long>
+					<long xml:lang="el">Γέμισμα χρώματος για επισημειώσεις</long>
+					<long xml:lang="es">Color de relleno para anotaciones</long>
+					<long xml:lang="eu">Betetze kolorea oharrentzat</long>
+					<long xml:lang="fi">Piirroksen väri</long>
+					<long xml:lang="fr">Couleur de remplissage des annotations</long>
+					<long xml:lang="gl">Cor de recheo das anotacións</long>
+					<long xml:lang="gu">ટિપ્પણીઓ માટે રંગ ભરો</long>
+					<long xml:lang="he">צבע מילוי עבור הערות</long>
+					<long xml:lang="hi">व्याख्या के लिए रंग भरें</long>
+					<long xml:lang="hu">Feljegyzések kitöltő színe</long>
+					<long xml:lang="it">Colore riempimento per le annotazioni</long>
+					<long xml:lang="ja">注釈線の塗り色</long>
+					<long xml:lang="ko">주석의 채우기 색</long>
+					<long xml:lang="nb">Fyllfarge for påførte elementer</long>
+					<long xml:lang="nl">Opvul kleur voor annotatie's</long>
+					<long xml:lang="or">ବ୍ଯାଖ୍ଯା ପାଇଁ ରଙ୍ଗ ପୁରଣକର</long>
+					<long xml:lang="pa">ਐਨਾਟੇਸ਼ਨ ਲਈ ਭਰਨ ਰੰਗ</long>
+					<long xml:lang="pl">Kolor wypełnienia dla rysowania</long>
+					<long xml:lang="pt">Cor de preenchimento para anotações</long>
+					<long xml:lang="pt_BR">Cor de preenchimento para anotações</long>
+					<long xml:lang="ro">Culoarea de umplere a adnotărilor</long>
+					<long xml:lang="ru">Цвет заливки для заметок</long>
+					<long xml:lang="sk">Farba výplne poznámok</long>
+					<long xml:lang="sv">Fyllnings färg för anteckningar</long>
+					<long xml:lang="tr">Notlar için dolgu rengi</long>
+					<long xml:lang="uk">Колір заповнення для анотації</long>
+					<long xml:lang="zh_CN">注解使用的填充颜色</long>
+					<long xml:lang="zh_TW">畫筆要用的色彩</long>
+					<hint>color</hint>
+					<default>#ff0000ff</default>
+				</option>
+
+				<option type="string" name="stroke_color">
+					<short>Annotate Stroke Color</short>
+					<short xml:lang="bg">Цвят за линиите на анотациите</short>
+					<short xml:lang="bn">অ্যানোটেশনের স্ট্রোকের রঙ</short>
+					<short xml:lang="bn_IN">অ্যানোটেট এ স্ট্রোকের রঙ করোন</short>
+					<short xml:lang="ca">Anotar color de accident</short>
+					<short xml:lang="de">Kommentar Rahmenfarbe</short>
+					<short xml:lang="el">Χρώμα Πινελιάς Επισημείωσης</short>
+					<short xml:lang="es">Color de trazo para Anotar</short>
+					<short xml:lang="eu">Oharren marra kolorea</short>
+					<short xml:lang="fi">Piirroksen ääriviivojen väri</short>
+					<short xml:lang="fr">Couleur du contour des annotations</short>
+					<short xml:lang="gl">Cor do pincel das anotacións</short>
+					<short xml:lang="gu">સ્ટ્રોક રંગની ટિપ્પણી</short>
+					<short xml:lang="he">צבע מכחול עבור הערות</short>
+					<short xml:lang="hi">स्ट्रोक रंग की व्याख्या करें</short>
+					<short xml:lang="hu">Feljegyzés körvonalszíne</short>
+					<short xml:lang="it">Colore tratto</short>
+					<short xml:lang="ja">注釈のストロークの色</short>
+					<short xml:lang="ko">주석의 외곽선 색</short>
+					<short xml:lang="nb">Bestrykningsfarge for Påfør</short>
+					<short xml:lang="nl">Annoteer doorhaal kleur</short>
+					<short xml:lang="or">ଆଘାତ ରଙ୍ଗକୁ ବ୍ଯାଖ୍ଯା କର</short>
+					<short xml:lang="pa">ਐਨਾਟੇਟ ਸਟਰੋਕ ਰੰਗ</short>
+					<short xml:lang="pl">Kolor pędzla</short>
+					<short xml:lang="pt">Cor do pincel das anotações</short>
+					<short xml:lang="pt_BR">Cor do pincel das anotações</short>
+					<short xml:lang="ro">Culoare de ștanțare a adnotării</short>
+					<short xml:lang="ru">Цвет черты заметки</short>
+					<short xml:lang="sk">Štýl ťahu poznám</short>
+					<short xml:lang="tr">Not Vurgu Rengi</short>
+					<short xml:lang="uk">Колір риски нотатки</short>
+					<short xml:lang="zh_CN">注解描边颜色</short>
+					<short xml:lang="zh_TW">桌面畫筆描述色彩</short>
+					<long>Stroke color for annotations</long>
+					<long xml:lang="bg">Цвят на чертите за анотации</long>
+					<long xml:lang="bn">অ্যানোটেশনের স্ট্রোকের রঙ</long>
+					<long xml:lang="bn_IN">অ্যানোটেশনের স্ট্রোকের রঙ</long>
+					<long xml:lang="ca">Color d´accident per anotacions</long>
+					<long xml:lang="de">Strichfarbe für Notizen</long>
+					<long xml:lang="el">Χρώμα πινελιάς για επισημειώσεις</long>
+					<long xml:lang="es">Color de Trazo para anotaciones</long>
+					<long xml:lang="eu">Marra kolorea oharrenzat</long>
+					<long xml:lang="fi">Viivan väri piirroksiin</long>
+					<long xml:lang="fr">Couleur du contour des annotations</long>
+					<long xml:lang="gl">Cor do pincel para anotacións</long>
+					<long xml:lang="gu">ટિપ્પણીઓ માટે સ્ટ્રોક રંગ</long>
+					<long xml:lang="he">צבע מכחול עבור הערות</long>
+					<long xml:lang="hi">व्याख्या के लिए स्ट्रोक रंग</long>
+					<long xml:lang="hu">Feljegyzések körvonalának színe</long>
+					<long xml:lang="it">Colore tratto per le annotazioni</long>
+					<long xml:lang="ja">注釈線のストロークの色</long>
+					<long xml:lang="ko">주석의 외곽선 색</long>
+					<long xml:lang="nb">Bestrykningsfarge for påførte elementer</long>
+					<long xml:lang="nl">Doorhaal kleur voor annotaties</long>
+					<long xml:lang="or">ବ୍ଯାଖ୍ଯାଗୁଡିକ ପାଇଁ ଆଘାତ ରଙ୍ଗ</long>
+					<long xml:lang="pa">ਐਨਾਟੇਸ਼ਨ ਸਟਰੋਕ ਰੰਗ</long>
+					<long xml:lang="pl">Kolor pędzla przy rysowaniu</long>
+					<long xml:lang="pt">Cor do pincel para anotações</long>
+					<long xml:lang="pt_BR">Cor do pincel para anotações</long>
+					<long xml:lang="ro">Culoare de ștanțare pentru adnotări</long>
+					<long xml:lang="ru">Цвет черты для заметок</long>
+					<long xml:lang="sk">Štýl ťahu poznámok</long>
+					<long xml:lang="sv">Streck färg för anteckningar</long>
+					<long xml:lang="tr">Notlar için vurgulama rengi</long>
+					<long xml:lang="uk">Колір риски для приміток</long>
+					<long xml:lang="zh_CN">注释描边使用的颜色</long>
+					<long xml:lang="zh_TW">桌面畫筆描述顏色</long>
+					<hint>color</hint>
+					<default>#00ff00ff</default>
+				</option>
+
+				<option type="float" name="line_width">
+					<short>Line width</short>
+					<short xml:lang="bg">Ширина на линията</short>
+					<short xml:lang="bn">রেখার বিস্তার</short>
+					<short xml:lang="bn_IN">রেখার বিস্তার (প্রস্থ)</short>
+					<short xml:lang="ca">Linia d´ample</short>
+					<short xml:lang="cs">Šířka linky</short>
+					<short xml:lang="de">Linienstärke</short>
+					<short xml:lang="el">Πλάτος γραμμής</short>
+					<short xml:lang="es">Ancho de línea</short>
+					<short xml:lang="eu">Lerro zabalera</short>
+					<short xml:lang="fi">Viivan leveys</short>
+					<short xml:lang="fr">Largeur de ligne</short>
+					<short xml:lang="gl">Ancho da liña</short>
+					<short xml:lang="gu">લીટી પહોળાઈ</short>
+					<short xml:lang="he">עובי קו</short>
+					<short xml:lang="hi">रेखा चौड़ाई</short>
+					<short xml:lang="hr">Debljina linije</short>
+					<short xml:lang="hu">Vonalvastagság</short>
+					<short xml:lang="it">Larghezza linea</short>
+					<short xml:lang="ja">線幅</short>
+					<short xml:lang="ko">선 너비</short>
+					<short xml:lang="nb">Linjebredde</short>
+					<short xml:lang="nl">Lijn breedte</short>
+					<short xml:lang="or">ରେଖା ଦୈର୍ଘ୍ଯ</short>
+					<short xml:lang="pa">ਲਾਈਨ ਚੌੜਾਈ</short>
+					<short xml:lang="pl">Szerokość linii</short>
+					<short xml:lang="pt">Esperssura da linha</short>
+					<short xml:lang="pt_BR">Espessura da linha</short>
+					<short xml:lang="ro">Lățime linie</short>
+					<short xml:lang="ru">Ширина линии</short>
+					<short xml:lang="sk">Šírka čiary</short>
+					<short xml:lang="sl">širina črte</short>
+					<short xml:lang="sr">Širina linije</short>
+					<short xml:lang="sv">Radbredd</short>
+					<short xml:lang="tr">Satır genişliği</short>
+					<short xml:lang="uk">Ширина лінії</short>
+					<short xml:lang="zh_CN">线宽</short>
+					<short xml:lang="zh_TW">線條寬度</short>
+					<long>Line width for annotations</long>
+					<long xml:lang="bg">Ширина на линията за анотации</long>
+					<long xml:lang="bn">অ্যানোটেশনের লাইনের প্রস্থ</long>
+					<long xml:lang="bn_IN">অ্যানোটেশনের লাইনের প্রস্থ</long>
+					<long xml:lang="ca">Linia d´ample per anotacions</long>
+					<long xml:lang="cs">Šířka linky pro anotaci</long>
+					<long xml:lang="de">Linienstärke für Notizen</long>
+					<long xml:lang="el">Πλάτος γραμμής για επισημειώσεις</long>
+					<long xml:lang="es">Ancho de linea para anotaciones</long>
+					<long xml:lang="eu">Lerro zabalera oharrentzat</long>
+					<long xml:lang="fi">Viivan leveys piirroksiin</long>
+					<long xml:lang="fr">Largeur de ligne des annotations</long>
+					<long xml:lang="gl">Ancho da liña para anotacións</long>
+					<long xml:lang="gu">ટિપ્પણીઓ માટે લીટી પહોળાઈ</long>
+					<long xml:lang="he">עובי קו עבור הערות</long>
+					<long xml:lang="hi">व्याख्या के लिए रेखा चौड़ाई</long>
+					<long xml:lang="hu">Feljegyzések vonalvastagsága</long>
+					<long xml:lang="it">Larghezza linea per le annotazioni</long>
+					<long xml:lang="ja">注釈線の線幅</long>
+					<long xml:lang="ko">주석의 선 너비</long>
+					<long xml:lang="nb">Linjebredde for påføringer</long>
+					<long xml:lang="nl">Lijn breedte voor annotaties</long>
+					<long xml:lang="or">ବ୍ଯାଖ୍ଯାଗୁଡିକ ପାଇଁ ରେଖା ଓସାର</long>
+					<long xml:lang="pa">ਐਨਾਟੇਸ਼ਨ ਲਈ ਲਾਈਨ ਚੌੜਾਈ</long>
+					<long xml:lang="pl">Szerokość linii przy rysowaniu</long>
+					<long xml:lang="pt">Espessura da linha para anotações</long>
+					<long xml:lang="pt_BR">Espessura da linha para anotações</long>
+					<long xml:lang="ro">Lățimea liniei pentru adnotări</long>
+					<long xml:lang="ru">Ширина линии для заметок</long>
+					<long xml:lang="sk">Šírka riadka pre komentáre</long>
+					<long xml:lang="sv">Linje bredd för anteckningar</long>
+					<long xml:lang="tr">Notlar için satır genişliği</long>
+					<long xml:lang="uk">Ширина лінії для приміток</long>
+					<long xml:lang="zh_CN">注释使用的线条宽度</long>
+					<long xml:lang="zh_TW">桌面畫筆的線條寬度</long>
+					<default>3.0</default>
+					<min>0.1</min>
+					<max>100.0</max>
+					<precision>0.1</precision>
+				</option>
+
+				<option type="float" name="stroke_width">
+					<short>Stroke width</short>
+					<short xml:lang="bg">Ширина на чертите</short>
+					<short xml:lang="bn">স্ট্রোকের প্রস্থ</short>
+					<short xml:lang="bn_IN">স্ট্রোকের প্রস্থ</short>
+					<short xml:lang="ca">Ample d´accident</short>
+					<short xml:lang="de">Strichbreite</short>
+					<short xml:lang="el">Πλάτος πινελιάς</short>
+					<short xml:lang="es">Ancho de Trazo</short>
+					<short xml:lang="eu">Marra zabalera</short>
+					<short xml:lang="fi">Viivan leveys</short>
+					<short xml:lang="fr">Largeur du contour</short>
+					<short xml:lang="gl">Ancho do pincel</short>
+					<short xml:lang="gu">સ્ટ્રોક પહોળાઈ</short>
+					<short xml:lang="he">עובי מכחול</short>
+					<short xml:lang="hi">स्ट्रोक चौड़ाई</short>
+					<short xml:lang="hu">Körvonal vastagsága</short>
+					<short xml:lang="it">Larghezza tratto</short>
+					<short xml:lang="ja">ストロークの幅</short>
+					<short xml:lang="ko">테두리 너비</short>
+					<short xml:lang="nb">Bestrykningsbredde</short>
+					<short xml:lang="nl">Doorhaal breedte</short>
+					<short xml:lang="or">ଆଘାତ ଓସାର</short>
+					<short xml:lang="pa">ਸਟਰੋਕ ਚੌੜਾਈ</short>
+					<short xml:lang="pl">Szerokość pędzla</short>
+					<short xml:lang="pt">Largura do pincel</short>
+					<short xml:lang="pt_BR">Largura do pincel</short>
+					<short xml:lang="ro">Lățime ștanțare</short>
+					<short xml:lang="ru">Ширина черты</short>
+					<short xml:lang="sk">Šírka ťahu</short>
+					<short xml:lang="sv">Streck storlek</short>
+					<short xml:lang="tr">Vurgu genişliği</short>
+					<short xml:lang="uk">Ширина риски</short>
+					<short xml:lang="zh_CN">描边宽度</short>
+					<short xml:lang="zh_TW">桌面畫筆描述寬度</short>
+					<long>Stroke width for annotations</long>
+					<long xml:lang="bg">Ширина на чертите за анотации</long>
+					<long xml:lang="bn">অ্যানোটেশনের স্ট্রোকের প্রস্থ</long>
+					<long xml:lang="bn_IN">অ্যানোটেশনের স্ট্রোকের প্রস্থ</long>
+					<long xml:lang="ca">Ample d´accident per anotacions</long>
+					<long xml:lang="de">Strichbreite für Notizen</long>
+					<long xml:lang="el">Πλάτος πινελιάς για επισημειώσεις</long>
+					<long xml:lang="es">Ancho de Trazo para anotaciones</long>
+					<long xml:lang="eu">Marra zabalera oharrentzat</long>
+					<long xml:lang="fi">Viivan leveys piirroksiin</long>
+					<long xml:lang="fr">Largeur du contour des annotations</long>
+					<long xml:lang="gl">Ancho do pincel para as anotacións</long>
+					<long xml:lang="gu">ટિપ્પણીઓ માટે સ્ટ્રોક પહોળાઈ</long>
+					<long xml:lang="he">עובי מכחול עבור הערות</long>
+					<long xml:lang="hi">व्याख्या के लिए स्ट्रोक चौड़ाई</long>
+					<long xml:lang="hu">Feljegyzések körvonal-vastagsága</long>
+					<long xml:lang="it">Larghezza tratto per le annotazioni</long>
+					<long xml:lang="ja">注釈線のストロークの幅</long>
+					<long xml:lang="ko">주석의 테두리 너비</long>
+					<long xml:lang="nb">Bestrykningsbredde for påførte elementer</long>
+					<long xml:lang="nl">Doorhaal breedte voor annotaties</long>
+					<long xml:lang="or">ବ୍ଯାଖ୍ଯାଗୁଡିକ ପାଇଁ ଆଘାତ ରଙ୍ଗ</long>
+					<long xml:lang="pa">ਐਨਾਟੇਸ਼ਨ ਲਈ ਸਟਰੋਕ ਚੌੜਾਈ</long>
+					<long xml:lang="pl">Szerokość pędzla przy rysowaniu</long>
+					<long xml:lang="pt">Largura do pincel para anotações</long>
+					<long xml:lang="pt_BR">Largura do pincel para anotações</long>
+					<long xml:lang="ro">Lățimea ștanțării pentru adnotări</long>
+					<long xml:lang="ru">Ширина черты для заметок</long>
+					<long xml:lang="sk">Šírka ťahu poznámok</long>
+					<long xml:lang="sv">Streck storlek för anteckningar</long>
+					<long xml:lang="tr">Notlar için vurgu genişliği</long>
+					<long xml:lang="uk">Ширина риски для приміток</long>
+					<long xml:lang="zh_CN">注释使用的描边宽度</long>
+					<long xml:lang="zh_TW">桌面畫筆的描述寬度</long>
+					<default>1.0</default>
+					<min>0.1</min>
+					<max>20.0</max>
+					<precision>0.1</precision>
+				</option>
+			</subgroup>
+		</group>
+	</plugin>
+</fusilli>

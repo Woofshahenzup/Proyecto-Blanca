@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libfusillidecoration
+Description: Window decoration library
+Version: 0.0.0
+
+Requires: xrender
+Libs: -lXrender -lX11   -L${libdir} -lfusillidecoration
+Cflags:   -I${includedir}/fusilli

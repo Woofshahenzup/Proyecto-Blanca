@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fusilli>
+	<plugin name="snow">
+		<short>Snow</short>
+		<long>Snow for Fusilli</long>
+
+		<category>Extras</category>
+		<deps>
+			<relation type="after">
+				<plugin>svg</plugin>
+			</relation>
+		</deps>
+
+		<group>
+			<short>Settings</short>
+
+			<subgroup>
+				<option type="int" name="num_snowflakes">
+					<short>Number Of Snowflakes</short>
+					<long>Number of snowflakes</long>
+					<default>1500</default>
+					<min>0</min>
+					<max>10000</max>
+				</option>
+
+				<option type="float" name="snow_size">
+					<short>Size Of Snowflakes</short>
+					<long>Size of snowflakes</long>
+					<default>10.0</default>
+					<min>0.0</min>
+					<max>50.0</max>
+					<precision>0.1</precision>
+				</option>
+
+				<option type="int" name="snow_speed">
+					<short>Snow Speed</short>
+					<long>Speed of falling snow</long>
+					<default>85</default>
+					<min>1</min>
+					<max>100</max>
+				</option>
+
+				<option type="int" name="snow_update_delay">
+					<short>Update Delay</short>
+					<long>Delay (in ms) between screen updates. Decreasing this value may make snow fall more smoothly, but will also increase CPU usage.</long>
+					<default>40</default>
+					<min>10</min>
+					<max>200</max>
+				</option>
+
+				<option type="int" name="screen_boxing">
+					<short>Screen Boxing</short>
+					<long>How far outside the screen resolution snow flakes can be before being removed. Needed because of FOV.</long>
+					<default>400</default>
+					<min>-2000</min>
+					<max>2000</max>
+				</option>
+
+				<option type="int" name="screen_depth">
+					<short>Screen Depth</short>
+					<long>How deep into the screen snowflakes can be drawn before being removed</long>
+					<default>1000</default>
+					<min>0</min>
+					<max>2000</max>
+				</option>
+
+				<option type="bool" name="snow_over_windows">
+					<short>Snow Over Windows</short>
+					<long>Snow is drawn above windows</long>
+					<default>false</default>
+				</option>
+
+				<option type="bool" name="snow_rotation">
+					<short>Rotate Flakes</short>
+					<long>Flakes rotate if checked.</long>
+					<default>true</default>
+				</option>
+
+				<option type="int" name="snow_direction">
+					<short>Snow Direction</short>
+					<long>Select snow flake movement direction</long>
+					<default>0</default>
+					<min>0</min>
+					<max>3</max>
+					<desc>
+						<value>0</value>
+						<name>Top to Bottom</name>
+					</desc>
+					<desc>
+						<value>1</value>
+						<name>Bottom to Top</name>
+					</desc>
+					<desc>
+						<value>2</value>
+						<name>Right to Left</name>
+					</desc>
+					<desc>
+						<value>3</value>
+						<name>Left to Right</name>
+					</desc>
+				</option>
+			</subgroup>
+		</group>
+
+		<group>
+			<short>Textures</short>
+
+			<subgroup>
+				<option type="list_string" name="snow_textures">
+					<short>Snow Textures</short>
+					<long>Snow textures</long>
+					<hints>file;image;</hints>
+					<default>
+						<item>snowflake.png</item>
+					</default>
+				</option>
+			</subgroup>
+		</group>
+
+		<group>
+			<short>Debug</short>
+
+			<subgroup>
+				<option type="bool" name="use_blending">
+					<short>Enable Blending</short>
+					<long>Enables alpha blending of snowflakes.</long>
+					<default>true</default>
+				</option>
+
+				<option type="bool" name="use_textures">
+					<short>Enable Textures</short>
+					<long>Enables textured snowflakes. If not selected, color gradients are used.</long>
+					<default>true</default>
+				</option>
+			</subgroup>
+		</group>
+
+		<group>
+			<short>Key Bindings</short>
+			<short xml:lang="bg">Комбинации от клавиши</short>
+			<short xml:lang="el">Συνδυασμοί Πλήκτρων</short>
+			<short xml:lang="es">Combinaciones de teclas</short>
+			<short xml:lang="eu">Laster-teklak</short>
+			<short xml:lang="fi">Näppäinsidokset</short>
+			<short xml:lang="fr">Assignation des touches</short>
+			<short xml:lang="gl">Atallos de Teclado</short>
+			<short xml:lang="he">צירופי מקשים</short>
+			<short xml:lang="hu">Gyorsbillentyűk</short>
+			<short xml:lang="it">Associazioni di tasti</short>
+			<short xml:lang="ja">キー割り当て</short>
+			<short xml:lang="ko">키 바로가기</short>
+			<short xml:lang="pl">Skróty klawiaturowe</short>
+			<short xml:lang="pt">Teclas de atalho</short>
+			<short xml:lang="ru">Комбинации клавиш</short>
+			<short xml:lang="uk">Комбінації клавіш</short>
+			<short xml:lang="zh_CN">按键绑定</short>
+			<short xml:lang="zh_TW">鍵盤按鍵設定</short>
+
+			<subgroup>
+				<option type="string" name="toggle_key">
+					<short>Snow Toggle</short>
+					<long>Snow toggle key</long>
+					<hint>key</hint>
+					<default>&lt;Super&gt;F3</default>
+				</option>
+			</subgroup>
+		</group>
+	</plugin>
+</fusilli>

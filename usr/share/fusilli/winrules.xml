@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fusilli>
+	<plugin name="winrules">
+		<short>Window Rules</short>
+		<long>Set windows rules</long>
+		<category>Window Management</category>
+
+		<group>
+			<short>Matches</short>
+
+			<subgroup>
+				<option type="string" per_screen="true" name="skiptaskbar_match">
+					<short>Skip taskbar</short>
+					<long>Don't show application in taskbar</long>
+					<hint>match</hint>
+					<default/>
+				</option>
+
+				<option type="string" per_screen="true" name="skippager_match">
+					<short>Skip pager</short>
+					<long>Don't show application in pager</long>
+					<hint>match</hint>
+					<default/>
+				</option>
+
+				<option type="string" per_screen="true" name="above_match">
+					<short>Above</short>
+					<long>Above others windows</long>
+					<hint>match</hint>
+					<default/>
+				</option>
+
+				<option type="string" per_screen="true" name="below_match">
+					<short>Below</short>
+					<long>Below others windows</long>
+					<hint>match</hint>
+					<default/>
+				</option>
+
+				<option type="string" per_screen="true" name="sticky_match">
+					<short>Sticky</short>
+					<long>Sticky windows</long>
+					<hint>match</hint>
+					<default/>
+				</option>
+
+				<option type="string" per_screen="true" name="fullscreen_match">
+					<short>Fullscreen</short>
+					<long>Fullscreen windows</long>
+					<hint>match</hint>
+					<default/>
+				</option>
+
+				<option type="string" per_screen="true" name="maximize_match">
+					<short>Maximized</short>
+					<long>Maximized windows</long>
+					<hint>match</hint>
+					<default/>
+				</option>
+
+				<option type="string" per_screen="true" name="no_argb_match">
+					<short>No ARGB visuals</short>
+					<long>Windows that should be treated as not supporting transparency</long>
+					<hint>match</hint>
+					<default/>
+				</option>
+
+				<option type="string" per_screen="true" name="no_move_match">
+					<short>Non movable windows</short>
+					<long>Set window as non movable</long>
+					<hint>match</hint>
+					<default/>
+				</option>
+
+				<option type="string" per_screen="true" name="no_resize_match">
+					<short>Non resizable windows</short>
+					<long>Set window as non resizable</long>
+					<hint>match</hint>
+					<default/>
+				</option>
+
+				<option type="string" per_screen="true" name="no_minimize_match">
+					<short>Non minimizable windows</short>
+					<long>Set window as non minimizable</long>
+					<hint>match</hint>
+					<default/>
+				</option>
+
+				<option type="string" per_screen="true" name="no_maximize_match">
+					<short>Non maximizable windows</short>
+					<long>Set window as non maximizable</long>
+					<hint>match</hint>
+					<default/>
+				</option>
+
+				<option type="string" per_screen="true" name="no_close_match">
+					<short>Non closable windows</short>
+					<long>Set window as non closable</long>
+					<hint>match</hint>
+					<default/>
+				</option>
+
+				<option type="string" per_screen="true" name="no_focus_match">
+					<short>No focus</short>
+					<long>Windows will not have focus</long>
+					<hint>match</hint>
+					<default/>
+				</option>
+			</subgroup>
+		</group>
+
+		<group>
+			<short>Size rules</short>
+
+			<subgroup multilist="true">
+				<short>Fixed Size Windows</short>
+
+				<option type="list_string" per_screen="true" name="size_matches">
+					<short>Sized Windows</short>
+					<long>Windows that should be resized by default</long>
+					<hint>match</hint>
+				</option>
+
+				<option type="list_int" per_screen="true" name="size_width_values">
+					<short>Width</short>
+					<long>Width values</long>
+				</option>
+
+				<option type="list_int" per_screen="true" name="size_height_values">
+					<short>Height</short>
+					<long>Height values</long>
+				</option>
+			</subgroup>
+		</group>
+	</plugin>
+</fusilli>

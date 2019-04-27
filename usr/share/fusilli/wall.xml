@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fusilli>
+	<plugin name="wall">
+		<short>Desktop Wall</short>
+		<long>Desktop Wall Plugin</long>
+		<category>Desktop</category>
+
+		<deps>
+			<relation type="after">
+				<plugin>decoration</plugin>
+			</relation>
+
+			<relation type="before">
+				<plugin>wobbly</plugin>
+				<plugin>fade</plugin>
+			</relation>
+
+			<conflict>
+				<plugin>cube</plugin>
+			</conflict>
+		</deps>
+
+		<group>
+			<short>General</short>
+
+			<subgroup>
+				<option type="bool" name="show_switcher">
+					<short>Show Viewport Switcher Preview</short>
+					<long>Show switcher window while switching viewports</long>
+					<default>true</default>
+				</option>
+
+				<option type="bool" name="miniscreen">
+					<short>Show Live Viewport Previews</short>
+					<long>Show live viewport previews in switcher window</long>
+					<default>false</default>
+				</option>
+			</subgroup>
+
+			<subgroup collapsible="true">
+				<short>Move within wall</short>
+
+				<long>&lt;span size="small"&gt;Remember: you can use &amp;lt;ClickOnDesktop&amp;gt;Button4 in Move Prev Button and &amp;lt;ClickOnDesktop&amp;gt;Button5 in Move Next Button if you want to move within workspaces using the mouse wheel&lt;/span&gt;</long>
+
+				<option type="string" name="left_key">
+					<short>Move Left Key</short>
+					<long>Move along the wall to the left</long>
+					<hint>key</hint>
+					<default>&lt;Control&gt;&lt;Alt&gt;Left</default>
+				</option>
+
+				<option type="string" name="left_button">
+					<short>Move Left Button</short>
+					<long>Move along the wall to the left</long>
+					<hint>button</hint>
+				</option>
+
+				<option type="string" name="right_key">
+					<short>Move Right Key</short>
+					<long>Move along the wall to the right</long>
+					<hint>key</hint>
+					<default>&lt;Control&gt;&lt;Alt&gt;Right</default>
+				</option>
+
+				<option type="string" name="right_button">
+					<short>Move Right Button</short>
+					<long>Move along the wall to the right</long>
+					<hint>button</hint>
+				</option>
+
+				<option type="string" name="up_key">
+					<short>Move Up Key</short>
+					<long>Move along the wall up</long>
+					<hint>key</hint>
+					<default>&lt;Control&gt;&lt;Alt&gt;Up</default>
+				</option>
+
+				<option type="string" name="up_button">
+					<short>Move Up Button</short>
+					<long>Move along the wall up</long>
+					<hint>button</hint>
+				</option>
+
+				<option type="string" name="down_key">
+					<short>Move Down Key</short>
+					<long>Move along the wall down</long>
+					<hint>key</hint>
+					<default>&lt;Control&gt;&lt;Alt&gt;Down</default>
+				</option>
+
+				<option type="string" name="down_button">
+					<short>Move Down Button</short>
+					<long>Move along the wall down</long>
+					<hint>button</hint>
+				</option>
+
+				<option type="string" name="prev_key">
+					<short>Move Prev Key</short>
+					<long>Move along the wall to the previous viewport</long>
+					<hint>key</hint>
+				</option>
+
+				<option type="string" name="prev_button">
+					<short>Move Prev Button</short>
+					<long>Move along the wall to the previous viewport</long>
+					<hint>button</hint>
+					<default/>
+				</option>
+
+				<option type="string" name="next_key">
+					<short>Move Next Key</short>
+					<long>Move along the wall to the next viewport</long>
+					<hint>key</hint>
+				</option>
+
+				<option type="string" name="next_button">
+					<short>Move Next Button</short>
+					<long>Move along the wall to the next viewport</long>
+					<hint>button</hint>
+					<default/>
+				</option>
+
+			</subgroup>
+
+			<subgroup collapsible="true">
+				<short>Move with window within wall</short>
+
+				<option type="string" name="left_window_key">
+					<short>Move Left With Window</short>
+					<long>Move with window along the wall to the left</long>
+					<hint>key</hint>
+					<default>&lt;Control&gt;&lt;Alt&gt;&lt;Shift&gt;Left</default>
+				</option>
+
+				<option type="string" name="right_window_key">
+					<short>Move Right With Window</short>
+					<long>Move with window along the wall to the right</long>
+					<hint>key</hint>
+					<default>&lt;Control&gt;&lt;Alt&gt;&lt;Shift&gt;Right</default>
+				</option>
+
+				<option type="string" name="up_window_key">
+					<short>Move Up With Window</short>
+					<long>Move with window along the wall up</long>
+					<hint>key</hint>
+					<default>&lt;Control&gt;&lt;Alt&gt;&lt;Shift&gt;Up</default>
+				</option>
+
+				<option type="string" name="down_window_key">
+					<short>Move Down With Window</short>
+					<long>Move with window along the wall down</long>
+					<hint>key</hint>
+					<default>&lt;Control&gt;&lt;Alt&gt;&lt;Shift&gt;Down</default>
+				</option>
+			</subgroup>
+		</group>
+
+		<group>
+			<short>Advanced</short>
+
+			<subgroup>
+				<option type="float" name="preview_timeout">
+					<short>Switch Target Preview Visibility Time</short>
+					<long>Duration (in s) the switch target preview should remain visible after switching ends.</long>
+					<default>0.4</default>
+					<min>0.0</min>
+					<max>2.0</max>
+					<precision>0.05</precision>
+				</option>
+
+				<option type="int" name="preview_scale">
+					<short>Preview Scale</short>
+					<long>Size of the preview in %</long>
+					<default>100</default>
+					<min>0</min>
+					<max>400</max>
+				</option>
+
+				<option type="int" name="edge_radius">
+					<short>Edge Radius</short>
+					<long>Radius of the rounded edge</long>
+					<default>5</default>
+					<min>0</min>
+					<max>20</max>
+				</option>
+
+				<option type="int" name="border_width">
+					<short>Border Width</short>
+					<long>Width of the border between the previews</long>
+					<default>10</default>
+					<min>0</min>
+					<max>30</max>
+				</option>
+
+				<option type="string" name="outline_color">
+					<short>Outline Color</short>
+					<long>Outline color of the switcher window.</long>
+					<hint>color</hint>
+					<default>#333333d9</default>
+				</option>
+			</subgroup>
+
+			<subgroup collapsible="true">
+				<short>Background Gradient</short>
+
+				<option type="string" name="background_gradient_base_color">
+					<short>Base Color</short>
+					<long>First color for the background gradient of the switcher window.</long>
+					<hint>color</hint>
+					<default>#cccce5d9</default>
+				</option>
+
+				<option type="string" name="background_gradient_highlight_color">
+					<short>Highlight Color</short>
+					<long>Second color for the background gradient of the switcher window.</long>
+					<hint>color</hint>
+					<default>#f2f2ffd9</default>
+				</option>
+
+				<option type="string" name="background_gradient_shadow_color">
+					<short>Shadow Color</short>
+					<short xml:lang="bg">Цвят на сянката</short>
+					<short xml:lang="cs">Barva stínu</short>
+					<short xml:lang="de">Schattenfarbe</short>
+					<short xml:lang="el">Χρώμα Σκιάς</short>
+					<short xml:lang="es">Color de la sombra</short>
+					<short xml:lang="eu">Itzal Kolorea</short>
+					<short xml:lang="fi">Varjon väri</short>
+					<short xml:lang="fr">Couleur de l'ombre</short>
+					<short xml:lang="gl">Cor da sombra</short>
+					<short xml:lang="gu">પડછાયા રંગ</short>
+					<short xml:lang="he">צבע הצל</short>
+					<short xml:lang="hu">Árnyék színe</short>
+					<short xml:lang="it">Colore ombreggiatura</short>
+					<short xml:lang="ja">影の色</short>
+					<short xml:lang="ko">그림자 색</short>
+					<short xml:lang="nb">Skyggefarge</short>
+					<short xml:lang="nl">Schaduw kleur</short>
+					<short xml:lang="or">ଛାଯାରଙ୍ଗ</short>
+					<short xml:lang="pl">Kolor cienia</short>
+					<short xml:lang="pt">Cor da sombra</short>
+					<short xml:lang="pt_BR">Cor da sombra</short>
+					<short xml:lang="ro">Culoare umbră</short>
+					<short xml:lang="ru">Цвет тени</short>
+					<short xml:lang="sk">Farba tieňa</short>
+					<short xml:lang="sv">Skuggfärg</short>
+					<short xml:lang="tr">Gölge Rengi</short>
+					<short xml:lang="uk">Колір тіні</short>
+					<short xml:lang="zh_CN">阴影颜色</short>
+					<short xml:lang="zh_TW">陰影顏色</short>
+					<long>Third color for the background gradient of the switcher window.</long>
+					<hint>color</hint>
+					<default>#f2f2ffd9</default>
+				</option>
+			</subgroup>
+
+			<subgroup collapsible="true">
+				<short>Thumb Gradient</short>
+
+				<option type="string" name="thumb_gradient_base_color">
+					<short>Base Color</short>
+					<long>First color for the thumb gradient of the switcher window.</long>
+					<hint>color</hint>
+					<default>#33333359</default>
+				</option>
+
+				<option type="string" name="thumb_gradient_highlight_color">
+					<short>Highlight Color</short>
+					<long>Second color for the thumb gradient of the switcher window.</long>
+					<hint>color</hint>
+					<default>#40404040</default>
+				</option>
+			</subgroup>
+
+			<subgroup collapsible="true">
+				<short>Highlight Gradient</short>
+
+				<option type="string" name="thumb_highlight_gradient_base_color">
+					<short>Base Color</short>
+					<long>First color for the thumb highlight gradient of the switcher window.</long>
+					<hint>color</hint>
+					<default>#fffffff2</default>
+				</option>
+
+				<option type="string" name="thumb_highlight_gradient_shadow_color">
+					<short>Shadow Color</short>
+					<short xml:lang="bg">Цвят на сянката</short>
+					<short xml:lang="cs">Barva stínu</short>
+					<short xml:lang="de">Schattenfarbe</short>
+					<short xml:lang="el">Χρώμα Σκιάς</short>
+					<short xml:lang="es">Color de la sombra</short>
+					<short xml:lang="eu">Itzal Kolorea</short>
+					<short xml:lang="fi">Varjon väri</short>
+					<short xml:lang="fr">Couleur de l'ombre</short>
+					<short xml:lang="gl">Cor da sombra</short>
+					<short xml:lang="gu">પડછાયા રંગ</short>
+					<short xml:lang="he">צבע הצל</short>
+					<short xml:lang="hu">Árnyék színe</short>
+					<short xml:lang="it">Colore ombreggiatura</short>
+					<short xml:lang="ja">影の色</short>
+					<short xml:lang="ko">그림자 색</short>
+					<short xml:lang="nb">Skyggefarge</short>
+					<short xml:lang="nl">Schaduw kleur</short>
+					<short xml:lang="or">ଛାଯାରଙ୍ଗ</short>
+					<short xml:lang="pl">Kolor cienia</short>
+					<short xml:lang="pt">Cor da sombra</short>
+					<short xml:lang="pt_BR">Cor da sombra</short>
+					<short xml:lang="ro">Culoare umbră</short>
+					<short xml:lang="ru">Цвет тени</short>
+					<short xml:lang="sk">Farba tieňa</short>
+					<short xml:lang="sv">Skuggfärg</short>
+					<short xml:lang="tr">Gölge Rengi</short>
+					<short xml:lang="uk">Колір тіні</short>
+					<short xml:lang="zh_CN">阴影颜色</short>
+					<short xml:lang="zh_TW">陰影顏色</short>
+					<long>Second color for the thumb highlight gradient of the switcher window.</long>
+					<hint>color</hint>
+					<default>#dfdfdfa6</default>
+				</option>
+			</subgroup>
+
+			<subgroup collapsible="true">
+				<short>Arrow Colors</short>
+
+				<option type="string" name="arrow_base_color">
+					<short>Base Color</short>
+					<long>First color of the arrow of the switcher window.</long>
+					<hint>color</hint>
+					<default>#e5e5e5d9</default>
+				</option>
+
+				<option type="string" name="arrow_shadow_color">
+					<short>Shadow Color</short>
+					<short xml:lang="bg">Цвят на сянката</short>
+					<short xml:lang="cs">Barva stínu</short>
+					<short xml:lang="de">Schattenfarbe</short>
+					<short xml:lang="el">Χρώμα Σκιάς</short>
+					<short xml:lang="es">Color de la sombra</short>
+					<short xml:lang="eu">Itzal Kolorea</short>
+					<short xml:lang="fi">Varjon väri</short>
+					<short xml:lang="fr">Couleur de l'ombre</short>
+					<short xml:lang="gl">Cor da sombra</short>
+					<short xml:lang="gu">પડછાયા રંગ</short>
+					<short xml:lang="he">צבע הצל</short>
+					<short xml:lang="hu">Árnyék színe</short>
+					<short xml:lang="it">Colore ombreggiatura</short>
+					<short xml:lang="ja">影の色</short>
+					<short xml:lang="ko">그림자 색</short>
+					<short xml:lang="nb">Skyggefarge</short>
+					<short xml:lang="nl">Schaduw kleur</short>
+					<short xml:lang="or">ଛାଯାରଙ୍ଗ</short>
+					<short xml:lang="pl">Kolor cienia</short>
+					<short xml:lang="pt">Cor da sombra</short>
+					<short xml:lang="pt_BR">Cor da sombra</short>
+					<short xml:lang="ro">Culoare umbră</short>
+					<short xml:lang="ru">Цвет тени</short>
+					<short xml:lang="sk">Farba tieňa</short>
+					<short xml:lang="sv">Skuggfärg</short>
+					<short xml:lang="tr">Gölge Rengi</short>
+					<short xml:lang="uk">Колір тіні</short>
+					<short xml:lang="zh_CN">阴影颜色</short>
+					<short xml:lang="zh_TW">陰影顏色</short>
+					<long>Second color of the arrow of the switcher window.</long>
+					<hint>color</hint>
+					<default>#dbdbdbd9</default>
+				</option>
+			</subgroup>
+
+			<subgroup>
+				<option type="bool" name="allow_wraparound">
+					<short>Allow Wrap-Around</short>
+					<long>Allow wrap-around when moving the wall up/down/left/right</long>
+					<default>false</default>
+				</option>
+
+				<option type="float" name="slide_duration">
+					<short>Wall Sliding Duration</short>
+					<long>Duration (in s) for wall sliding viewport switching animation</long>
+					<default>0.3</default>
+					<min>0.0</min>
+					<max>5.0</max>
+					<precision>0.05</precision>
+				</option>
+
+				<option type="string" name="no_slide_match">
+					<short>Non Sliding Windows</short>
+					<long>Windows that should not slide during the slide animation</long>
+					<hint>match</hint>
+					<default>type=Dock | type=Desktop | state=Sticky</default>
+				</option>
+
+				<option type="int" per_screen="true" name="mmmode">
+					<short>Multimonitor behavior</short>
+					<long>How should a multimonitor configuration be handled</long>
+					<default>0</default>
+					<min>0</min>
+					<max>1</max>
+					<desc>
+						<value>0</value>
+						<name>Switch all</name>
+					</desc>
+					<desc>
+						<value>1</value>
+						<name>Switch separately</name>
+					</desc>
+				</option>
+			</subgroup>
+		</group>
+	</plugin>
+</fusilli>

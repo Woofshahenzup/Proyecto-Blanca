@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Fusilli/Xfce4
+Comment=Change to xfce4
+Icon=/usr/share/icons/fsm.png
+Exec=fusilli-gui
+Terminal=false
+Type=Application
+Categories=Fusilli;Settings;DesktopSettings;
+StartupNotify=true
+
+Name[es_SV.UTF-8]=Fusilli/Xfce4

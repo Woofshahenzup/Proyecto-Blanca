@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fusilli>
+	<plugin name="svg">
+		<short>Svg</short>
+		<short xml:lang="bg">Svg</short>
+		<short xml:lang="bn">Svg </short>
+		<short xml:lang="bn_IN">Svg </short>
+		<short xml:lang="cs">SVG</short>
+		<short xml:lang="de">SVG</short>
+		<short xml:lang="el">Svg</short>
+		<short xml:lang="es">Svg</short>
+		<short xml:lang="eu">Svg</short>
+		<short xml:lang="fi">SVG</short>
+		<short xml:lang="fr">Svg</short>
+		<short xml:lang="gl">Svg</short>
+		<short xml:lang="gu">Svg</short>
+		<short xml:lang="he">Svg </short>
+		<short xml:lang="hi">Svg</short>
+		<short xml:lang="hu">SVG</short>
+		<short xml:lang="it">SVG</short>
+		<short xml:lang="ja">Svg</short>
+		<short xml:lang="ko">Svg</short>
+		<short xml:lang="nb">Svg</short>
+		<short xml:lang="nl">SVG</short>
+		<short xml:lang="or">Svg</short>
+		<short xml:lang="pa">Svg</short>
+		<short xml:lang="pl">Svg</short>
+		<short xml:lang="pt">Svg</short>
+		<short xml:lang="pt_BR">Svg</short>
+		<short xml:lang="ro">Svg</short>
+		<short xml:lang="ru">Svg</short>
+		<short xml:lang="sk">SVG</short>
+		<short xml:lang="sv">Svg</short>
+		<short xml:lang="tr">Svg</short>
+		<short xml:lang="uk">Svg</short>
+		<short xml:lang="zh_CN">Svg</short>
+		<short xml:lang="zh_TW">Svg</short>
+		<long>Svg image loader</long>
+		<long xml:lang="bg">Svg image loader</long>
+		<long xml:lang="bn">Svg চিত্র লোডার</long>
+		<long xml:lang="bn_IN">Svg চিত্র লোডার</long>
+		<long xml:lang="cs">Podpora obrázkového formátu SVG</long>
+		<long xml:lang="de">Plugin für das Laden von Bildern im SVG-Format</long>
+		<long xml:lang="el">Φορτωτής εικόνας svg</long>
+		<long xml:lang="es">Cargador de imágenes Svg</long>
+		<long xml:lang="eu">Svg irudi kargatzailea</long>
+		<long xml:lang="fi">SVG-kuvien lataaja</long>
+		<long xml:lang="fr">Chargeur d'images Svg</long>
+		<long xml:lang="gl">Complemento que activa o soporte para o cargado de imaxes SVG</long>
+		<long xml:lang="gu">Svg ચિત્ર લાવનાર</long>
+		<long xml:lang="he">טוען תמונות Svg</long>
+		<long xml:lang="hi">Svg चित्र लोडर</long>
+		<long xml:lang="hu">SVG képbetöltő</long>
+		<long xml:lang="it">Caricatore immagini SVG</long>
+		<long xml:lang="ja">Svg 画像読み込み</long>
+		<long xml:lang="ko">Svg 이미지 불러오기</long>
+		<long xml:lang="nb">Innlaster for svg-bilde</long>
+		<long xml:lang="nl">SVG afbeelding lader</long>
+		<long xml:lang="or">Svg ଚିତ୍ର ଲୋଡକାରୀ</long>
+		<long xml:lang="pa">Svg ਚਿੱਤਰ ਲੋਡਰ</long>
+		<long xml:lang="pl">Wtyczka ładująca obrazki .svg</long>
+		<long xml:lang="pt">Carregar imagens svg</long>
+		<long xml:lang="pt_BR">Carregar imagens svg</long>
+		<long xml:lang="ro">Încărcător de imagini Svg</long>
+		<long xml:lang="ru">Загрузчик изображений Svg</long>
+		<long xml:lang="sk">Načítanie SVG obrázkov</long>
+		<long xml:lang="sv">Svg-bildläsare</long>
+		<long xml:lang="tr">Svg resim yükleyici</long>
+		<long xml:lang="uk">Завантажувач зображень Svg</long>
+		<long xml:lang="zh_CN">Svg图像加载工具</long>
+		<long xml:lang="zh_TW">Svg 圖檔載入器</long>
+		<category>Image Loading</category>
+	</plugin>
+</fusilli>

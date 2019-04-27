@@ -1,0 +1,27 @@
+#!/bin/bash
+
+## language settings
+export TEXTDOMAIN=hdsgui
+export OUTPUT_CHARSET=UTF-8
+. $HOME/.hdsgui/config
+. gettext.sh
+
+hdsentinel -r /tmp/HDS
+[ "`grep "Acoustic Management.*: Supported" /tmp/HDS.txt`" ] && echo -e "\c" > $HOME/.hdsgui/supported || rm -f $HOME/.hdsgui/supported
+
+if [ "$ACOUSTIC" = "true" ]; then
+	[ "$SILENCE" = "true" ] && hdsentinel -setaam all quiet || hdsentinel -setaam all loud &
+fi
+
+if [ "$STARTUP" = "true" ]; then
+	if [ "`grep "Failure Predicted" /tmp/HDS.txt`" ] || [ "`grep "Replace hard disk" /tmp/HDS.txt`" ] || [ "`grep "to prevent data loss" /tmp/HDS.txt`" ]; then
+		while true; do echo 'icon:/usr/local/lib/X11/mini-icons/hds_1.png'; sleep 0.5; echo 'icon:/usr/local/lib/X11/mini-icons/hds_2.png'; sleep 0.5; done | yad --notification --icon-size=24 --auto-kill --no-middle --listen --text="----------------------
+ <b>$(gettext 'WARNING!')</b>
+----------------------
+	<b>$(gettext 'One or several disk(s) connected to your motherboard or an external controller card strongly requires your attention.')</b>
+	$(gettext 'Please, click this systray icon to run HDS GUI...')" --command="hdsgui" &
+		XPID1=$!
+		sleep $DURATION #configured in main script hdsgui
+		kill $XPID1 &
+	fi
+fi

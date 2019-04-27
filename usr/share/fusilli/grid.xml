@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fusilli>
+	<plugin name="grid">
+		<short>Grid</short>
+		<long>Warp and resize windows to fit an imaginary grid.</long>
+		<category>Window Management</category>
+
+		<group>
+			<short>Bindings</short>
+			<short xml:lang="el">Συνδυασμοί</short>
+			<short xml:lang="es">Vínculos</short>
+			<short xml:lang="eu">Laster-bideak</short>
+			<short xml:lang="fi">Pikanäppäimet</short>
+			<short xml:lang="fr">Assignations</short>
+			<short xml:lang="gl">Atallos de teclado</short>
+			<short xml:lang="he">צירופים</short>
+			<short xml:lang="hu">Gyorsbillentyűk</short>
+			<short xml:lang="it">Associazioni</short>
+			<short xml:lang="ja">割り当て</short>
+			<short xml:lang="ko">바로가기</short>
+			<short xml:lang="pl">Przyporządkowanie klawiszy</short>
+			<short xml:lang="pt">Atalhos</short>
+			<short xml:lang="ru">Закрепление</short>
+			<short xml:lang="uk">Закріплення</short>
+			<short xml:lang="zh_CN">绑定</short>
+			<short xml:lang="zh_TW">連結</short>
+
+			<subgroup>
+				<option type="string" name="put_center_key">
+					<short>Put Center</short>
+					<long>Move window to the center</long>
+					<hint>key</hint>
+					<default>&lt;Control&gt;&lt;Alt&gt;KP_5</default>
+				</option>
+
+				<option type="string" name="put_left_key">
+					<short>Put Left</short>
+					<long>Move window to the left edge</long>
+					<hint>key</hint>
+					<default>&lt;Control&gt;&lt;Alt&gt;KP_4</default>
+				</option>
+
+				<option type="string" name="put_right_key">
+					<short>Put Right</short>
+					<long>Move window to the right edge</long>
+					<hint>key</hint>
+					<default>&lt;Control&gt;&lt;Alt&gt;KP_6</default>
+				</option>
+
+				<option type="string" name="put_top_key">
+					<short>Put Top</short>
+					<long>Move window to the top edge</long>
+					<hint>key</hint>
+					<default>&lt;Control&gt;&lt;Alt&gt;KP_8</default>
+				</option>
+
+				<option type="string" name="put_bottom_key">
+					<short>Put Bottom</short>
+					<long>Move window to the bottom edge</long>
+					<hint>key</hint>
+					<default>&lt;Control&gt;&lt;Alt&gt;KP_2</default>
+				</option>
+
+				<option type="string" name="put_topleft_key">
+					<short>Put Top Left</short>
+					<long>Move window to the top left corner</long>
+					<hint>key</hint>
+					<default>&lt;Control&gt;&lt;Alt&gt;KP_7</default>
+				</option>
+
+				<option type="string" name="put_topright_key">
+					<short>Put Top Right</short>
+					<long>Move window to the top right corner</long>
+					<hint>key</hint>
+					<default>&lt;Control&gt;&lt;Alt&gt;KP_9</default>
+				</option>
+
+				<option type="string" name="put_bottomleft_key">
+					<short>Put Bottom Left</short>
+					<long>Move window to the bottom left corner</long>
+					<hint>key</hint>
+					<default>&lt;Control&gt;&lt;Alt&gt;KP_1</default>
+				</option>
+
+				<option type="string" name="put_bottomright_key">
+					<short>Put Bottom Right</short>
+					<long>Move window to the bottom right corner</long>
+					<hint>key</hint>
+					<default>&lt;Control&gt;&lt;Alt&gt;KP_3</default>
+				</option>
+			</subgroup>
+		</group>
+	</plugin>
+</fusilli>

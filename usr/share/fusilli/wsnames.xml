@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fusilli>
+	<plugin name="wsnames">
+		<short>Workspace Naming</short>
+		<long>Allows assigning descriptions to workspaces</long>
+		<category>Window Management</category>
+
+		<group>
+			<short>General</short>
+
+			<subgroup multilist="true">
+				<short>Workspace Names</short>
+
+				<option type="list_int" per_screen="true" name="workspace_number">
+					<short>Number</short>
+					<long>Number of workspace to be named</long>
+					<min>1</min>
+					<max>32</max>
+				</option>
+
+				<option type="list_string" per_screen="true" name="workspace_name">
+					<short>Name</short>
+					<long>The desired workspace name</long>
+				</option>
+			</subgroup>
+
+			<subgroup>
+				<short>Appearance</short>
+				<short xml:lang="bg">Външен вид</short>
+				<short xml:lang="de">Erscheinung</short>
+				<short xml:lang="el">Εμφάνιση</short>
+				<short xml:lang="es">Apariencia</short>
+				<short xml:lang="eu">Itxura</short>
+				<short xml:lang="fi">Ulkoasu</short>
+				<short xml:lang="fr">Apparence</short>
+				<short xml:lang="gl">Apariencia</short>
+				<short xml:lang="he">מראה</short>
+				<short xml:lang="hu">Megjelenés</short>
+				<short xml:lang="it">Aspetto</short>
+				<short xml:lang="ja">外観</short>
+				<short xml:lang="ko">모양</short>
+				<short xml:lang="pl">Wygląd</short>
+				<short xml:lang="pt">Aparência</short>
+				<short xml:lang="ru">Внешний вид</short>
+				<short xml:lang="uk">Зовнішній вигляд</short>
+				<short xml:lang="zh_CN">外观</short>
+				<short xml:lang="zh_TW">外觀</short>
+				<option type="float" per_screen="true" name="display_time">
+					<short>Display Time</short>
+					<long>Timeout (in s) of the name display</long>
+					<min>0.1</min>
+					<max>5.0</max>
+					<precision>0.05</precision>
+					<default>0.5</default>
+				</option>
+
+				<option type="float" per_screen="true" name="fade_time">
+					<short>Fade Time</short>
+					<short xml:lang="cs">Doba zprůhlednění</short>
+					<short xml:lang="de">Ausblendungszeit</short>
+					<short xml:lang="el">Χρόνος Ξεθωριάσματος</short>
+					<short xml:lang="es">Tiempo de desvanecimiento</short>
+					<short xml:lang="eu">Iraungitze denbora</short>
+					<short xml:lang="fi">Häivytysviive</short>
+					<short xml:lang="fr">Temps de Fondu</short>
+					<short xml:lang="gl">Tempo de desvanecemento</short>
+					<short xml:lang="gu">આછાપણાનો સમય</short>
+					<short xml:lang="he">משך עמעום</short>
+					<short xml:lang="hu">Elhalványítási idő</short>
+					<short xml:lang="it">Tempo dissolvenza</short>
+					<short xml:lang="ja">フェード時間</short>
+					<short xml:lang="ko">페이드 시간</short>
+					<short xml:lang="nb">Uttoningstid</short>
+					<short xml:lang="nl">Verduisteren tijdsduur</short>
+					<short xml:lang="or">ଫିକାହେବା ସମଯ</short>
+					<short xml:lang="pl">Czas przenikania</short>
+					<short xml:lang="pt">Tempo de Esmaecimento</short>
+					<short xml:lang="pt_BR">Tempo de desvanecimento</short>
+					<short xml:lang="ru">Время исчезновения</short>
+					<short xml:lang="sk">Doba stmavnutia</short>
+					<short xml:lang="sv">Toningstid</short>
+					<short xml:lang="tr">Solma Süresi</short>
+					<short xml:lang="uk">Час зникнення</short>
+					<short xml:lang="zh_CN">渐隐时间</short>
+					<short xml:lang="zh_TW">淡入/淡出時間</short>
+					<long>Time (in s) the name display fades out after being shown.</long>
+					<min>0.0</min>
+					<max>5.0</max>
+					<precision>0.05</precision>
+					<default>0.25</default>
+				</option>
+
+				<option type="bool" per_screen="true" name="bold_text">
+					<short>Bold Font</short>
+					<long>Selects if the text should be displayed in bold font or not.</long>
+					<default>true</default>
+				</option>
+
+				<option type="int" per_screen="true" name="font_size">
+					<short>Font Size</short>
+					<long>Font size for the text display.</long>
+					<default>16</default>
+					<min>6</min>
+					<max>96</max>
+				</option>
+
+				<option type="string" per_screen="true" name="font_family">
+					<short>Font Family</short>
+					<long>Font family for the text display (Don't leave this blank!)</long>
+					<hint>font</hint>
+					<default>Sans</default>
+				</option>
+
+				<option type="int" per_screen="true" name="text_placement">
+					<short>Text Placement</short>
+					<long>Selects where to place the text.</long>
+					<default>0</default>
+					<min>0</min>
+					<max>2</max>
+					<desc>
+						<value>0</value>
+						<name>Centered on screen</name>
+					</desc>
+					<desc>
+						<value>1</value>
+						<name>Top of screen</name>
+					</desc>
+					<desc>
+						<value>2</value>
+						<name>Bottom of screen</name>
+					</desc>
+				</option>
+
+				<option type="string" per_screen="true" name="back_color">
+					<short>Background Color</short>
+					<long>Background color for the text display.</long>
+					<hint>color</hint>
+					<default>#00000099</default>
+				</option>
+
+				<option type="string" per_screen="true" name="font_color">
+					<short>Font Color</short>
+					<long>Font color for the text display.</long>
+					<hint>color</hint>
+					<default>#ffffffff</default>
+				</option>
+			</subgroup>
+		</group>
+	</plugin>
+</fusilli>

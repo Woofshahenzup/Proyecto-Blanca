@@ -1,0 +1,36 @@
+#!/bin/sh
+# nilsonmorales  8 dic 2018
+GTKDIALOG=gtkdialog
+
+export TEXTDOMAIN=fusilli-gui
+export OUTPUT_CHARSET=UTF-8
+. gettext.sh 
+
+MAIN_DIALOG='
+<window title="Fusilli/Xfce4" window-position="1">
+	<vbox>
+	<vbox>
+		<text><label>"'"$(gettext "Choose Desktop Enviroment")"'"</label></text>
+			<button tooltip-text="'"$(gettext "Start Fusilli")"'" width-request="200" theme-icon-size="32">
+		        <label>"'"$(gettext "Start Fusilli")"'"</label>
+				<input file icon="gtk-yes"></input>
+				<action>/usr/local/bin/fusilli-rotini.sh &</action>
+			</button>
+			<button tooltip-text="'"$(gettext "Back to Xfce4")"'" width-request="150" theme-icon-size="32">
+		        <label>"'"$(gettext "Back to Xfce4")"'"</label>
+				<input file icon="gtk-stop"></input>
+				<action> xfwm4 --replace &</action>
+			</button>
+			</vbox>
+		<hbox>
+			<button cancel></button>
+			</hbox>
+	</vbox>
+</window>'
+
+export MAIN_DIALOG
+
+case $1 in
+	-d | --dump) echo "$MAIN_DIALOG" ;;
+	*) $GTKDIALOG --program=MAIN_DIALOG ;;
+esac
